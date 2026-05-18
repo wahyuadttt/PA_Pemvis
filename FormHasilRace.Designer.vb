@@ -17,9 +17,10 @@ Partial Class FormHasilRace
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormHasilRace))
         pnlHeader = New Panel()
         pnlHeaderAccent = New Panel()
         lblHeaderTitle = New Label()
@@ -67,7 +68,9 @@ Partial Class FormHasilRace
         btnUbahHasil = New Button()
         btnHapusHasil = New Button()
         btnBatal = New Button()
-        btnPrint = New Button()
+        btnPrintHasil = New Button()
+        PrintDocument1 = New Printing.PrintDocument()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
         pnlHeader.SuspendLayout()
         pnlSidebar.SuspendLayout()
         pnlContent.SuspendLayout()
@@ -381,33 +384,33 @@ Partial Class FormHasilRace
         ' 
         ' dgvHasilRace
         ' 
-        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        dgvHasilRace.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        dgvHasilRace.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         dgvHasilRace.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvHasilRace.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvHasilRace.BackgroundColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
         dgvHasilRace.BorderStyle = BorderStyle.None
         dgvHasilRace.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dgvHasilRace.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        DataGridViewCellStyle5.ForeColor = Color.White
-        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle5.SelectionForeColor = Color.White
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        dgvHasilRace.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = Color.White
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.SelectionForeColor = Color.White
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgvHasilRace.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvHasilRace.ColumnHeadersHeight = 36
         dgvHasilRace.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
-        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle6.ForeColor = Color.White
-        DataGridViewCellStyle6.Padding = New Padding(4)
-        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        DataGridViewCellStyle6.SelectionForeColor = Color.White
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle3.ForeColor = Color.White
+        DataGridViewCellStyle3.Padding = New Padding(4)
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle3
         dgvHasilRace.EnableHeadersVisualStyles = False
         dgvHasilRace.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
         dgvHasilRace.Location = New Point(18, 130)
@@ -681,7 +684,7 @@ Partial Class FormHasilRace
         pnlAction.Controls.Add(btnUbahHasil)
         pnlAction.Controls.Add(btnHapusHasil)
         pnlAction.Controls.Add(btnBatal)
-        pnlAction.Controls.Add(btnPrint)
+        pnlAction.Controls.Add(btnPrintHasil)
         pnlAction.Dock = DockStyle.Bottom
         pnlAction.Location = New Point(0, 695)
         pnlAction.Margin = New Padding(4)
@@ -706,7 +709,6 @@ Partial Class FormHasilRace
         btnSimpanHasil.TabIndex = 0
         btnSimpanHasil.Text = "Simpan"
         btnSimpanHasil.UseVisualStyleBackColor = False
-        btnSimpanHasil.Visible = False
         ' 
         ' btnUbahHasil
         ' 
@@ -724,7 +726,6 @@ Partial Class FormHasilRace
         btnUbahHasil.TabIndex = 1
         btnUbahHasil.Text = "Ubah"
         btnUbahHasil.UseVisualStyleBackColor = False
-        btnUbahHasil.Visible = False
         ' 
         ' btnHapusHasil
         ' 
@@ -742,7 +743,6 @@ Partial Class FormHasilRace
         btnHapusHasil.TabIndex = 2
         btnHapusHasil.Text = "Hapus"
         btnHapusHasil.UseVisualStyleBackColor = False
-        btnHapusHasil.Visible = False
         ' 
         ' btnBatal
         ' 
@@ -760,24 +760,35 @@ Partial Class FormHasilRace
         btnBatal.TabIndex = 3
         btnBatal.Text = "Batal"
         btnBatal.UseVisualStyleBackColor = False
-        btnBatal.Visible = False
         ' 
-        ' btnPrint
+        ' btnPrintHasil
         ' 
-        btnPrint.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        btnPrint.Cursor = Cursors.Hand
-        btnPrint.FlatAppearance.BorderSize = 0
-        btnPrint.FlatStyle = FlatStyle.Flat
-        btnPrint.Font = New Font("Segoe UI", 9F)
-        btnPrint.ForeColor = Color.White
-        btnPrint.Location = New Point(15, 58)
-        btnPrint.Margin = New Padding(4)
-        btnPrint.Name = "btnPrint"
-        btnPrint.Size = New Size(368, 38)
-        btnPrint.TabIndex = 4
-        btnPrint.Text = "🖨  Cetak Laporan Hasil Race"
-        btnPrint.UseVisualStyleBackColor = False
-        btnPrint.Visible = False
+        btnPrintHasil.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        btnPrintHasil.Cursor = Cursors.Hand
+        btnPrintHasil.FlatAppearance.BorderSize = 0
+        btnPrintHasil.FlatStyle = FlatStyle.Flat
+        btnPrintHasil.Font = New Font("Segoe UI", 9F)
+        btnPrintHasil.ForeColor = Color.White
+        btnPrintHasil.Location = New Point(15, 58)
+        btnPrintHasil.Margin = New Padding(4)
+        btnPrintHasil.Name = "btnPrintHasil"
+        btnPrintHasil.Size = New Size(368, 38)
+        btnPrintHasil.TabIndex = 4
+        btnPrintHasil.Text = "🖨  Cetak Laporan Hasil Race"
+        btnPrintHasil.UseVisualStyleBackColor = False
+        ' 
+        ' PrintDocument1
+        ' 
+        ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
         ' 
         ' FormHasilRace
         ' 
@@ -851,7 +862,7 @@ Partial Class FormHasilRace
     Friend WithEvents btnUbahHasil As Button
     Friend WithEvents btnHapusHasil As Button
     Friend WithEvents btnBatal As Button
-    Friend WithEvents btnPrint As Button
+    Friend WithEvents btnPrintHasil As Button
     Friend WithEvents pnlGrid As Panel
     Friend WithEvents pnlGridHeader As Panel
     Friend WithEvents lblGridTitle As Label
@@ -860,4 +871,6 @@ Partial Class FormHasilRace
     Friend WithEvents dgvHasilRace As DataGridView
     Friend WithEvents txtPoinHasil As TextBox
     Friend WithEvents txtTimHasil As TextBox
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class

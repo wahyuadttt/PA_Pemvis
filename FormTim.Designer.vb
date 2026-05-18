@@ -18,9 +18,10 @@ Partial Class FormTim
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormTim))
         pnlHeader = New Panel()
         pnlHeaderAccent = New Panel()
         lblHeaderTitle = New Label()
@@ -59,8 +60,10 @@ Partial Class FormTim
         btnUbahTim = New Button()
         btnHapusTim = New Button()
         btnBatal = New Button()
-        btnPrint = New Button()
+        btnPrintTim = New Button()
         ErrorProvider1 = New ErrorProvider(components)
+        PrintDocument1 = New Printing.PrintDocument()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
         pnlHeader.SuspendLayout()
         pnlSidebar.SuspendLayout()
         pnlContent.SuspendLayout()
@@ -335,33 +338,33 @@ Partial Class FormTim
         ' 
         ' dgvTim
         ' 
-        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        dgvTim.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        dgvTim.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         dgvTim.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvTim.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvTim.BackgroundColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
         dgvTim.BorderStyle = BorderStyle.None
         dgvTim.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dgvTim.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        DataGridViewCellStyle5.ForeColor = Color.White
-        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle5.SelectionForeColor = Color.White
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        dgvTim.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = Color.White
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.SelectionForeColor = Color.White
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgvTim.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvTim.ColumnHeadersHeight = 36
         dgvTim.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
-        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle6.ForeColor = Color.White
-        DataGridViewCellStyle6.Padding = New Padding(4)
-        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        DataGridViewCellStyle6.SelectionForeColor = Color.White
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        dgvTim.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle3.ForeColor = Color.White
+        DataGridViewCellStyle3.Padding = New Padding(4)
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        dgvTim.DefaultCellStyle = DataGridViewCellStyle3
         dgvTim.EnableHeadersVisualStyles = False
         dgvTim.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
         dgvTim.Location = New Point(18, 62)
@@ -564,7 +567,7 @@ Partial Class FormTim
         pnlAction.Controls.Add(btnUbahTim)
         pnlAction.Controls.Add(btnHapusTim)
         pnlAction.Controls.Add(btnBatal)
-        pnlAction.Controls.Add(btnPrint)
+        pnlAction.Controls.Add(btnPrintTim)
         pnlAction.Dock = DockStyle.Bottom
         pnlAction.Location = New Point(0, 695)
         pnlAction.Margin = New Padding(4)
@@ -641,26 +644,38 @@ Partial Class FormTim
         btnBatal.Text = "Batal"
         btnBatal.UseVisualStyleBackColor = False
         ' 
-        ' btnPrint
+        ' btnPrintTim
         ' 
-        btnPrint.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        btnPrint.Cursor = Cursors.Hand
-        btnPrint.FlatAppearance.BorderSize = 0
-        btnPrint.FlatStyle = FlatStyle.Flat
-        btnPrint.Font = New Font("Segoe UI", 9F)
-        btnPrint.ForeColor = Color.White
-        btnPrint.Location = New Point(15, 58)
-        btnPrint.Margin = New Padding(4)
-        btnPrint.Name = "btnPrint"
-        btnPrint.Size = New Size(348, 38)
-        btnPrint.TabIndex = 4
-        btnPrint.Text = "🖨  Cetak Laporan Tim"
-        btnPrint.UseVisualStyleBackColor = False
-        btnPrint.Visible = False
+        btnPrintTim.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        btnPrintTim.Cursor = Cursors.Hand
+        btnPrintTim.FlatAppearance.BorderSize = 0
+        btnPrintTim.FlatStyle = FlatStyle.Flat
+        btnPrintTim.Font = New Font("Segoe UI", 9F)
+        btnPrintTim.ForeColor = Color.White
+        btnPrintTim.Location = New Point(15, 58)
+        btnPrintTim.Margin = New Padding(4)
+        btnPrintTim.Name = "btnPrintTim"
+        btnPrintTim.Size = New Size(348, 38)
+        btnPrintTim.TabIndex = 4
+        btnPrintTim.Text = "🖨  Cetak Laporan Tim"
+        btnPrintTim.UseVisualStyleBackColor = False
         ' 
         ' ErrorProvider1
         ' 
         ErrorProvider1.ContainerControl = Me
+        ' 
+        ' PrintDocument1
+        ' 
+        ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
         ' 
         ' FormTim
         ' 
@@ -728,9 +743,11 @@ Partial Class FormTim
     Friend WithEvents btnUbahTim As Button
     Friend WithEvents btnHapusTim As Button
     Friend WithEvents btnBatal As Button
-    Friend WithEvents btnPrint As Button
+    Friend WithEvents btnPrintTim As Button
     Friend WithEvents pnlGrid As Panel
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents dgvTim As DataGridView
     Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class

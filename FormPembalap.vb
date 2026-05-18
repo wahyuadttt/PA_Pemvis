@@ -200,4 +200,53 @@
 
     End Sub
 
+    Private Sub btnPrintPembalap_Click(sender As Object, e As EventArgs) Handles btnPrintPembalap.Click
+
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.WindowState = FormWindowState.Maximized
+        PrintPreviewDialog1.ShowDialog()
+
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
+        Dim fontJudul As New Font("Arial", 16, FontStyle.Bold)
+        Dim fontIsi As New Font("Arial", 10)
+
+        Dim y As Integer = 50
+
+        e.Graphics.DrawString(
+            "DATA PEMBALAP FORMULA 1",
+            fontJudul,
+            Brushes.Black,
+            220,
+            y)
+
+        y += 50
+
+        For Each row As DataGridViewRow In dgvPembalap.Rows
+
+            If Not row.IsNewRow Then
+
+                Dim teks As String =
+                    "Nama : " & row.Cells("nama").Value.ToString() &
+                    " | Negara : " & row.Cells("negara").Value.ToString() &
+                    " | Nomor : " & row.Cells("nomor").Value.ToString() &
+                    " | Tim : " & row.Cells("tim").Value.ToString()
+
+                e.Graphics.DrawString(
+                    teks,
+                    fontIsi,
+                    Brushes.Black,
+                    50,
+                    y)
+
+                y += 30
+
+            End If
+
+        Next
+
+    End Sub
+
 End Class

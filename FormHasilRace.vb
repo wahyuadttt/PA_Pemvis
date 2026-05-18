@@ -282,4 +282,53 @@ Public Class FormHasilRace
 
     End Sub
 
+    Private Sub btnPrintHasil_Click(sender As Object, e As EventArgs) Handles btnPrintHasil.Click
+
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.WindowState = FormWindowState.Maximized
+        PrintPreviewDialog1.ShowDialog()
+
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
+        Dim fontJudul As New Font("Arial", 16, FontStyle.Bold)
+        Dim fontIsi As New Font("Arial", 10)
+
+        Dim y As Integer = 50
+
+        e.Graphics.DrawString(
+            "HASIL RACE FORMULA 1",
+            fontJudul,
+            Brushes.Black,
+            220,
+            y)
+
+        y += 50
+
+        For Each row As DataGridViewRow In dgvHasilRace.Rows
+
+            If Not row.IsNewRow Then
+
+                Dim teks As String =
+                    "Pembalap : " & row.Cells("pembalap").Value.ToString() &
+                    " | Tim : " & row.Cells("namaTim").Value.ToString() &
+                    " | Posisi : " & row.Cells("posisiFinish").Value.ToString() &
+                    " | Poin : " & row.Cells("poin").Value.ToString()
+
+                e.Graphics.DrawString(
+                    teks,
+                    fontIsi,
+                    Brushes.Black,
+                    50,
+                    y)
+
+                y += 30
+
+            End If
+
+        Next
+
+    End Sub
+
 End Class
