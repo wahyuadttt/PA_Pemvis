@@ -14,7 +14,7 @@ Public Class LoginAdmin
         If txtUsername.Text.Trim() = "admin" AndAlso txtPassword.Text.Trim() = "admin" Then
 
             IsAdmin = True
-            DashboardAdmin.Show()
+            FormPembalap.Show()
             Me.Hide()
 
         Else
@@ -35,13 +35,13 @@ Public Class LoginAdmin
         ErrorProvider1.Clear()
 
         IsAdmin = False
-        DashboardUser.Show()
+        FormMenu.Show()
         Me.Hide()
     End Sub
 
     Private Sub LoginAdmin_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         IsAdmin = False
-        DashboardUser.Show()
+        FormPembalap.Show()
     End Sub
 
     Private Sub LoginAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -17,9 +17,10 @@ Partial Class FormPembalap
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        components = New ComponentModel.Container()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
         pnlHeader = New Panel()
         pnlHeaderAccent = New Panel()
         lblHeaderTitle = New Label()
@@ -37,7 +38,7 @@ Partial Class FormPembalap
         btnKeluar = New Button()
         pnlContent = New Panel()
         pnlGrid = New Panel()
-        txtSearch = New TextBox()
+        txtSearchPembalap = New TextBox()
         dgvPembalap = New DataGridView()
         pnlInput = New Panel()
         pnlInputAccent = New Panel()
@@ -54,11 +55,12 @@ Partial Class FormPembalap
         picFotoPembalap = New PictureBox()
         btnPilihFoto = New Button()
         pnlAction = New Panel()
-        btnSimpan = New Button()
-        btnUbah = New Button()
-        btnHapus = New Button()
+        btnSimpanPembalap = New Button()
+        btnUbahPembalap = New Button()
+        btnHapusPembalap = New Button()
         btnBatal = New Button()
         btnPrint = New Button()
+        ErrorProvider1 = New ErrorProvider(components)
         pnlHeader.SuspendLayout()
         pnlSidebar.SuspendLayout()
         pnlContent.SuspendLayout()
@@ -67,6 +69,7 @@ Partial Class FormPembalap
         pnlInput.SuspendLayout()
         CType(picFotoPembalap, ComponentModel.ISupportInitialize).BeginInit()
         pnlAction.SuspendLayout()
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlHeader
@@ -78,17 +81,19 @@ Partial Class FormPembalap
         pnlHeader.Controls.Add(lblAdminBadge)
         pnlHeader.Dock = DockStyle.Top
         pnlHeader.Location = New Point(0, 0)
+        pnlHeader.Margin = New Padding(4)
         pnlHeader.Name = "pnlHeader"
-        pnlHeader.Size = New Size(1280, 60)
+        pnlHeader.Size = New Size(1600, 75)
         pnlHeader.TabIndex = 0
         ' 
         ' pnlHeaderAccent
         ' 
         pnlHeaderAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         pnlHeaderAccent.Dock = DockStyle.Bottom
-        pnlHeaderAccent.Location = New Point(0, 58)
+        pnlHeaderAccent.Location = New Point(0, 73)
+        pnlHeaderAccent.Margin = New Padding(4)
         pnlHeaderAccent.Name = "pnlHeaderAccent"
-        pnlHeaderAccent.Size = New Size(1280, 2)
+        pnlHeaderAccent.Size = New Size(1600, 2)
         pnlHeaderAccent.TabIndex = 0
         ' 
         ' lblHeaderTitle
@@ -97,9 +102,10 @@ Partial Class FormPembalap
         lblHeaderTitle.BackColor = Color.Transparent
         lblHeaderTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         lblHeaderTitle.ForeColor = Color.White
-        lblHeaderTitle.Location = New Point(15, 8)
+        lblHeaderTitle.Location = New Point(19, 10)
+        lblHeaderTitle.Margin = New Padding(4, 0, 4, 0)
         lblHeaderTitle.Name = "lblHeaderTitle"
-        lblHeaderTitle.Size = New Size(324, 37)
+        lblHeaderTitle.Size = New Size(388, 45)
         lblHeaderTitle.TabIndex = 1
         lblHeaderTitle.Text = "F1 RACE MANAGEMENT"
         ' 
@@ -109,9 +115,10 @@ Partial Class FormPembalap
         lblHeaderSub.BackColor = Color.Transparent
         lblHeaderSub.Font = New Font("Segoe UI", 8F)
         lblHeaderSub.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(190))
-        lblHeaderSub.Location = New Point(17, 40)
+        lblHeaderSub.Location = New Point(21, 50)
+        lblHeaderSub.Margin = New Padding(4, 0, 4, 0)
         lblHeaderSub.Name = "lblHeaderSub"
-        lblHeaderSub.Size = New Size(144, 19)
+        lblHeaderSub.Size = New Size(164, 21)
         lblHeaderSub.TabIndex = 2
         lblHeaderSub.Text = "Manajemen Pembalap"
         ' 
@@ -120,9 +127,10 @@ Partial Class FormPembalap
         lblAdminBadge.BackColor = Color.FromArgb(CByte(50), CByte(12), CByte(10))
         lblAdminBadge.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
         lblAdminBadge.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        lblAdminBadge.Location = New Point(345, 19)
+        lblAdminBadge.Location = New Point(431, 24)
+        lblAdminBadge.Margin = New Padding(4, 0, 4, 0)
         lblAdminBadge.Name = "lblAdminBadge"
-        lblAdminBadge.Size = New Size(80, 26)
+        lblAdminBadge.Size = New Size(100, 32)
         lblAdminBadge.TabIndex = 3
         lblAdminBadge.Text = "● ADMIN"
         lblAdminBadge.TextAlign = ContentAlignment.MiddleCenter
@@ -140,9 +148,10 @@ Partial Class FormPembalap
         pnlSidebar.Controls.Add(btnNavHasil)
         pnlSidebar.Controls.Add(btnKeluar)
         pnlSidebar.Dock = DockStyle.Left
-        pnlSidebar.Location = New Point(0, 60)
+        pnlSidebar.Location = New Point(0, 75)
+        pnlSidebar.Margin = New Padding(4)
         pnlSidebar.Name = "pnlSidebar"
-        pnlSidebar.Size = New Size(180, 668)
+        pnlSidebar.Size = New Size(225, 835)
         pnlSidebar.TabIndex = 1
         ' 
         ' pnlSidebarAccent
@@ -150,8 +159,9 @@ Partial Class FormPembalap
         pnlSidebarAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         pnlSidebarAccent.Dock = DockStyle.Left
         pnlSidebarAccent.Location = New Point(0, 0)
+        pnlSidebarAccent.Margin = New Padding(4)
         pnlSidebarAccent.Name = "pnlSidebarAccent"
-        pnlSidebarAccent.Size = New Size(3, 668)
+        pnlSidebarAccent.Size = New Size(4, 835)
         pnlSidebarAccent.TabIndex = 0
         ' 
         ' lblMenuTitle
@@ -160,9 +170,10 @@ Partial Class FormPembalap
         lblMenuTitle.BackColor = Color.Transparent
         lblMenuTitle.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblMenuTitle.ForeColor = Color.FromArgb(CByte(120), CByte(120), CByte(135))
-        lblMenuTitle.Location = New Point(14, 18)
+        lblMenuTitle.Location = New Point(18, 22)
+        lblMenuTitle.Margin = New Padding(4, 0, 4, 0)
         lblMenuTitle.Name = "lblMenuTitle"
-        lblMenuTitle.Size = New Size(100, 19)
+        lblMenuTitle.Size = New Size(113, 21)
         lblMenuTitle.TabIndex = 1
         lblMenuTitle.Text = "KELOLA DATA"
         ' 
@@ -175,9 +186,10 @@ Partial Class FormPembalap
         btnNavPembalap.FlatStyle = FlatStyle.Flat
         btnNavPembalap.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         btnNavPembalap.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        btnNavPembalap.Location = New Point(0, 42)
+        btnNavPembalap.Location = New Point(0, 52)
+        btnNavPembalap.Margin = New Padding(4)
         btnNavPembalap.Name = "btnNavPembalap"
-        btnNavPembalap.Size = New Size(180, 36)
+        btnNavPembalap.Size = New Size(225, 45)
         btnNavPembalap.TabIndex = 2
         btnNavPembalap.Text = "  🏎  Pembalap"
         btnNavPembalap.TextAlign = ContentAlignment.MiddleLeft
@@ -192,9 +204,10 @@ Partial Class FormPembalap
         btnNavTim.FlatStyle = FlatStyle.Flat
         btnNavTim.Font = New Font("Segoe UI", 10F)
         btnNavTim.ForeColor = Color.White
-        btnNavTim.Location = New Point(0, 79)
+        btnNavTim.Location = New Point(0, 99)
+        btnNavTim.Margin = New Padding(4)
         btnNavTim.Name = "btnNavTim"
-        btnNavTim.Size = New Size(180, 36)
+        btnNavTim.Size = New Size(225, 45)
         btnNavTim.TabIndex = 3
         btnNavTim.Text = "  🏁  Konstruktor"
         btnNavTim.TextAlign = ContentAlignment.MiddleLeft
@@ -209,9 +222,10 @@ Partial Class FormPembalap
         btnNavRace.FlatStyle = FlatStyle.Flat
         btnNavRace.Font = New Font("Segoe UI", 10F)
         btnNavRace.ForeColor = Color.White
-        btnNavRace.Location = New Point(0, 116)
+        btnNavRace.Location = New Point(0, 145)
+        btnNavRace.Margin = New Padding(4)
         btnNavRace.Name = "btnNavRace"
-        btnNavRace.Size = New Size(180, 36)
+        btnNavRace.Size = New Size(225, 45)
         btnNavRace.TabIndex = 4
         btnNavRace.Text = "  📅  Jadwal Race"
         btnNavRace.TextAlign = ContentAlignment.MiddleLeft
@@ -220,9 +234,10 @@ Partial Class FormPembalap
         ' pnlSidebarDivider
         ' 
         pnlSidebarDivider.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
-        pnlSidebarDivider.Location = New Point(14, 160)
+        pnlSidebarDivider.Location = New Point(18, 200)
+        pnlSidebarDivider.Margin = New Padding(4)
         pnlSidebarDivider.Name = "pnlSidebarDivider"
-        pnlSidebarDivider.Size = New Size(152, 1)
+        pnlSidebarDivider.Size = New Size(190, 1)
         pnlSidebarDivider.TabIndex = 5
         ' 
         ' btnNavKlasemen
@@ -234,9 +249,10 @@ Partial Class FormPembalap
         btnNavKlasemen.FlatStyle = FlatStyle.Flat
         btnNavKlasemen.Font = New Font("Segoe UI", 10F)
         btnNavKlasemen.ForeColor = Color.White
-        btnNavKlasemen.Location = New Point(0, 165)
+        btnNavKlasemen.Location = New Point(0, 206)
+        btnNavKlasemen.Margin = New Padding(4)
         btnNavKlasemen.Name = "btnNavKlasemen"
-        btnNavKlasemen.Size = New Size(180, 36)
+        btnNavKlasemen.Size = New Size(225, 45)
         btnNavKlasemen.TabIndex = 6
         btnNavKlasemen.Text = "  🏆  Klasemen"
         btnNavKlasemen.TextAlign = ContentAlignment.MiddleLeft
@@ -251,9 +267,10 @@ Partial Class FormPembalap
         btnNavHasil.FlatStyle = FlatStyle.Flat
         btnNavHasil.Font = New Font("Segoe UI", 10F)
         btnNavHasil.ForeColor = Color.White
-        btnNavHasil.Location = New Point(0, 202)
+        btnNavHasil.Location = New Point(0, 252)
+        btnNavHasil.Margin = New Padding(4)
         btnNavHasil.Name = "btnNavHasil"
-        btnNavHasil.Size = New Size(180, 36)
+        btnNavHasil.Size = New Size(225, 45)
         btnNavHasil.TabIndex = 7
         btnNavHasil.Text = "  📊  Hasil Race"
         btnNavHasil.TextAlign = ContentAlignment.MiddleLeft
@@ -268,9 +285,10 @@ Partial Class FormPembalap
         btnKeluar.FlatStyle = FlatStyle.Flat
         btnKeluar.Font = New Font("Segoe UI", 9F)
         btnKeluar.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        btnKeluar.Location = New Point(0, 630)
+        btnKeluar.Location = New Point(0, 788)
+        btnKeluar.Margin = New Padding(4)
         btnKeluar.Name = "btnKeluar"
-        btnKeluar.Size = New Size(180, 36)
+        btnKeluar.Size = New Size(225, 45)
         btnKeluar.TabIndex = 8
         btnKeluar.Text = "  ✕  Keluar"
         btnKeluar.TextAlign = ContentAlignment.MiddleLeft
@@ -282,75 +300,79 @@ Partial Class FormPembalap
         pnlContent.Controls.Add(pnlGrid)
         pnlContent.Controls.Add(pnlInput)
         pnlContent.Dock = DockStyle.Fill
-        pnlContent.Location = New Point(180, 60)
+        pnlContent.Location = New Point(225, 75)
+        pnlContent.Margin = New Padding(4)
         pnlContent.Name = "pnlContent"
-        pnlContent.Padding = New Padding(16, 12, 16, 12)
-        pnlContent.Size = New Size(1100, 668)
+        pnlContent.Padding = New Padding(20, 15, 20, 15)
+        pnlContent.Size = New Size(1375, 835)
         pnlContent.TabIndex = 2
         ' 
         ' pnlGrid
         ' 
         pnlGrid.BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
-        pnlGrid.Controls.Add(txtSearch)
+        pnlGrid.Controls.Add(txtSearchPembalap)
         pnlGrid.Controls.Add(dgvPembalap)
         pnlGrid.Dock = DockStyle.Fill
-        pnlGrid.Location = New Point(356, 12)
+        pnlGrid.Location = New Point(445, 15)
+        pnlGrid.Margin = New Padding(4)
         pnlGrid.Name = "pnlGrid"
-        pnlGrid.Padding = New Padding(14, 12, 14, 12)
-        pnlGrid.Size = New Size(728, 644)
+        pnlGrid.Padding = New Padding(18, 15, 18, 15)
+        pnlGrid.Size = New Size(910, 805)
         pnlGrid.TabIndex = 1
         ' 
-        ' txtSearch
+        ' txtSearchPembalap
         ' 
-        txtSearch.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        txtSearch.BorderStyle = BorderStyle.FixedSingle
-        txtSearch.Font = New Font("Segoe UI", 10F)
-        txtSearch.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
-        txtSearch.Location = New Point(14, 12)
-        txtSearch.Name = "txtSearch"
-        txtSearch.Size = New Size(880, 30)
-        txtSearch.TabIndex = 0
-        txtSearch.Text = "🔍  Cari pembalap..."
+        txtSearchPembalap.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        txtSearchPembalap.BorderStyle = BorderStyle.FixedSingle
+        txtSearchPembalap.Font = New Font("Segoe UI", 10F)
+        txtSearchPembalap.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
+        txtSearchPembalap.Location = New Point(18, 15)
+        txtSearchPembalap.Margin = New Padding(4)
+        txtSearchPembalap.Name = "txtSearchPembalap"
+        txtSearchPembalap.Size = New Size(1100, 34)
+        txtSearchPembalap.TabIndex = 0
+        txtSearchPembalap.Text = "🔍  Cari pembalap..."
         ' 
         ' dgvPembalap
         ' 
-        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        dgvPembalap.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        dgvPembalap.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         dgvPembalap.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvPembalap.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvPembalap.BackgroundColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
         dgvPembalap.BorderStyle = BorderStyle.None
         dgvPembalap.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dgvPembalap.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        DataGridViewCellStyle2.ForeColor = Color.White
-        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle2.SelectionForeColor = Color.White
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        dgvPembalap.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        DataGridViewCellStyle5.ForeColor = Color.White
+        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle5.SelectionForeColor = Color.White
+        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
+        dgvPembalap.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         dgvPembalap.ColumnHeadersHeight = 36
         dgvPembalap.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle3.ForeColor = Color.White
-        DataGridViewCellStyle3.Padding = New Padding(4)
-        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        DataGridViewCellStyle3.SelectionForeColor = Color.White
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
-        dgvPembalap.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle6.ForeColor = Color.White
+        DataGridViewCellStyle6.Padding = New Padding(4)
+        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        DataGridViewCellStyle6.SelectionForeColor = Color.White
+        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
+        dgvPembalap.DefaultCellStyle = DataGridViewCellStyle6
         dgvPembalap.EnableHeadersVisualStyles = False
         dgvPembalap.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
-        dgvPembalap.Location = New Point(14, 50)
+        dgvPembalap.Location = New Point(18, 62)
+        dgvPembalap.Margin = New Padding(4)
         dgvPembalap.Name = "dgvPembalap"
         dgvPembalap.ReadOnly = True
         dgvPembalap.RowHeadersVisible = False
         dgvPembalap.RowHeadersWidth = 51
         dgvPembalap.RowTemplate.Height = 34
         dgvPembalap.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvPembalap.Size = New Size(1408, 1134)
+        dgvPembalap.Size = New Size(1760, 1418)
         dgvPembalap.TabIndex = 1
         ' 
         ' pnlInput
@@ -371,9 +393,10 @@ Partial Class FormPembalap
         pnlInput.Controls.Add(btnPilihFoto)
         pnlInput.Controls.Add(pnlAction)
         pnlInput.Dock = DockStyle.Left
-        pnlInput.Location = New Point(16, 12)
+        pnlInput.Location = New Point(20, 15)
+        pnlInput.Margin = New Padding(4)
         pnlInput.Name = "pnlInput"
-        pnlInput.Size = New Size(340, 644)
+        pnlInput.Size = New Size(425, 805)
         pnlInput.TabIndex = 0
         ' 
         ' pnlInputAccent
@@ -381,8 +404,9 @@ Partial Class FormPembalap
         pnlInputAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         pnlInputAccent.Dock = DockStyle.Top
         pnlInputAccent.Location = New Point(0, 0)
+        pnlInputAccent.Margin = New Padding(4)
         pnlInputAccent.Name = "pnlInputAccent"
-        pnlInputAccent.Size = New Size(340, 3)
+        pnlInputAccent.Size = New Size(425, 4)
         pnlInputAccent.TabIndex = 0
         ' 
         ' lblPanelInput
@@ -390,9 +414,10 @@ Partial Class FormPembalap
         lblPanelInput.AutoSize = True
         lblPanelInput.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         lblPanelInput.ForeColor = Color.White
-        lblPanelInput.Location = New Point(14, 16)
+        lblPanelInput.Location = New Point(18, 20)
+        lblPanelInput.Margin = New Padding(4, 0, 4, 0)
         lblPanelInput.Name = "lblPanelInput"
-        lblPanelInput.Size = New Size(166, 25)
+        lblPanelInput.Size = New Size(190, 30)
         lblPanelInput.TabIndex = 1
         lblPanelInput.Text = "DATA PEMBALAP"
         ' 
@@ -401,9 +426,10 @@ Partial Class FormPembalap
         lblNamaPembalap.AutoSize = True
         lblNamaPembalap.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblNamaPembalap.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        lblNamaPembalap.Location = New Point(14, 52)
+        lblNamaPembalap.Location = New Point(18, 65)
+        lblNamaPembalap.Margin = New Padding(4, 0, 4, 0)
         lblNamaPembalap.Name = "lblNamaPembalap"
-        lblNamaPembalap.Size = New Size(131, 19)
+        lblNamaPembalap.Size = New Size(148, 21)
         lblNamaPembalap.TabIndex = 2
         lblNamaPembalap.Text = "NAMA PEMBALAP"
         ' 
@@ -413,9 +439,10 @@ Partial Class FormPembalap
         txtNamaPembalap.BorderStyle = BorderStyle.FixedSingle
         txtNamaPembalap.Font = New Font("Segoe UI", 10F)
         txtNamaPembalap.ForeColor = Color.White
-        txtNamaPembalap.Location = New Point(14, 70)
+        txtNamaPembalap.Location = New Point(18, 88)
+        txtNamaPembalap.Margin = New Padding(4)
         txtNamaPembalap.Name = "txtNamaPembalap"
-        txtNamaPembalap.Size = New Size(312, 30)
+        txtNamaPembalap.Size = New Size(390, 34)
         txtNamaPembalap.TabIndex = 3
         ' 
         ' lblNomor
@@ -423,9 +450,10 @@ Partial Class FormPembalap
         lblNomor.AutoSize = True
         lblNomor.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblNomor.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        lblNomor.Location = New Point(14, 112)
+        lblNomor.Location = New Point(18, 140)
+        lblNomor.Margin = New Padding(4, 0, 4, 0)
         lblNomor.Name = "lblNomor"
-        lblNomor.Size = New Size(113, 19)
+        lblNomor.Size = New Size(126, 21)
         lblNomor.TabIndex = 4
         lblNomor.Text = "NOMOR BALAP"
         ' 
@@ -435,9 +463,10 @@ Partial Class FormPembalap
         txtNomor.BorderStyle = BorderStyle.FixedSingle
         txtNomor.Font = New Font("Segoe UI", 10F)
         txtNomor.ForeColor = Color.White
-        txtNomor.Location = New Point(14, 130)
+        txtNomor.Location = New Point(18, 162)
+        txtNomor.Margin = New Padding(4)
         txtNomor.Name = "txtNomor"
-        txtNomor.Size = New Size(312, 30)
+        txtNomor.Size = New Size(390, 34)
         txtNomor.TabIndex = 5
         ' 
         ' lblNegaraPembalap
@@ -445,9 +474,10 @@ Partial Class FormPembalap
         lblNegaraPembalap.AutoSize = True
         lblNegaraPembalap.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblNegaraPembalap.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        lblNegaraPembalap.Location = New Point(14, 172)
+        lblNegaraPembalap.Location = New Point(18, 215)
+        lblNegaraPembalap.Margin = New Padding(4, 0, 4, 0)
         lblNegaraPembalap.Name = "lblNegaraPembalap"
-        lblNegaraPembalap.Size = New Size(105, 19)
+        lblNegaraPembalap.Size = New Size(118, 21)
         lblNegaraPembalap.TabIndex = 6
         lblNegaraPembalap.Text = "NEGARA ASAL"
         ' 
@@ -457,9 +487,10 @@ Partial Class FormPembalap
         txtNegaraPembalap.BorderStyle = BorderStyle.FixedSingle
         txtNegaraPembalap.Font = New Font("Segoe UI", 10F)
         txtNegaraPembalap.ForeColor = Color.White
-        txtNegaraPembalap.Location = New Point(14, 190)
+        txtNegaraPembalap.Location = New Point(18, 238)
+        txtNegaraPembalap.Margin = New Padding(4)
         txtNegaraPembalap.Name = "txtNegaraPembalap"
-        txtNegaraPembalap.Size = New Size(312, 30)
+        txtNegaraPembalap.Size = New Size(390, 34)
         txtNegaraPembalap.TabIndex = 7
         ' 
         ' lblTimPembalap
@@ -467,9 +498,10 @@ Partial Class FormPembalap
         lblTimPembalap.AutoSize = True
         lblTimPembalap.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblTimPembalap.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        lblTimPembalap.Location = New Point(14, 232)
+        lblTimPembalap.Location = New Point(18, 290)
+        lblTimPembalap.Margin = New Padding(4, 0, 4, 0)
         lblTimPembalap.Name = "lblTimPembalap"
-        lblTimPembalap.Size = New Size(150, 19)
+        lblTimPembalap.Size = New Size(169, 21)
         lblTimPembalap.TabIndex = 8
         lblTimPembalap.Text = "TIM / KONSTRUKTOR"
         ' 
@@ -480,9 +512,10 @@ Partial Class FormPembalap
         cbTim.FlatStyle = FlatStyle.Flat
         cbTim.Font = New Font("Segoe UI", 10F)
         cbTim.ForeColor = Color.White
-        cbTim.Location = New Point(14, 250)
+        cbTim.Location = New Point(18, 312)
+        cbTim.Margin = New Padding(4)
         cbTim.Name = "cbTim"
-        cbTim.Size = New Size(312, 31)
+        cbTim.Size = New Size(389, 36)
         cbTim.TabIndex = 9
         ' 
         ' lblFoto
@@ -490,9 +523,10 @@ Partial Class FormPembalap
         lblFoto.AutoSize = True
         lblFoto.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblFoto.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        lblFoto.Location = New Point(14, 294)
+        lblFoto.Location = New Point(18, 368)
+        lblFoto.Margin = New Padding(4, 0, 4, 0)
         lblFoto.Name = "lblFoto"
-        lblFoto.Size = New Size(122, 19)
+        lblFoto.Size = New Size(137, 21)
         lblFoto.TabIndex = 10
         lblFoto.Text = "FOTO PEMBALAP"
         ' 
@@ -500,9 +534,10 @@ Partial Class FormPembalap
         ' 
         picFotoPembalap.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         picFotoPembalap.BorderStyle = BorderStyle.FixedSingle
-        picFotoPembalap.Location = New Point(14, 312)
+        picFotoPembalap.Location = New Point(18, 390)
+        picFotoPembalap.Margin = New Padding(4)
         picFotoPembalap.Name = "picFotoPembalap"
-        picFotoPembalap.Size = New Size(160, 160)
+        picFotoPembalap.Size = New Size(200, 200)
         picFotoPembalap.SizeMode = PictureBoxSizeMode.Zoom
         picFotoPembalap.TabIndex = 11
         picFotoPembalap.TabStop = False
@@ -515,9 +550,10 @@ Partial Class FormPembalap
         btnPilihFoto.FlatStyle = FlatStyle.Flat
         btnPilihFoto.Font = New Font("Segoe UI", 9F)
         btnPilihFoto.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(215))
-        btnPilihFoto.Location = New Point(185, 312)
+        btnPilihFoto.Location = New Point(231, 390)
+        btnPilihFoto.Margin = New Padding(4)
         btnPilihFoto.Name = "btnPilihFoto"
-        btnPilihFoto.Size = New Size(141, 36)
+        btnPilihFoto.Size = New Size(176, 45)
         btnPilihFoto.TabIndex = 12
         btnPilihFoto.Text = "📁  Pilih Foto..."
         btnPilihFoto.UseVisualStyleBackColor = False
@@ -525,65 +561,69 @@ Partial Class FormPembalap
         ' pnlAction
         ' 
         pnlAction.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        pnlAction.Controls.Add(btnSimpan)
-        pnlAction.Controls.Add(btnUbah)
-        pnlAction.Controls.Add(btnHapus)
+        pnlAction.Controls.Add(btnSimpanPembalap)
+        pnlAction.Controls.Add(btnUbahPembalap)
+        pnlAction.Controls.Add(btnHapusPembalap)
         pnlAction.Controls.Add(btnBatal)
         pnlAction.Controls.Add(btnPrint)
         pnlAction.Dock = DockStyle.Bottom
-        pnlAction.Location = New Point(0, 556)
+        pnlAction.Location = New Point(0, 695)
+        pnlAction.Margin = New Padding(4)
         pnlAction.Name = "pnlAction"
-        pnlAction.Padding = New Padding(12, 10, 12, 10)
-        pnlAction.Size = New Size(340, 88)
+        pnlAction.Padding = New Padding(15, 12, 15, 12)
+        pnlAction.Size = New Size(425, 110)
         pnlAction.TabIndex = 13
         ' 
-        ' btnSimpan
+        ' btnSimpanPembalap
         ' 
-        btnSimpan.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        btnSimpan.Cursor = Cursors.Hand
-        btnSimpan.FlatAppearance.BorderSize = 0
-        btnSimpan.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(180), CByte(0), CByte(0))
-        btnSimpan.FlatStyle = FlatStyle.Flat
-        btnSimpan.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        btnSimpan.ForeColor = Color.White
-        btnSimpan.Location = New Point(12, 10)
-        btnSimpan.Name = "btnSimpan"
-        btnSimpan.Size = New Size(74, 30)
-        btnSimpan.TabIndex = 0
-        btnSimpan.Text = "Simpan"
-        btnSimpan.UseVisualStyleBackColor = False
+        btnSimpanPembalap.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        btnSimpanPembalap.Cursor = Cursors.Hand
+        btnSimpanPembalap.FlatAppearance.BorderSize = 0
+        btnSimpanPembalap.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(180), CByte(0), CByte(0))
+        btnSimpanPembalap.FlatStyle = FlatStyle.Flat
+        btnSimpanPembalap.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        btnSimpanPembalap.ForeColor = Color.White
+        btnSimpanPembalap.Location = New Point(15, 12)
+        btnSimpanPembalap.Margin = New Padding(4)
+        btnSimpanPembalap.Name = "btnSimpanPembalap"
+        btnSimpanPembalap.Size = New Size(92, 38)
+        btnSimpanPembalap.TabIndex = 0
+        btnSimpanPembalap.Text = "Simpan"
+        btnSimpanPembalap.UseVisualStyleBackColor = False
         ' 
-        ' btnUbah
+        ' btnUbahPembalap
         ' 
-        btnUbah.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        btnUbah.Cursor = Cursors.Hand
-        btnUbah.FlatAppearance.BorderSize = 0
-        btnUbah.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(55), CByte(55), CByte(70))
-        btnUbah.FlatStyle = FlatStyle.Flat
-        btnUbah.Font = New Font("Segoe UI", 9F)
-        btnUbah.ForeColor = Color.White
-        btnUbah.Location = New Point(92, 10)
-        btnUbah.Name = "btnUbah"
-        btnUbah.Size = New Size(62, 30)
-        btnUbah.TabIndex = 1
-        btnUbah.Text = "Ubah"
-        btnUbah.UseVisualStyleBackColor = False
+        btnUbahPembalap.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        btnUbahPembalap.Cursor = Cursors.Hand
+        btnUbahPembalap.FlatAppearance.BorderSize = 0
+        btnUbahPembalap.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(55), CByte(55), CByte(70))
+        btnUbahPembalap.FlatStyle = FlatStyle.Flat
+        btnUbahPembalap.Font = New Font("Segoe UI", 9F)
+        btnUbahPembalap.ForeColor = Color.White
+        btnUbahPembalap.Location = New Point(115, 12)
+        btnUbahPembalap.Margin = New Padding(4)
+        btnUbahPembalap.Name = "btnUbahPembalap"
+        btnUbahPembalap.Size = New Size(78, 38)
+        btnUbahPembalap.TabIndex = 1
+        btnUbahPembalap.Text = "Ubah"
+        btnUbahPembalap.UseVisualStyleBackColor = False
         ' 
-        ' btnHapus
+        ' btnHapusPembalap
         ' 
-        btnHapus.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        btnHapus.Cursor = Cursors.Hand
-        btnHapus.FlatAppearance.BorderSize = 0
-        btnHapus.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(55), CByte(55), CByte(70))
-        btnHapus.FlatStyle = FlatStyle.Flat
-        btnHapus.Font = New Font("Segoe UI", 9F)
-        btnHapus.ForeColor = Color.White
-        btnHapus.Location = New Point(160, 10)
-        btnHapus.Name = "btnHapus"
-        btnHapus.Size = New Size(62, 30)
-        btnHapus.TabIndex = 2
-        btnHapus.Text = "Hapus"
-        btnHapus.UseVisualStyleBackColor = False
+        btnHapusPembalap.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        btnHapusPembalap.Cursor = Cursors.Hand
+        btnHapusPembalap.FlatAppearance.BorderSize = 0
+        btnHapusPembalap.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(55), CByte(55), CByte(70))
+        btnHapusPembalap.FlatStyle = FlatStyle.Flat
+        btnHapusPembalap.Font = New Font("Segoe UI", 9F)
+        btnHapusPembalap.ForeColor = Color.White
+        btnHapusPembalap.Location = New Point(200, 12)
+        btnHapusPembalap.Margin = New Padding(4)
+        btnHapusPembalap.Name = "btnHapusPembalap"
+        btnHapusPembalap.Size = New Size(78, 38)
+        btnHapusPembalap.TabIndex = 2
+        btnHapusPembalap.Text = "Hapus"
+        btnHapusPembalap.UseVisualStyleBackColor = False
         ' 
         ' btnBatal
         ' 
@@ -594,9 +634,10 @@ Partial Class FormPembalap
         btnBatal.FlatStyle = FlatStyle.Flat
         btnBatal.Font = New Font("Segoe UI", 9F)
         btnBatal.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(195))
-        btnBatal.Location = New Point(228, 10)
+        btnBatal.Location = New Point(285, 12)
+        btnBatal.Margin = New Padding(4)
         btnBatal.Name = "btnBatal"
-        btnBatal.Size = New Size(62, 30)
+        btnBatal.Size = New Size(78, 38)
         btnBatal.TabIndex = 3
         btnBatal.Text = "Batal"
         btnBatal.UseVisualStyleBackColor = False
@@ -609,24 +650,30 @@ Partial Class FormPembalap
         btnPrint.FlatStyle = FlatStyle.Flat
         btnPrint.Font = New Font("Segoe UI", 9F)
         btnPrint.ForeColor = Color.White
-        btnPrint.Location = New Point(12, 46)
+        btnPrint.Location = New Point(15, 58)
+        btnPrint.Margin = New Padding(4)
         btnPrint.Name = "btnPrint"
-        btnPrint.Size = New Size(278, 30)
+        btnPrint.Size = New Size(348, 38)
         btnPrint.TabIndex = 4
         btnPrint.Text = "🖨  Cetak Laporan Pembalap"
         btnPrint.UseVisualStyleBackColor = False
         btnPrint.Visible = False
         ' 
+        ' ErrorProvider1
+        ' 
+        ErrorProvider1.ContainerControl = Me
+        ' 
         ' FormPembalap
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(26), CByte(26), CByte(36))
-        ClientSize = New Size(1280, 728)
+        ClientSize = New Size(1600, 910)
         Controls.Add(pnlContent)
         Controls.Add(pnlSidebar)
         Controls.Add(pnlHeader)
-        MinimumSize = New Size(1024, 600)
+        Margin = New Padding(4)
+        MinimumSize = New Size(1274, 736)
         Name = "FormPembalap"
         StartPosition = FormStartPosition.CenterScreen
         Text = "F1 Race Management — Manajemen Pembalap"
@@ -643,6 +690,7 @@ Partial Class FormPembalap
         pnlInput.PerformLayout()
         CType(picFotoPembalap, ComponentModel.ISupportInitialize).EndInit()
         pnlAction.ResumeLayout(False)
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -678,12 +726,13 @@ Partial Class FormPembalap
     Friend WithEvents picFotoPembalap As PictureBox
     Friend WithEvents btnPilihFoto As Button
     Friend WithEvents pnlAction As Panel
-    Friend WithEvents btnSimpan As Button
-    Friend WithEvents btnUbah As Button
-    Friend WithEvents btnHapus As Button
+    Friend WithEvents btnSimpanPembalap As Button
+    Friend WithEvents btnUbahPembalap As Button
+    Friend WithEvents btnHapusPembalap As Button
     Friend WithEvents btnBatal As Button
     Friend WithEvents btnPrint As Button
     Friend WithEvents pnlGrid As Panel
-    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents txtSearchPembalap As TextBox
     Friend WithEvents dgvPembalap As DataGridView
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\POSTTEST_5.vbproj": {}
+    "D:\\Kuliah\\Praktikum\\PA_Pemvis\\POSTTEST_5.vbproj": {}
   },
   "projects": {
-    "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\POSTTEST_5.vbproj": {
+    "D:\\Kuliah\\Praktikum\\PA_Pemvis\\POSTTEST_5.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\POSTTEST_5.vbproj",
+        "projectUniqueName": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\POSTTEST_5.vbproj",
         "projectName": "POSTTEST_5",
-        "projectPath": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\POSTTEST_5.vbproj",
+        "projectPath": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\POSTTEST_5.vbproj",
         "packagesPath": "C:\\Users\\Inspiron 14\\.nuget\\packages\\",
-        "outputPath": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\obj\\",
+        "outputPath": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Inspiron 14\\AppData\\Roaming\\NuGet\\NuGet.Config",
