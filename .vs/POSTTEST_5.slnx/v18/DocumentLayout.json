@@ -1,0 +1,112 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\pa-pemvis\\pa-pemvis-main\\pa_pemvis\\dashboardadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:dashboardadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\pa-pemvis\\pa-pemvis-main\\pa_pemvis\\formmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:formmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\pa-pemvis\\pa-pemvis-main\\pa_pemvis\\formpembalap.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:formpembalap.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\pa-pemvis\\pa-pemvis-main\\pa_pemvis\\dashboarduser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:dashboarduser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\pa-pemvis\\pa-pemvis-main\\pa_pemvis\\formklasemen.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:formklasemen.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormKlasemen.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\FormKlasemen.vb",
+              "RelativeDocumentMoniker": "FormKlasemen.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\FormKlasemen.vb [Design]",
+              "RelativeToolTip": "FormKlasemen.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-17T14:42:15.232Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormPembalap.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\FormPembalap.vb",
+              "RelativeDocumentMoniker": "FormPembalap.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\FormPembalap.vb [Design]",
+              "RelativeToolTip": "FormPembalap.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-17T14:40:20.653Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMenu.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\FormMenu.vb",
+              "RelativeDocumentMoniker": "FormMenu.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\FormMenu.vb [Design]",
+              "RelativeToolTip": "FormMenu.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-17T14:40:07.062Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardAdmin.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\DashboardAdmin.vb",
+              "RelativeDocumentMoniker": "DashboardAdmin.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\DashboardAdmin.vb [Design]",
+              "RelativeToolTip": "DashboardAdmin.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-17T14:16:24.889Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DashboardUser.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\DashboardUser.vb",
+              "RelativeDocumentMoniker": "DashboardUser.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\PA-Pemvis\\PA-Pemvis-main\\PA_PemVis\\DashboardUser.vb [Design]",
+              "RelativeToolTip": "DashboardUser.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-17T14:16:22.654Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
