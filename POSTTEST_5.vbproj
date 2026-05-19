@@ -46,19 +46,4 @@
     </None>
   </ItemGroup>
 
-<<<<<<< HEAD
-  <ItemGroup>
-    <EmbeddedResource Update="FormHasilRace.resx">
-      <LogicalName></LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Update="FormPembalap.resx">
-      <LogicalName></LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Update="FormTim.resx">
-      <LogicalName></LogicalName>
-    </EmbeddedResource>
-  </ItemGroup>
-
-=======
->>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
 </Project>

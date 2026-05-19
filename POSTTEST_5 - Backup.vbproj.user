@@ -1,23 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
   <ItemGroup>
-    <Compile Update="admin\UC_HasilRaceAdmin.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="admin\UC_PembalapAdmin.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="admin\UC_RaceAdmin.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="admin\UC_TimAdmin.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="DashboardAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DashboardUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormHasilRace.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormKlasemen.vb">
@@ -26,8 +16,21 @@
     <Compile Update="FormMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormPembalap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTim.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LoginAdmin.vb">
       <SubType>Form</SubType>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Update="admin\UC_HasilRaceAdmin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="User\UC_RaceUser.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="User\UC_FormRaceUser.vb">
       <SubType>UserControl</SubType>
@@ -38,14 +41,22 @@
     <Compile Update="User\UC_Klasemen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="admin\UC_PembalapAdmin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="User\UC_PembalapUser.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="User\UC_RaceUser.vb">
+    <Compile Update="admin\UC_RaceAdmin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="admin\UC_TimAdmin.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="User\UC_TimUser.vb">
       <SubType>UserControl</SubType>
     </Compile>
+=======
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
   </ItemGroup>
 </Project>
