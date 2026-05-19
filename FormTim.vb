@@ -191,7 +191,10 @@
 
     End Sub
 
+<<<<<<< HEAD
     Private Sub pnlSidebar_Paint(sender As Object, e As PaintEventArgs) Handles pnlSidebar.Paint
 
     End Sub
+=======
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
 End Class

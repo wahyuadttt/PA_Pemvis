@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\",
   "Documents": [
     {
@@ -49,6 +50,25 @@
     {
       "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\user\\uc_klasemen.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:user\\uc_klasemen.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+=======
+  "WorkspaceRootPath": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\formklasemen.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:formklasemen.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\formhasilrace.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:formhasilrace.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\formpembalap.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:formpembalap.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\formtim.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:formtim.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
     }
   ],
   "DocumentGroupContainers": [
@@ -58,6 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -78,6 +99,11 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
@@ -86,6 +112,7 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+<<<<<<< HEAD
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UC_HasilRaceAdmin.vb [Design]",
@@ -107,11 +134,27 @@
               "RelativeToolTip": "User\\UC_FormRaceUser.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-19T00:18:46.919Z",
+=======
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormKlasemen.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\FormKlasemen.vb",
+              "RelativeDocumentMoniker": "FormKlasemen.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\FormKlasemen.vb [Design]",
+              "RelativeToolTip": "FormKlasemen.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T05:12:04.509Z",
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "UC_RaceAdmin.vb [Design]",
               "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_RaceAdmin.vb",
               "RelativeDocumentMoniker": "admin\\UC_RaceAdmin.vb",
@@ -119,11 +162,21 @@
               "RelativeToolTip": "admin\\UC_RaceAdmin.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-18T18:22:11.411Z",
+=======
+              "Title": "FormHasilRace.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\FormHasilRace.vb",
+              "RelativeDocumentMoniker": "FormHasilRace.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\FormHasilRace.vb [Design]",
+              "RelativeToolTip": "FormHasilRace.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T05:09:02.24Z",
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+<<<<<<< HEAD
               "Title": "UC_TimAdmin.vb [Design]",
               "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_TimAdmin.vb",
               "RelativeDocumentMoniker": "admin\\UC_TimAdmin.vb",
@@ -131,10 +184,20 @@
               "RelativeToolTip": "admin\\UC_TimAdmin.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-18T18:22:14.574Z",
+=======
+              "Title": "FormTim.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\FormTim.vb",
+              "RelativeDocumentMoniker": "FormTim.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\FormTim.vb [Design]",
+              "RelativeToolTip": "FormTim.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T05:08:50.809Z",
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "UC_RaceUser.vb [Design]",
               "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_RaceUser.vb",
@@ -217,6 +280,16 @@
               "RelativeToolTip": "User\\UC_TimUser.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-05-18T17:08:56.02Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "FormPembalap.vb [Design]",
+              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\FormPembalap.vb",
+              "RelativeDocumentMoniker": "FormPembalap.vb",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\FormPembalap.vb [Design]",
+              "RelativeToolTip": "FormPembalap.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T05:05:08.547Z",
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
               "EditorCaption": " [Design]"
             }
           ]

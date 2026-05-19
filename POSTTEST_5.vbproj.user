@@ -25,6 +25,7 @@
     <Compile Update="LoginAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="admin\UC_HasilRaceAdmin.vb">
       <SubType>UserControl</SubType>
     </Compile>
@@ -55,5 +56,7 @@
     <Compile Update="User\UC_TimUser.vb">
       <SubType>UserControl</SubType>
     </Compile>
+=======
+>>>>>>> 929940e1962ded39aa7db0384f7a7f6f9ec51b0d
   </ItemGroup>
 </Project>
