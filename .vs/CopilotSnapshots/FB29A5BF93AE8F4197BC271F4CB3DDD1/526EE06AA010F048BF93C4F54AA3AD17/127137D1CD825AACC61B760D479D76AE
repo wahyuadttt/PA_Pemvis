@@ -1,0 +1,265 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class UC_HasilRace
+    Inherits System.Windows.Forms.UserControl
+
+    'UserControl overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UC_HasilRace))
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
+        PrintDocument1 = New Printing.PrintDocument()
+        txtSearch = New TextBox()
+        dgvHasilRace = New DataGridView()
+        lblGridTitle = New Label()
+        lblGridSub = New Label()
+        pnlGridHeader = New Panel()
+        pnlGrid = New Panel()
+        pnlContent = New Panel()
+        lblHeaderSub = New Label()
+        lblHeaderTitle = New Label()
+        pnlHeaderAccent = New Panel()
+        lblBadge = New Label()
+        pnlHeader = New Panel()
+        CType(dgvHasilRace, ComponentModel.ISupportInitialize).BeginInit()
+        pnlGridHeader.SuspendLayout()
+        pnlGrid.SuspendLayout()
+        pnlContent.SuspendLayout()
+        pnlHeader.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
+        ' 
+        ' txtSearch
+        ' 
+        txtSearch.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        txtSearch.BorderStyle = BorderStyle.FixedSingle
+        txtSearch.Font = New Font("Segoe UI", 10F)
+        txtSearch.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
+        txtSearch.Location = New Point(14, 66)
+        txtSearch.Name = "txtSearch"
+        txtSearch.Size = New Size(1405, 30)
+        txtSearch.TabIndex = 1
+        txtSearch.Text = "🔍  Cari pembalap / tim..."
+        ' 
+        ' dgvHasilRace
+        ' 
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        dgvHasilRace.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        dgvHasilRace.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        dgvHasilRace.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvHasilRace.BackgroundColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        dgvHasilRace.BorderStyle = BorderStyle.None
+        dgvHasilRace.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        dgvHasilRace.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = Color.White
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.SelectionForeColor = Color.White
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgvHasilRace.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        dgvHasilRace.ColumnHeadersHeight = 36
+        dgvHasilRace.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle3.ForeColor = Color.White
+        DataGridViewCellStyle3.Padding = New Padding(4)
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle3
+        dgvHasilRace.EnableHeadersVisualStyles = False
+        dgvHasilRace.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
+        dgvHasilRace.Location = New Point(14, 102)
+        dgvHasilRace.Name = "dgvHasilRace"
+        dgvHasilRace.ReadOnly = True
+        dgvHasilRace.RowHeadersVisible = False
+        dgvHasilRace.RowHeadersWidth = 51
+        dgvHasilRace.RowTemplate.Height = 34
+        dgvHasilRace.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgvHasilRace.Size = New Size(1402, 597)
+        dgvHasilRace.TabIndex = 2
+        ' 
+        ' lblGridTitle
+        ' 
+        lblGridTitle.AutoSize = True
+        lblGridTitle.BackColor = Color.Transparent
+        lblGridTitle.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
+        lblGridTitle.ForeColor = Color.White
+        lblGridTitle.Location = New Point(10, 6)
+        lblGridTitle.Name = "lblGridTitle"
+        lblGridTitle.Size = New Size(159, 25)
+        lblGridTitle.TabIndex = 0
+        lblGridTitle.Text = "HASIL BALAPAN"
+        ' 
+        ' lblGridSub
+        ' 
+        lblGridSub.AutoSize = True
+        lblGridSub.BackColor = Color.Transparent
+        lblGridSub.Font = New Font("Segoe UI", 8F)
+        lblGridSub.ForeColor = Color.FromArgb(CByte(120), CByte(120), CByte(135))
+        lblGridSub.Location = New Point(12, 28)
+        lblGridSub.Name = "lblGridSub"
+        lblGridSub.Size = New Size(245, 19)
+        lblGridSub.TabIndex = 1
+        lblGridSub.Text = "Pilih sirkuit di kiri untuk memfilter data"
+        ' 
+        ' pnlGridHeader
+        ' 
+        pnlGridHeader.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        pnlGridHeader.Controls.Add(lblGridTitle)
+        pnlGridHeader.Controls.Add(lblGridSub)
+        pnlGridHeader.Dock = DockStyle.Top
+        pnlGridHeader.Location = New Point(14, 12)
+        pnlGridHeader.Name = "pnlGridHeader"
+        pnlGridHeader.Size = New Size(1405, 46)
+        pnlGridHeader.TabIndex = 0
+        ' 
+        ' pnlGrid
+        ' 
+        pnlGrid.BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
+        pnlGrid.Controls.Add(pnlGridHeader)
+        pnlGrid.Controls.Add(txtSearch)
+        pnlGrid.Controls.Add(dgvHasilRace)
+        pnlGrid.Dock = DockStyle.Fill
+        pnlGrid.Location = New Point(16, 12)
+        pnlGrid.Name = "pnlGrid"
+        pnlGrid.Padding = New Padding(14, 12, 14, 12)
+        pnlGrid.Size = New Size(1433, 714)
+        pnlGrid.TabIndex = 1
+        ' 
+        ' pnlContent
+        ' 
+        pnlContent.BackColor = Color.FromArgb(CByte(26), CByte(26), CByte(36))
+        pnlContent.Controls.Add(pnlGrid)
+        pnlContent.Dock = DockStyle.Fill
+        pnlContent.Location = New Point(0, 60)
+        pnlContent.Name = "pnlContent"
+        pnlContent.Padding = New Padding(16, 12, 16, 12)
+        pnlContent.Size = New Size(1465, 738)
+        pnlContent.TabIndex = 5
+        ' 
+        ' lblHeaderSub
+        ' 
+        lblHeaderSub.AutoSize = True
+        lblHeaderSub.BackColor = Color.Transparent
+        lblHeaderSub.Font = New Font("Segoe UI", 8F)
+        lblHeaderSub.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(190))
+        lblHeaderSub.Location = New Point(17, 40)
+        lblHeaderSub.Name = "lblHeaderSub"
+        lblHeaderSub.Size = New Size(147, 19)
+        lblHeaderSub.TabIndex = 2
+        lblHeaderSub.Text = "Tampilan Hasil Balapan"
+        ' 
+        ' lblHeaderTitle
+        ' 
+        lblHeaderTitle.AutoSize = True
+        lblHeaderTitle.BackColor = Color.Transparent
+        lblHeaderTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
+        lblHeaderTitle.ForeColor = Color.White
+        lblHeaderTitle.Location = New Point(15, 8)
+        lblHeaderTitle.Name = "lblHeaderTitle"
+        lblHeaderTitle.Size = New Size(324, 37)
+        lblHeaderTitle.TabIndex = 1
+        lblHeaderTitle.Text = "F1 RACE MANAGEMENT"
+        ' 
+        ' pnlHeaderAccent
+        ' 
+        pnlHeaderAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        pnlHeaderAccent.Dock = DockStyle.Bottom
+        pnlHeaderAccent.Location = New Point(0, 58)
+        pnlHeaderAccent.Name = "pnlHeaderAccent"
+        pnlHeaderAccent.Size = New Size(1465, 2)
+        pnlHeaderAccent.TabIndex = 0
+        ' 
+        ' lblBadge
+        ' 
+        lblBadge.BackColor = Color.FromArgb(CByte(15), CByte(40), CByte(15))
+        lblBadge.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
+        lblBadge.ForeColor = Color.FromArgb(CByte(80), CByte(210), CByte(80))
+        lblBadge.Location = New Point(1359, 20)
+        lblBadge.Name = "lblBadge"
+        lblBadge.Size = New Size(90, 26)
+        lblBadge.TabIndex = 5
+        lblBadge.Text = "● READ ONLY"
+        lblBadge.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' pnlHeader
+        ' 
+        pnlHeader.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        pnlHeader.Controls.Add(lblBadge)
+        pnlHeader.Controls.Add(pnlHeaderAccent)
+        pnlHeader.Controls.Add(lblHeaderTitle)
+        pnlHeader.Controls.Add(lblHeaderSub)
+        pnlHeader.Dock = DockStyle.Top
+        pnlHeader.Location = New Point(0, 0)
+        pnlHeader.Name = "pnlHeader"
+        pnlHeader.Size = New Size(1465, 60)
+        pnlHeader.TabIndex = 3
+        ' 
+        ' UC_HasilRace
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        Controls.Add(pnlContent)
+        Controls.Add(pnlHeader)
+        Name = "UC_HasilRace"
+        Padding = New Padding(20, 15, 20, 15)
+        Size = New Size(1465, 798)
+        CType(dgvHasilRace, ComponentModel.ISupportInitialize).EndInit()
+        pnlGridHeader.ResumeLayout(False)
+        pnlGridHeader.PerformLayout()
+        pnlGrid.ResumeLayout(False)
+        pnlGrid.PerformLayout()
+        pnlContent.ResumeLayout(False)
+        pnlHeader.ResumeLayout(False)
+        pnlHeader.PerformLayout()
+        ResumeLayout(False)
+    End Sub
+
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents dgvHasilRace As DataGridView
+    Friend WithEvents lblGridTitle As Label
+    Friend WithEvents lblGridSub As Label
+    Friend WithEvents pnlGridHeader As Panel
+    Friend WithEvents pnlGrid As Panel
+    Friend WithEvents pnlContent As Panel
+    Friend WithEvents lblHeaderSub As Label
+    Friend WithEvents lblHeaderTitle As Label
+    Friend WithEvents pnlHeaderAccent As Panel
+    Friend WithEvents lblBadge As Label
+    Friend WithEvents pnlHeader As Panel
+
+End Class

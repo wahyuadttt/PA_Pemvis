@@ -1,0 +1,568 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class UC_HasilRaceAdmin
+    Inherits System.Windows.Forms.UserControl
+
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    Private components As System.ComponentModel.IContainer
+
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        pnlPageTitle = New Panel()
+        lblPageTitle = New Label()
+        pnlMain = New Panel()
+        pnlDataSection = New Panel()
+        pnlSearchSection = New Panel()
+        lblSearch = New Label()
+        txtSearch = New TextBox()
+        dgvHasilRace = New DataGridView()
+        pnlInputSection = New Panel()
+        pnlInputAccent = New Panel()
+        lblInputPanel = New Label()
+        pnlInputForm = New Panel()
+        tlpInput = New TableLayoutPanel()
+        lblRace = New Label()
+        cbRace = New ComboBox()
+        lblPembalap = New Label()
+        cbPembalap = New ComboBox()
+        lblTim = New Label()
+        cbTim = New ComboBox()
+        lblSirkuit = New Label()
+        cbSirkuit = New ComboBox()
+        lblPosisi = New Label()
+        txtPosisi = New TextBox()
+        lblPoin = New Label()
+        txtPoin = New TextBox()
+        pnlActionSection = New Panel()
+        btnPrint = New Button()
+        btnSimpan = New Button()
+        btnUbah = New Button()
+        btnHapus = New Button()
+        btnBatal = New Button()
+        ErrorProvider1 = New ErrorProvider(components)
+        PrintDocument1 = New Printing.PrintDocument()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
+        pnlPageTitle.SuspendLayout()
+        pnlMain.SuspendLayout()
+        pnlDataSection.SuspendLayout()
+        pnlSearchSection.SuspendLayout()
+        CType(dgvHasilRace, ComponentModel.ISupportInitialize).BeginInit()
+        pnlInputSection.SuspendLayout()
+        pnlInputForm.SuspendLayout()
+        tlpInput.SuspendLayout()
+        pnlActionSection.SuspendLayout()
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        '
+        ' pnlPageTitle
+        '
+        pnlPageTitle.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        pnlPageTitle.Controls.Add(lblPageTitle)
+        pnlPageTitle.Dock = DockStyle.Top
+        pnlPageTitle.Location = New Point(0, 0)
+        pnlPageTitle.Name = "pnlPageTitle"
+        pnlPageTitle.Padding = New Padding(15, 15, 15, 15)
+        pnlPageTitle.Size = New Size(1000, 60)
+        pnlPageTitle.TabIndex = 0
+        '
+        ' lblPageTitle
+        '
+        lblPageTitle.AutoSize = True
+        lblPageTitle.Font = New Font("Segoe UI", 18.0F, FontStyle.Bold)
+        lblPageTitle.ForeColor = Color.White
+        lblPageTitle.Location = New Point(15, 15)
+        lblPageTitle.Name = "lblPageTitle"
+        lblPageTitle.Size = New Size(296, 41)
+        lblPageTitle.TabIndex = 0
+        lblPageTitle.Text = "Hasil Balapan F1"
+        '
+        ' pnlMain
+        '
+        pnlMain.Controls.Add(pnlDataSection)
+        pnlMain.Controls.Add(pnlInputSection)
+        pnlMain.Dock = DockStyle.Fill
+        pnlMain.Location = New Point(0, 60)
+        pnlMain.Name = "pnlMain"
+        pnlMain.Padding = New Padding(15)
+        pnlMain.Size = New Size(1000, 640)
+        pnlMain.TabIndex = 1
+        '
+        ' pnlDataSection
+        '
+        pnlDataSection.Controls.Add(pnlSearchSection)
+        pnlDataSection.Controls.Add(dgvHasilRace)
+        pnlDataSection.Dock = DockStyle.Left
+        pnlDataSection.Location = New Point(15, 15)
+        pnlDataSection.Name = "pnlDataSection"
+        pnlDataSection.Size = New Size(550, 610)
+        pnlDataSection.TabIndex = 0
+        '
+        ' pnlSearchSection
+        '
+        pnlSearchSection.Controls.Add(lblSearch)
+        pnlSearchSection.Controls.Add(txtSearch)
+        pnlSearchSection.Dock = DockStyle.Top
+        pnlSearchSection.Location = New Point(0, 0)
+        pnlSearchSection.Name = "pnlSearchSection"
+        pnlSearchSection.Padding = New Padding(0, 0, 0, 10)
+        pnlSearchSection.Size = New Size(550, 50)
+        pnlSearchSection.TabIndex = 0
+        '
+        ' lblSearch
+        '
+        lblSearch.AutoSize = True
+        lblSearch.Font = New Font("Segoe UI", 9.75F)
+        lblSearch.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        lblSearch.Location = New Point(0, 8)
+        lblSearch.Name = "lblSearch"
+        lblSearch.Size = New Size(54, 23)
+        lblSearch.TabIndex = 0
+        lblSearch.Text = "Cari:"
+        '
+        ' txtSearch
+        '
+        txtSearch.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        txtSearch.BorderStyle = BorderStyle.FixedSingle
+        txtSearch.Font = New Font("Segoe UI", 9.75F)
+        txtSearch.ForeColor = Color.White
+        txtSearch.Location = New Point(60, 5)
+        txtSearch.Name = "txtSearch"
+        txtSearch.PlaceholderText = "Cari sirkuit atau pembalap..."
+        txtSearch.Size = New Size(480, 27)
+        txtSearch.TabIndex = 1
+        '
+        ' dgvHasilRace
+        '
+        dgvHasilRace.AllowUserToAddRows = False
+        dgvHasilRace.AllowUserToDeleteRows = False
+        dgvHasilRace.BackgroundColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        dgvHasilRace.BorderStyle = BorderStyle.None
+        dgvHasilRace.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9.75F)
+        DataGridViewCellStyle1.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(50), CByte(50), CByte(70))
+        DataGridViewCellStyle1.SelectionForeColor = Color.White
+        dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle1
+        dgvHasilRace.Dock = DockStyle.Fill
+        dgvHasilRace.EnableHeadersVisualStyles = False
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = Color.White
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(50), CByte(50), CByte(70))
+        DataGridViewCellStyle2.SelectionForeColor = Color.White
+        dgvHasilRace.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        dgvHasilRace.ColumnHeadersHeight = 30
+        dgvHasilRace.Location = New Point(0, 50)
+        dgvHasilRace.Name = "dgvHasilRace"
+        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9.75F)
+        DataGridViewCellStyle3.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(50), CByte(50), CByte(70))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        dgvHasilRace.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        dgvHasilRace.RowHeadersWidth = 51
+        dgvHasilRace.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgvHasilRace.Size = New Size(550, 560)
+        dgvHasilRace.TabIndex = 1
+        '
+        ' pnlInputSection
+        '
+        pnlInputSection.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        pnlInputSection.Controls.Add(pnlInputAccent)
+        pnlInputSection.Controls.Add(lblInputPanel)
+        pnlInputSection.Controls.Add(pnlInputForm)
+        pnlInputSection.Controls.Add(pnlActionSection)
+        pnlInputSection.Dock = DockStyle.Right
+        pnlInputSection.Location = New Point(580, 15)
+        pnlInputSection.Name = "pnlInputSection"
+        pnlInputSection.Padding = New Padding(15)
+        pnlInputSection.Size = New Size(405, 610)
+        pnlInputSection.TabIndex = 1
+        '
+        ' pnlInputAccent
+        '
+        pnlInputAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        pnlInputAccent.Dock = DockStyle.Top
+        pnlInputAccent.Height = 3
+        pnlInputAccent.Location = New Point(15, 15)
+        pnlInputAccent.Name = "pnlInputAccent"
+        pnlInputAccent.Size = New Size(375, 3)
+        pnlInputAccent.TabIndex = 0
+        '
+        ' lblInputPanel
+        '
+        lblInputPanel.AutoSize = True
+        lblInputPanel.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        lblInputPanel.ForeColor = Color.White
+        lblInputPanel.Location = New Point(15, 25)
+        lblInputPanel.Name = "lblInputPanel"
+        lblInputPanel.Size = New Size(130, 28)
+        lblInputPanel.TabIndex = 1
+        lblInputPanel.Text = "Input Data"
+        '
+        ' pnlInputForm
+        '
+        pnlInputForm.AutoScroll = True
+        pnlInputForm.Controls.Add(tlpInput)
+        pnlInputForm.Dock = DockStyle.Fill
+        pnlInputForm.Location = New Point(15, 56)
+        pnlInputForm.Name = "pnlInputForm"
+        pnlInputForm.Padding = New Padding(0, 10, 0, 0)
+        pnlInputForm.Size = New Size(375, 475)
+        pnlInputForm.TabIndex = 2
+        '
+        ' tlpInput
+        '
+        tlpInput.ColumnCount = 2
+        tlpInput.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 100.0F))
+        tlpInput.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0F))
+        tlpInput.Controls.Add(lblRace, 0, 0)
+        tlpInput.Controls.Add(cbRace, 1, 0)
+        tlpInput.Controls.Add(lblPembalap, 0, 1)
+        tlpInput.Controls.Add(cbPembalap, 1, 1)
+        tlpInput.Controls.Add(lblTim, 0, 2)
+        tlpInput.Controls.Add(cbTim, 1, 2)
+        tlpInput.Controls.Add(lblSirkuit, 0, 3)
+        tlpInput.Controls.Add(cbSirkuit, 1, 3)
+        tlpInput.Controls.Add(lblPosisi, 0, 4)
+        tlpInput.Controls.Add(txtPosisi, 1, 4)
+        tlpInput.Controls.Add(lblPoin, 0, 5)
+        tlpInput.Controls.Add(txtPoin, 1, 5)
+        tlpInput.Dock = DockStyle.Top
+        tlpInput.Location = New Point(0, 10)
+        tlpInput.Name = "tlpInput"
+        tlpInput.RowCount = 6
+        tlpInput.RowStyles.Add(New RowStyle(SizeType.Absolute, 40.0F))
+        tlpInput.RowStyles.Add(New RowStyle(SizeType.Absolute, 40.0F))
+        tlpInput.RowStyles.Add(New RowStyle(SizeType.Absolute, 40.0F))
+        tlpInput.RowStyles.Add(New RowStyle(SizeType.Absolute, 40.0F))
+        tlpInput.RowStyles.Add(New RowStyle(SizeType.Absolute, 40.0F))
+        tlpInput.RowStyles.Add(New RowStyle(SizeType.Absolute, 40.0F))
+        tlpInput.Size = New Size(375, 250)
+        tlpInput.TabIndex = 0
+        '
+        ' lblRace
+        '
+        lblRace.Anchor = AnchorStyles.Left
+        lblRace.AutoSize = True
+        lblRace.Font = New Font("Segoe UI", 9.75F)
+        lblRace.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        lblRace.Location = New Point(3, 8)
+        lblRace.Name = "lblRace"
+        lblRace.Size = New Size(44, 23)
+        lblRace.TabIndex = 0
+        lblRace.Text = "Race"
+        '
+        ' cbRace
+        '
+        cbRace.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        cbRace.Dock = DockStyle.Fill
+        cbRace.DropDownStyle = ComboBoxStyle.DropDownList
+        cbRace.Font = New Font("Segoe UI", 9.75F)
+        cbRace.ForeColor = Color.White
+        cbRace.Location = New Point(103, 5)
+        cbRace.Margin = New Padding(3, 5, 3, 5)
+        cbRace.Name = "cbRace"
+        cbRace.Size = New Size(269, 30)
+        cbRace.TabIndex = 1
+        '
+        ' lblPembalap
+        '
+        lblPembalap.Anchor = AnchorStyles.Left
+        lblPembalap.AutoSize = True
+        lblPembalap.Font = New Font("Segoe UI", 9.75F)
+        lblPembalap.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        lblPembalap.Location = New Point(3, 48)
+        lblPembalap.Name = "lblPembalap"
+        lblPembalap.Size = New Size(78, 23)
+        lblPembalap.TabIndex = 2
+        lblPembalap.Text = "Pembalap"
+        '
+        ' cbPembalap
+        '
+        cbPembalap.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        cbPembalap.Dock = DockStyle.Fill
+        cbPembalap.DropDownStyle = ComboBoxStyle.DropDownList
+        cbPembalap.Font = New Font("Segoe UI", 9.75F)
+        cbPembalap.ForeColor = Color.White
+        cbPembalap.Location = New Point(103, 45)
+        cbPembalap.Margin = New Padding(3, 5, 3, 5)
+        cbPembalap.Name = "cbPembalap"
+        cbPembalap.Size = New Size(269, 30)
+        cbPembalap.TabIndex = 3
+        '
+        ' lblTim
+        '
+        lblTim.Anchor = AnchorStyles.Left
+        lblTim.AutoSize = True
+        lblTim.Font = New Font("Segoe UI", 9.75F)
+        lblTim.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        lblTim.Location = New Point(3, 88)
+        lblTim.Name = "lblTim"
+        lblTim.Size = New Size(33, 23)
+        lblTim.TabIndex = 4
+        lblTim.Text = "Tim"
+        '
+        ' cbTim
+        '
+        cbTim.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        cbTim.Dock = DockStyle.Fill
+        cbTim.DropDownStyle = ComboBoxStyle.DropDownList
+        cbTim.Font = New Font("Segoe UI", 9.75F)
+        cbTim.ForeColor = Color.White
+        cbTim.Location = New Point(103, 85)
+        cbTim.Margin = New Padding(3, 5, 3, 5)
+        cbTim.Name = "cbTim"
+        cbTim.Size = New Size(269, 30)
+        cbTim.TabIndex = 5
+        '
+        ' lblSirkuit
+        '
+        lblSirkuit.Anchor = AnchorStyles.Left
+        lblSirkuit.AutoSize = True
+        lblSirkuit.Font = New Font("Segoe UI", 9.75F)
+        lblSirkuit.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        lblSirkuit.Location = New Point(3, 128)
+        lblSirkuit.Name = "lblSirkuit"
+        lblSirkuit.Size = New Size(59, 23)
+        lblSirkuit.TabIndex = 6
+        lblSirkuit.Text = "Sirkuit"
+        '
+        ' cbSirkuit
+        '
+        cbSirkuit.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        cbSirkuit.Dock = DockStyle.Fill
+        cbSirkuit.DropDownStyle = ComboBoxStyle.DropDownList
+        cbSirkuit.Font = New Font("Segoe UI", 9.75F)
+        cbSirkuit.ForeColor = Color.White
+        cbSirkuit.Location = New Point(103, 125)
+        cbSirkuit.Margin = New Padding(3, 5, 3, 5)
+        cbSirkuit.Name = "cbSirkuit"
+        cbSirkuit.Size = New Size(269, 30)
+        cbSirkuit.TabIndex = 7
+        '
+        ' lblPosisi
+        '
+        lblPosisi.Anchor = AnchorStyles.Left
+        lblPosisi.AutoSize = True
+        lblPosisi.Font = New Font("Segoe UI", 9.75F)
+        lblPosisi.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        lblPosisi.Location = New Point(3, 168)
+        lblPosisi.Name = "lblPosisi"
+        lblPosisi.Size = New Size(51, 23)
+        lblPosisi.TabIndex = 8
+        lblPosisi.Text = "Posisi"
+        '
+        ' txtPosisi
+        '
+        txtPosisi.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        txtPosisi.BorderStyle = BorderStyle.FixedSingle
+        txtPosisi.Dock = DockStyle.Fill
+        txtPosisi.Font = New Font("Segoe UI", 9.75F)
+        txtPosisi.ForeColor = Color.White
+        txtPosisi.Location = New Point(103, 165)
+        txtPosisi.Margin = New Padding(3, 5, 3, 5)
+        txtPosisi.Name = "txtPosisi"
+        txtPosisi.PlaceholderText = "1-10"
+        txtPosisi.Size = New Size(269, 27)
+        txtPosisi.TabIndex = 9
+        '
+        ' lblPoin
+        '
+        lblPoin.Anchor = AnchorStyles.Left
+        lblPoin.AutoSize = True
+        lblPoin.Font = New Font("Segoe UI", 9.75F)
+        lblPoin.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(210))
+        lblPoin.Location = New Point(3, 208)
+        lblPoin.Name = "lblPoin"
+        lblPoin.Size = New Size(39, 23)
+        lblPoin.TabIndex = 10
+        lblPoin.Text = "Poin"
+        '
+        ' txtPoin
+        '
+        txtPoin.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        txtPoin.BorderStyle = BorderStyle.FixedSingle
+        txtPoin.Dock = DockStyle.Fill
+        txtPoin.Font = New Font("Segoe UI", 9.75F)
+        txtPoin.ForeColor = Color.White
+        txtPoin.Location = New Point(103, 205)
+        txtPoin.Margin = New Padding(3, 5, 3, 5)
+        txtPoin.Name = "txtPoin"
+        txtPoin.ReadOnly = True
+        txtPoin.Size = New Size(269, 27)
+        txtPoin.TabIndex = 11
+        '
+        ' pnlActionSection
+        '
+        pnlActionSection.Controls.Add(btnPrint)
+        pnlActionSection.Controls.Add(btnSimpan)
+        pnlActionSection.Controls.Add(btnUbah)
+        pnlActionSection.Controls.Add(btnHapus)
+        pnlActionSection.Controls.Add(btnBatal)
+        pnlActionSection.Dock = DockStyle.Bottom
+        pnlActionSection.Location = New Point(15, 531)
+        pnlActionSection.Name = "pnlActionSection"
+        pnlActionSection.Padding = New Padding(0, 10, 0, 0)
+        pnlActionSection.Size = New Size(375, 64)
+        pnlActionSection.TabIndex = 3
+        '
+        ' btnPrint
+        '
+        btnPrint.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        btnPrint.Cursor = Cursors.Hand
+        btnPrint.FlatAppearance.BorderSize = 1
+        btnPrint.FlatAppearance.BorderColor = Color.FromArgb(CByte(100), CByte(100), CByte(120))
+        btnPrint.FlatStyle = FlatStyle.Flat
+        btnPrint.Font = New Font("Segoe UI", 9.75F)
+        btnPrint.ForeColor = Color.White
+        btnPrint.Location = New Point(3, 34)
+        btnPrint.Name = "btnPrint"
+        btnPrint.Size = New Size(70, 28)
+        btnPrint.TabIndex = 4
+        btnPrint.Text = "Print"
+        btnPrint.UseVisualStyleBackColor = False
+        '
+        ' btnSimpan
+        '
+        btnSimpan.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        btnSimpan.Cursor = Cursors.Hand
+        btnSimpan.FlatAppearance.BorderSize = 0
+        btnSimpan.FlatStyle = FlatStyle.Flat
+        btnSimpan.Font = New Font("Segoe UI", 9.75F)
+        btnSimpan.ForeColor = Color.White
+        btnSimpan.Location = New Point(3, 5)
+        btnSimpan.Name = "btnSimpan"
+        btnSimpan.Size = New Size(85, 28)
+        btnSimpan.TabIndex = 0
+        btnSimpan.Text = "Simpan"
+        btnSimpan.UseVisualStyleBackColor = False
+        '
+        ' btnUbah
+        '
+        btnUbah.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        btnUbah.Cursor = Cursors.Hand
+        btnUbah.FlatAppearance.BorderSize = 1
+        btnUbah.FlatAppearance.BorderColor = Color.FromArgb(CByte(100), CByte(100), CByte(120))
+        btnUbah.FlatStyle = FlatStyle.Flat
+        btnUbah.Font = New Font("Segoe UI", 9.75F)
+        btnUbah.ForeColor = Color.White
+        btnUbah.Location = New Point(93, 5)
+        btnUbah.Name = "btnUbah"
+        btnUbah.Size = New Size(70, 28)
+        btnUbah.TabIndex = 1
+        btnUbah.Text = "Ubah"
+        btnUbah.UseVisualStyleBackColor = False
+        '
+        ' btnHapus
+        '
+        btnHapus.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        btnHapus.Cursor = Cursors.Hand
+        btnHapus.FlatAppearance.BorderSize = 1
+        btnHapus.FlatAppearance.BorderColor = Color.FromArgb(CByte(100), CByte(100), CByte(120))
+        btnHapus.FlatStyle = FlatStyle.Flat
+        btnHapus.Font = New Font("Segoe UI", 9.75F)
+        btnHapus.ForeColor = Color.White
+        btnHapus.Location = New Point(168, 5)
+        btnHapus.Name = "btnHapus"
+        btnHapus.Size = New Size(70, 28)
+        btnHapus.TabIndex = 2
+        btnHapus.Text = "Hapus"
+        btnHapus.UseVisualStyleBackColor = False
+        '
+        ' btnBatal
+        '
+        btnBatal.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
+        btnBatal.Cursor = Cursors.Hand
+        btnBatal.FlatAppearance.BorderSize = 1
+        btnBatal.FlatAppearance.BorderColor = Color.FromArgb(CByte(100), CByte(100), CByte(120))
+        btnBatal.FlatStyle = FlatStyle.Flat
+        btnBatal.Font = New Font("Segoe UI", 9.75F)
+        btnBatal.ForeColor = Color.White
+        btnBatal.Location = New Point(243, 5)
+        btnBatal.Name = "btnBatal"
+        btnBatal.Size = New Size(70, 28)
+        btnBatal.TabIndex = 3
+        btnBatal.Text = "Batal"
+        btnBatal.UseVisualStyleBackColor = False
+        '
+        ' ErrorProvider1
+        '
+        ErrorProvider1.BlinkStyle = ErrorBlinkStyle.NeverBlink
+        ErrorProvider1.ContainerControl = Me
+        '
+        ' UC_HasilRaceAdmin
+        '
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
+        Controls.Add(pnlMain)
+        Controls.Add(pnlPageTitle)
+        Name = "UC_HasilRaceAdmin"
+        Size = New Size(1000, 700)
+        pnlPageTitle.ResumeLayout(False)
+        pnlPageTitle.PerformLayout()
+        pnlMain.ResumeLayout(False)
+        pnlDataSection.ResumeLayout(False)
+        pnlSearchSection.ResumeLayout(False)
+        pnlSearchSection.PerformLayout()
+        CType(dgvHasilRace, ComponentModel.ISupportInitialize).EndInit()
+        pnlInputSection.ResumeLayout(False)
+        pnlInputSection.PerformLayout()
+        pnlInputForm.ResumeLayout(False)
+        tlpInput.ResumeLayout(False)
+        tlpInput.PerformLayout()
+        pnlActionSection.ResumeLayout(False)
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+    End Sub
+
+    Friend WithEvents pnlPageTitle As Panel
+    Friend WithEvents lblPageTitle As Label
+    Friend WithEvents pnlMain As Panel
+    Friend WithEvents pnlDataSection As Panel
+    Friend WithEvents pnlSearchSection As Panel
+    Friend WithEvents lblSearch As Label
+    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents dgvHasilRace As DataGridView
+    Friend WithEvents pnlInputSection As Panel
+    Friend WithEvents pnlInputAccent As Panel
+    Friend WithEvents lblInputPanel As Label
+    Friend WithEvents pnlInputForm As Panel
+    Friend WithEvents tlpInput As TableLayoutPanel
+    Friend WithEvents lblRace As Label
+    Friend WithEvents cbRace As ComboBox
+    Friend WithEvents lblPembalap As Label
+    Friend WithEvents cbPembalap As ComboBox
+    Friend WithEvents lblTim As Label
+    Friend WithEvents cbTim As ComboBox
+    Friend WithEvents lblSirkuit As Label
+    Friend WithEvents cbSirkuit As ComboBox
+    Friend WithEvents lblPosisi As Label
+    Friend WithEvents txtPosisi As TextBox
+    Friend WithEvents lblPoin As Label
+    Friend WithEvents txtPoin As TextBox
+    Friend WithEvents pnlActionSection As Panel
+    Friend WithEvents btnPrint As Button
+    Friend WithEvents btnSimpan As Button
+    Friend WithEvents btnUbah As Button
+    Friend WithEvents btnHapus As Button
+    Friend WithEvents btnBatal As Button
+    Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+End Class

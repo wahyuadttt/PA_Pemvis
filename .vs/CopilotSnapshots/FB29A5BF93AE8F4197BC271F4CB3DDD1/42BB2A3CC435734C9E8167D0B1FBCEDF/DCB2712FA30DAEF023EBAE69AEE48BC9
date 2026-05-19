@@ -1,0 +1,62 @@
+﻿Public Class DashboardUser
+
+    Private currentUserControl As UserControl
+
+    Private Sub DashboardUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        IsAdmin = False
+        ' Load default: Pembalap
+        LoadUserControl(New UC_PembalapUser())
+    End Sub
+
+    Private Sub LoadUserControl(uc As UserControl)
+        ' Hapus UserControl lama
+        pnlContent.Controls.Clear()
+
+        ' Set properties UserControl
+        uc.Dock = DockStyle.Fill
+
+        ' Tambahkan ke panel
+        pnlContent.Controls.Add(uc)
+
+        ' Simpan referensi
+        currentUserControl = uc
+    End Sub
+
+    Private Sub btnNavPembalap_Click(sender As Object, e As EventArgs) Handles btnNavPembalap.Click
+        LoadUserControl(New UC_PembalapUser())
+    End Sub
+
+    Private Sub btnNavTim_Click(sender As Object, e As EventArgs) Handles btnNavTim.Click
+        LoadUserControl(New UC_TimUser())
+    End Sub
+
+    Private Sub btnNavRace_Click(sender As Object, e As EventArgs) Handles btnNavRace.Click
+        LoadUserControl(New UC_RaceUser())
+    End Sub
+
+    Private Sub btnNavHasil_Click(sender As Object, e As EventArgs) Handles btnNavHasil.Click
+        LoadUserControl(New UC_HasilRaceUser())
+    End Sub
+
+    Private Sub btnNavKlasemen_Click(sender As Object, e As EventArgs) Handles btnNavKlasemen.Click
+        LoadUserControl(New UC_Klasemen())
+    End Sub
+
+    Private Sub btnLoginAdmin_Click(sender As Object, e As EventArgs) Handles btnLoginAdmin.Click
+        Dim hasil As DialogResult = MessageBox.Show(
+            "Apakah Anda ingin login sebagai Admin?",
+            "Konfirmasi",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question)
+
+        If hasil = DialogResult.Yes Then
+            LoginAdmin.Show()
+            Me.Hide()
+        End If
+    End Sub
+
+    Private Sub DashboardUser_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Application.Exit()
+    End Sub
+
+End Class

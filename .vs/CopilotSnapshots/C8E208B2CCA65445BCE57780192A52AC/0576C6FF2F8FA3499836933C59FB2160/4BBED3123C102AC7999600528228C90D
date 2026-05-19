@@ -1,0 +1,3 @@
+﻿Public Class UC_RaceUser
+    Inherits System.Windows.Forms.UserControl
+End Class

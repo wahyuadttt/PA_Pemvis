@@ -1,0 +1,179 @@
+C:\kelas_B2\PA PemVis\POSTTEST_6\bin\Debug\net10.0-windows\POSTTEST_5.exe
+C:\kelas_B2\PA PemVis\POSTTEST_6\bin\Debug\net10.0-windows\POSTTEST_5.deps.json
+C:\kelas_B2\PA PemVis\POSTTEST_6\bin\Debug\net10.0-windows\POSTTEST_5.runtimeconfig.json
+C:\kelas_B2\PA PemVis\POSTTEST_6\bin\Debug\net10.0-windows\POSTTEST_5.dll
+C:\kelas_B2\PA PemVis\POSTTEST_6\bin\Debug\net10.0-windows\POSTTEST_5.pdb
+C:\kelas_B2\PA PemVis\POSTTEST_6\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\kelas_B2\PA PemVis\POSTTEST_6\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\kelas_B2\PA PemVis\POSTTEST_6\bin\Debug\net10.0-windows\MySqlConnector.dll
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.AssemblyReference.cache
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.DashboardAdmin.resources
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.DashboardUser.resources
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.LoginAdmin.resources
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.Resources.resources
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.GenerateResource.cache
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfoInputs.cache
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfo.vb
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.CoreCompileInputs.cache
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.Up2Date
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.dll
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\refint\POSTTEST_5.dll
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.pdb
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.genruntimeconfig.cache
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\ref\POSTTEST_5.dll
+C:\kelas_B2\PA PemVis\POSTTEST_6\obj\Debug\net10.0-windows\POSTTEST_5.FormKlasemen.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.exe
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.deps.json
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.runtimeconfig.json
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.pdb
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\bin\Debug\net10.0-windows\MySqlConnector.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.AssemblyReference.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.DashboardAdmin.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.DashboardUser.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormKlasemen.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.LoginAdmin.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.Resources.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.GenerateResource.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfoInputs.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfo.vb
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.CoreCompileInputs.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.sourcelink.json
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.Up2Date
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\refint\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.pdb
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.genruntimeconfig.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA_PemVis\obj\Debug\net10.0-windows\ref\POSTTEST_5.dll
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.AssemblyReference.cache
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.DashboardAdmin.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.DashboardUser.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormKlasemen.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormPembalap.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormTim.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.LoginAdmin.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.Resources.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.GenerateResource.cache
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfoInputs.cache
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfo.vb
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.CoreCompileInputs.cache
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.dll
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\refint\POSTTEST_5.dll
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.pdb
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormHasilRace.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormMenu.resources
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.exe
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.deps.json
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.runtimeconfig.json
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.dll
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.pdb
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\MySqlConnector.dll
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.Up2Date
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.genruntimeconfig.cache
+C:\kelas_B2\PA PemVis\PA-Pemvis-main\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\ref\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.exe
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.deps.json
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.runtimeconfig.json
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\POSTTEST_5.pdb
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\bin\Debug\net10.0-windows\MySqlConnector.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.AssemblyReference.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.DashboardAdmin.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.DashboardUser.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormHasilRace.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormKlasemen.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormMenu.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormPembalap.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.FormTim.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.LoginAdmin.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.Resources.resources
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.GenerateResource.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfoInputs.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfo.vb
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.CoreCompileInputs.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.sourcelink.json
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.Up2Date
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\refint\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.pdb
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\POSTTEST_5.genruntimeconfig.cache
+D:\Kuliah\Praktikum\PA_Pemvis\PA-Pemvis\PA-Pemvis-main\PA_PemVis\obj\Debug\net10.0-windows\ref\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\bin\Debug\net10.0-windows\POSTTEST_5.exe
+D:\Kuliah\Praktikum\PA_Pemvis\bin\Debug\net10.0-windows\POSTTEST_5.deps.json
+D:\Kuliah\Praktikum\PA_Pemvis\bin\Debug\net10.0-windows\POSTTEST_5.runtimeconfig.json
+D:\Kuliah\Praktikum\PA_Pemvis\bin\Debug\net10.0-windows\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\bin\Debug\net10.0-windows\POSTTEST_5.pdb
+D:\Kuliah\Praktikum\PA_Pemvis\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Kuliah\Praktikum\PA_Pemvis\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Kuliah\Praktikum\PA_Pemvis\bin\Debug\net10.0-windows\MySqlConnector.dll
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.AssemblyReference.cache
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.DashboardAdmin.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.DashboardUser.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.FormHasilRace.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.FormKlasemen.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.FormMenu.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.FormPembalap.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.FormTim.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.LoginAdmin.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.Resources.resources
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.GenerateResource.cache
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfoInputs.cache
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfo.vb
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.CoreCompileInputs.cache
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.sourcelink.json
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.Up2Date
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\refint\POSTTEST_5.dll
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.pdb
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\POSTTEST_5.genruntimeconfig.cache
+D:\Kuliah\Praktikum\PA_Pemvis\obj\Debug\net10.0-windows\ref\POSTTEST_5.dll
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.AssemblyReference.cache
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.dll
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\refint\POSTTEST_5.dll
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.pdb
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_HasilRaceAdmin.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_PembalapAdmin.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_RaceAdmin.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_TimAdmin.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.DashboardAdmin.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.DashboardUser.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.FormHasilRace.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.FormKlasemen.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.FormMenu.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.FormPembalap.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.FormTim.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.LoginAdmin.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.Resources.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_FormRaceUser.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_Klasemen.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_PembalapUser.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_TimUser.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.GenerateResource.cache
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfoInputs.cache
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.AssemblyInfo.vb
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.CoreCompileInputs.cache
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_HasilRace.resources
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\bin\Debug\net10.0-windows\POSTTEST_5.exe
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\bin\Debug\net10.0-windows\POSTTEST_5.deps.json
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\bin\Debug\net10.0-windows\POSTTEST_5.runtimeconfig.json
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\bin\Debug\net10.0-windows\POSTTEST_5.dll
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\bin\Debug\net10.0-windows\POSTTEST_5.pdb
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\bin\Debug\net10.0-windows\MySqlConnector.dll
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.vbproj.Up2Date
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.genruntimeconfig.cache
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\ref\POSTTEST_5.dll
+C:\kelas_B2\PA_PemVisual\PA_Pemvis-main\obj\Debug\net10.0-windows\POSTTEST_5.UC_RaceUser.resources

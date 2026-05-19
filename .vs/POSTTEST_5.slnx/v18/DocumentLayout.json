@@ -1,0 +1,295 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\admin\\uc_hasilraceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:admin\\uc_hasilraceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\admin\\uc_raceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:admin\\uc_raceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\admin\\uc_pembalapadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:admin\\uc_pembalapadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\admin\\uc_timadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:admin\\uc_timadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\user\\uc_formraceuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:user\\uc_formraceuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\user\\uc_raceuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:user\\uc_raceuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\dashboarduser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:dashboarduser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\user\\uc_raceuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:user\\uc_raceuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\formhasilrace.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:formhasilrace.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\user\\uc_timuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:user\\uc_timuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\user\\uc_timuser.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:user\\uc_timuser.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\user\\uc_klasemen.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:user\\uc_klasemen.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\uc_raceuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:uc_raceuser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\admin\\uc_raceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:admin\\uc_raceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\dashboarduser.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:dashboarduser.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|c:\\kelas_b2\\pa_pemvisual\\pa_pemvis-main\\dashboarduser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:dashboarduser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DashboardUser.vb",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\DashboardUser.vb",
+              "RelativeDocumentMoniker": "DashboardUser.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\DashboardUser.vb",
+              "RelativeToolTip": "DashboardUser.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T00:42:38.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DashboardUser.Designer.vb",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\DashboardUser.Designer.vb",
+              "RelativeDocumentMoniker": "DashboardUser.Designer.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\DashboardUser.Designer.vb",
+              "RelativeToolTip": "DashboardUser.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T00:42:38.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UC_RaceAdmin.vb",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_RaceAdmin.vb",
+              "RelativeDocumentMoniker": "admin\\UC_RaceAdmin.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_RaceAdmin.vb",
+              "RelativeToolTip": "admin\\UC_RaceAdmin.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T00:42:38.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UC_RaceUser.vb",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\UC_RaceUser.vb",
+              "RelativeDocumentMoniker": "UC_RaceUser.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\UC_RaceUser.vb",
+              "RelativeToolTip": "UC_RaceUser.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T00:42:38.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UC_PembalapAdmin.vb [Design]",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_PembalapAdmin.vb",
+              "RelativeDocumentMoniker": "admin\\UC_PembalapAdmin.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_PembalapAdmin.vb [Design]",
+              "RelativeToolTip": "admin\\UC_PembalapAdmin.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T18:22:06.591Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_HasilRaceAdmin.vb [Design]",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_HasilRaceAdmin.vb",
+              "RelativeDocumentMoniker": "admin\\UC_HasilRaceAdmin.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_HasilRaceAdmin.vb [Design]",
+              "RelativeToolTip": "admin\\UC_HasilRaceAdmin.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T18:21:58.822Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UC_FormRaceUser.vb [Design]",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_FormRaceUser.vb",
+              "RelativeDocumentMoniker": "User\\UC_FormRaceUser.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_FormRaceUser.vb [Design]",
+              "RelativeToolTip": "User\\UC_FormRaceUser.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T00:18:46.919Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UC_RaceAdmin.vb [Design]",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_RaceAdmin.vb",
+              "RelativeDocumentMoniker": "admin\\UC_RaceAdmin.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_RaceAdmin.vb [Design]",
+              "RelativeToolTip": "admin\\UC_RaceAdmin.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T18:22:11.411Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UC_TimAdmin.vb [Design]",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_TimAdmin.vb",
+              "RelativeDocumentMoniker": "admin\\UC_TimAdmin.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\admin\\UC_TimAdmin.vb [Design]",
+              "RelativeToolTip": "admin\\UC_TimAdmin.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T18:22:14.574Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UC_RaceUser.vb [Design]",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_RaceUser.vb",
+              "RelativeDocumentMoniker": "User\\UC_RaceUser.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_RaceUser.vb [Design]",
+              "RelativeToolTip": "User\\UC_RaceUser.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T00:31:13.444Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardUser.vb [Design]",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\DashboardUser.vb",
+              "RelativeDocumentMoniker": "DashboardUser.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\DashboardUser.vb [Design]",
+              "RelativeToolTip": "DashboardUser.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T18:18:22.813Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UC_RaceUser.vb",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_RaceUser.vb",
+              "RelativeDocumentMoniker": "User\\UC_RaceUser.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_RaceUser.vb",
+              "RelativeToolTip": "User\\UC_RaceUser.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T00:30:23.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormHasilRace.vb",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\FormHasilRace.vb",
+              "RelativeDocumentMoniker": "FormHasilRace.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\FormHasilRace.vb",
+              "RelativeToolTip": "FormHasilRace.vb",
+              "ViewState": "AgIAADYBAAAAAAAAAAAswEsBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-19T00:25:10.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UC_Klasemen.Designer.vb",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_Klasemen.Designer.vb",
+              "RelativeDocumentMoniker": "User\\UC_Klasemen.Designer.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_Klasemen.Designer.vb",
+              "RelativeToolTip": "User\\UC_Klasemen.Designer.vb",
+              "ViewState": "AgIAABkBAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T17:10:15.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UC_TimUser.Designer.vb",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_TimUser.Designer.vb",
+              "RelativeDocumentMoniker": "User\\UC_TimUser.Designer.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_TimUser.Designer.vb",
+              "RelativeToolTip": "User\\UC_TimUser.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T17:09:28.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UC_TimUser.vb [Design]",
+              "DocumentMoniker": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_TimUser.vb",
+              "RelativeDocumentMoniker": "User\\UC_TimUser.vb",
+              "ToolTip": "C:\\kelas_B2\\PA_PemVisual\\PA_Pemvis-main\\User\\UC_TimUser.vb [Design]",
+              "RelativeToolTip": "User\\UC_TimUser.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-18T17:08:56.02Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
