@@ -29,10 +29,15 @@ Public Class UC_PembalapAdmin
 
     End Sub
 
-    Private Sub TampilPembalap()
+    Private Sub TampilPembalap(Optional keyword As String = "")
 
         dgvPembalap.DataSource = Nothing
-        dgvPembalap.DataSource = GetAllPembalap()
+
+        If keyword = "" Then
+            dgvPembalap.DataSource = GetAllPembalap()
+        Else
+            dgvPembalap.DataSource = SearchPembalap(keyword)
+        End If
 
         dgvPembalap.RowTemplate.Height = 80
 
@@ -64,48 +69,36 @@ Public Class UC_PembalapAdmin
             dgvPembalap.Columns("tim").HeaderText = "Tim"
         End If
 
-        ' =========================
-        ' KOLOM FOTO
-        ' =========================
+    End Sub
 
+    Private Sub dgvPembalap_DataBindingComplete(sender As Object, e As DataGridViewBindingCompleteEventArgs) Handles dgvPembalap.DataBindingComplete
         If Not dgvPembalap.Columns.Contains("FotoPreview") Then
-
             Dim imgCol As New DataGridViewImageColumn()
-
             imgCol.Name = "FotoPreview"
             imgCol.HeaderText = "Foto"
-            imgCol.ImageLayout =
-            DataGridViewImageCellLayout.Zoom
-
+            imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
+            imgCol.Width = 100
             dgvPembalap.Columns.Add(imgCol)
-
         End If
 
-        dgvPembalap.Columns("FotoPreview").Width = 100
+        dgvPembalap.Columns("FotoPreview").DisplayIndex = dgvPembalap.Columns.Count - 1
 
         For Each row As DataGridViewRow In dgvPembalap.Rows
-
-            If Not row.IsNewRow Then
-
-                Dim path As String =
-                row.Cells("foto").Value.ToString()
-
-                If IO.File.Exists(path) Then
-
-                    Using img As Image =
-                    Image.FromFile(path)
-
-                        row.Cells("FotoPreview").Value =
-                        New Bitmap(img)
-
-                    End Using
-
+            If Not row.IsNewRow AndAlso dgvPembalap.Columns.Contains("foto") Then
+                Dim val = row.Cells("foto").Value
+                If val IsNot Nothing AndAlso Not DBNull.Value.Equals(val) Then
+                    Dim path As String = val.ToString()
+                    If IO.File.Exists(path) Then
+                        Try
+                            Using img As Image = Image.FromFile(path)
+                                row.Cells("FotoPreview").Value = New Bitmap(img)
+                            End Using
+                        Catch ex As Exception
+                        End Try
+                    End If
                 End If
-
             End If
-
         Next
-
     End Sub
 
     Private Function ValidasiPembalap() As Boolean
@@ -274,14 +267,7 @@ Public Class UC_PembalapAdmin
 
     Private Sub txtSearchPembalap_TextChanged(sender As Object, e As EventArgs) Handles txtSearchPembalap.TextChanged
 
-        If txtSearchPembalap.Text.Trim() = "" Then
-            TampilPembalap()
-        Else
-
-            dgvPembalap.DataSource =
-                SearchPembalap(txtSearchPembalap.Text.Trim())
-
-        End If
+        TampilPembalap(txtSearchPembalap.Text.Trim())
 
     End Sub
 

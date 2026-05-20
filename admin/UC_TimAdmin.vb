@@ -12,9 +12,15 @@ Public Class UC_TimAdmin
 
     End Sub
 
-    Private Sub TampilTim()
+    Private Sub TampilTim(Optional keyword As String = "")
+
         dgvTim.DataSource = Nothing
-        dgvTim.DataSource = GetAllTim()  ' ← DI SINI
+
+        If keyword = "" Then
+            dgvTim.DataSource = GetAllTim()
+        Else
+            dgvTim.DataSource = SearchTim(keyword)
+        End If
 
         dgvTim.RowTemplate.Height = 80
 
@@ -42,48 +48,36 @@ Public Class UC_TimAdmin
             dgvTim.Columns("chasis").HeaderText = "Chasis"
         End If
 
-        ' =========================
-        ' KOLOM LOGO
-        ' =========================
+    End Sub
 
+    Private Sub dgvTim_DataBindingComplete(sender As Object, e As DataGridViewBindingCompleteEventArgs) Handles dgvTim.DataBindingComplete
         If Not dgvTim.Columns.Contains("LogoPreview") Then
-
             Dim imgCol As New DataGridViewImageColumn()
-
             imgCol.Name = "LogoPreview"
             imgCol.HeaderText = "Logo"
-            imgCol.ImageLayout =
-            DataGridViewImageCellLayout.Zoom
-
+            imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
+            imgCol.Width = 100
             dgvTim.Columns.Add(imgCol)
-
         End If
 
-        dgvTim.Columns("LogoPreview").Width = 100
+        dgvTim.Columns("LogoPreview").DisplayIndex = dgvTim.Columns.Count - 1
 
         For Each row As DataGridViewRow In dgvTim.Rows
-
-            If Not row.IsNewRow Then
-
-                Dim path As String =
-                row.Cells("logo").Value.ToString()
-
-                If IO.File.Exists(path) Then
-
-                    Using img As Image =
-                    Image.FromFile(path)
-
-                        row.Cells("LogoPreview").Value =
-                        New Bitmap(img)
-
-                    End Using
-
+            If Not row.IsNewRow AndAlso dgvTim.Columns.Contains("logo") Then
+                Dim val = row.Cells("logo").Value
+                If val IsNot Nothing AndAlso Not DBNull.Value.Equals(val) Then
+                    Dim path As String = val.ToString()
+                    If IO.File.Exists(path) Then
+                        Try
+                            Using img As Image = Image.FromFile(path)
+                                row.Cells("LogoPreview").Value = New Bitmap(img)
+                            End Using
+                        Catch ex As Exception
+                        End Try
+                    End If
                 End If
-
             End If
-
         Next
-
     End Sub
 
     Private Function ValidasiTim() As Boolean
@@ -241,16 +235,7 @@ Public Class UC_TimAdmin
 
     Private Sub txtSearchTim_TextChanged(sender As Object, e As EventArgs) Handles txtSearchTim.TextChanged
 
-        If txtSearchTim.Text.Trim() = "" Then
-
-            TampilTim()
-
-        Else
-
-            dgvTim.DataSource =
-                SearchTim(txtSearchTim.Text.Trim())
-
-        End If
+        TampilTim(txtSearchTim.Text.Trim())
 
     End Sub
 

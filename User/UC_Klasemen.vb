@@ -1,6 +1,7 @@
 Public Class UC_Klasemen
 
     Private Sub UC_Klasemen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        dgvKlasemen.BringToFront()
         TampilKlasemenPembalap()
     End Sub
 
