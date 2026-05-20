@@ -61,7 +61,7 @@ Partial Class UC_Klasemen
         pnlTabs.Dock = DockStyle.Top
         pnlTabs.Location = New Point(0, 0)
         pnlTabs.Name = "pnlTabs"
-        pnlTabs.Size = New Size(1095, 44)
+        pnlTabs.Size = New Size(1055, 44)
         pnlTabs.TabIndex = 1
         ' 
         ' btnTabPembalap
@@ -86,7 +86,7 @@ Partial Class UC_Klasemen
         pnlTitleAccent.Dock = DockStyle.Bottom
         pnlTitleAccent.Location = New Point(0, 68)
         pnlTitleAccent.Name = "pnlTitleAccent"
-        pnlTitleAccent.Size = New Size(1095, 2)
+        pnlTitleAccent.Size = New Size(1055, 2)
         pnlTitleAccent.TabIndex = 0
         ' 
         ' lblKlasemenTitle
@@ -148,7 +148,7 @@ Partial Class UC_Klasemen
         pnlTitleBar.Dock = DockStyle.Top
         pnlTitleBar.Location = New Point(0, 44)
         pnlTitleBar.Name = "pnlTitleBar"
-        pnlTitleBar.Size = New Size(1095, 70)
+        pnlTitleBar.Size = New Size(1055, 70)
         pnlTitleBar.TabIndex = 0
         ' 
         ' pnlKlasemenWrap
@@ -160,7 +160,7 @@ Partial Class UC_Klasemen
         pnlKlasemenWrap.Dock = DockStyle.Fill
         pnlKlasemenWrap.Location = New Point(24, 20)
         pnlKlasemenWrap.Name = "pnlKlasemenWrap"
-        pnlKlasemenWrap.Size = New Size(1095, 833)
+        pnlKlasemenWrap.Size = New Size(1055, 803)
         pnlKlasemenWrap.TabIndex = 0
         ' 
         ' dgvKlasemen
@@ -201,7 +201,7 @@ Partial Class UC_Klasemen
         dgvKlasemen.RowHeadersWidth = 51
         dgvKlasemen.RowTemplate.Height = 40
         dgvKlasemen.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvKlasemen.Size = New Size(1095, 833)
+        dgvKlasemen.Size = New Size(1055, 803)
         dgvKlasemen.TabIndex = 2
         ' 
         ' pnlContent
@@ -209,10 +209,10 @@ Partial Class UC_Klasemen
         pnlContent.BackColor = Color.FromArgb(CByte(26), CByte(26), CByte(36))
         pnlContent.Controls.Add(pnlKlasemenWrap)
         pnlContent.Dock = DockStyle.Fill
-        pnlContent.Location = New Point(0, 60)
+        pnlContent.Location = New Point(20, 75)
         pnlContent.Name = "pnlContent"
         pnlContent.Padding = New Padding(24, 20, 24, 20)
-        pnlContent.Size = New Size(1143, 873)
+        pnlContent.Size = New Size(1103, 843)
         pnlContent.TabIndex = 5
         ' 
         ' pnlHeaderAccent
@@ -221,7 +221,7 @@ Partial Class UC_Klasemen
         pnlHeaderAccent.Dock = DockStyle.Bottom
         pnlHeaderAccent.Location = New Point(0, 58)
         pnlHeaderAccent.Name = "pnlHeaderAccent"
-        pnlHeaderAccent.Size = New Size(1143, 2)
+        pnlHeaderAccent.Size = New Size(1103, 2)
         pnlHeaderAccent.TabIndex = 0
         ' 
         ' lblHeaderTitle
@@ -253,7 +253,7 @@ Partial Class UC_Klasemen
         lblBadge.BackColor = Color.FromArgb(CByte(15), CByte(40), CByte(15))
         lblBadge.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
         lblBadge.ForeColor = Color.FromArgb(CByte(80), CByte(210), CByte(80))
-        lblBadge.Location = New Point(1029, 19)
+        lblBadge.Location = New Point(345, 20)
         lblBadge.Name = "lblBadge"
         lblBadge.Size = New Size(90, 26)
         lblBadge.TabIndex = 3
@@ -268,9 +268,9 @@ Partial Class UC_Klasemen
         pnlHeader.Controls.Add(lblHeaderSub)
         pnlHeader.Controls.Add(lblBadge)
         pnlHeader.Dock = DockStyle.Top
-        pnlHeader.Location = New Point(0, 0)
+        pnlHeader.Location = New Point(20, 15)
         pnlHeader.Name = "pnlHeader"
-        pnlHeader.Size = New Size(1143, 60)
+        pnlHeader.Size = New Size(1103, 60)
         pnlHeader.TabIndex = 3
         ' 
         ' UC_Klasemen

@@ -13,9 +13,8 @@ Public Class UC_TimAdmin
     End Sub
 
     Private Sub TampilTim()
-
         dgvTim.DataSource = Nothing
-        dgvTim.DataSource = GetAllTim()
+        dgvTim.DataSource = GetAllTim()  ' ← DI SINI
 
         dgvTim.RowTemplate.Height = 80
 

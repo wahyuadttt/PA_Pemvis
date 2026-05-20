@@ -156,7 +156,7 @@ Partial Class LoginAdmin
         lblLockIcon.BackColor = Color.Transparent
         lblLockIcon.Font = New Font("Segoe UI Emoji", 28F)
         lblLockIcon.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        lblLockIcon.Location = New Point(12, 63)
+        lblLockIcon.Location = New Point(12, 60)
         lblLockIcon.Name = "lblLockIcon"
         lblLockIcon.Size = New Size(92, 63)
         lblLockIcon.TabIndex = 0

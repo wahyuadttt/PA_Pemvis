@@ -41,6 +41,7 @@ Partial Class UC_FormRaceUser
         lblHeaderTitle = New Label()
         lblHeaderSub = New Label()
         pnlSidebar = New Panel()
+        lblMenuTitle = New Label()
         pnlSidebarAccent = New Panel()
         btnNavPembalap = New Button()
         btnNavTim = New Button()
@@ -48,7 +49,6 @@ Partial Class UC_FormRaceUser
         pnlSidebarDivider = New Panel()
         btnNavKlasemen = New Button()
         btnNavHasil = New Button()
-        lblMenuTitle = New Label()
         CType(ErrorProvider1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvTim, ComponentModel.ISupportInitialize).BeginInit()
         pnlGrid.SuspendLayout()
@@ -114,7 +114,7 @@ Partial Class UC_FormRaceUser
         dgvTim.DefaultCellStyle = DataGridViewCellStyle3
         dgvTim.EnableHeadersVisualStyles = False
         dgvTim.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
-        dgvTim.Location = New Point(14, 52)
+        dgvTim.Location = New Point(17, 49)
         dgvTim.Name = "dgvTim"
         dgvTim.ReadOnly = True
         dgvTim.RowHeadersVisible = False
@@ -156,7 +156,7 @@ Partial Class UC_FormRaceUser
         btnKeluar.FlatStyle = FlatStyle.Flat
         btnKeluar.Font = New Font("Segoe UI", 9F)
         btnKeluar.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        btnKeluar.Location = New Point(0, 630)
+        btnKeluar.Location = New Point(0, 617)
         btnKeluar.Name = "btnKeluar"
         btnKeluar.Size = New Size(180, 36)
         btnKeluar.TabIndex = 8
@@ -239,6 +239,18 @@ Partial Class UC_FormRaceUser
         pnlSidebar.Name = "pnlSidebar"
         pnlSidebar.Size = New Size(180, 762)
         pnlSidebar.TabIndex = 4
+        ' 
+        ' lblMenuTitle
+        ' 
+        lblMenuTitle.AutoSize = True
+        lblMenuTitle.BackColor = Color.Transparent
+        lblMenuTitle.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
+        lblMenuTitle.ForeColor = Color.FromArgb(CByte(120), CByte(120), CByte(135))
+        lblMenuTitle.Location = New Point(17, 26)
+        lblMenuTitle.Name = "lblMenuTitle"
+        lblMenuTitle.Size = New Size(88, 19)
+        lblMenuTitle.TabIndex = 9
+        lblMenuTitle.Text = "LIHAT DATA"
         ' 
         ' pnlSidebarAccent
         ' 
@@ -341,18 +353,6 @@ Partial Class UC_FormRaceUser
         btnNavHasil.Text = "  📊  Hasil Race"
         btnNavHasil.TextAlign = ContentAlignment.MiddleLeft
         btnNavHasil.UseVisualStyleBackColor = False
-        ' 
-        ' lblMenuTitle
-        ' 
-        lblMenuTitle.AutoSize = True
-        lblMenuTitle.BackColor = Color.Transparent
-        lblMenuTitle.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
-        lblMenuTitle.ForeColor = Color.FromArgb(CByte(120), CByte(120), CByte(135))
-        lblMenuTitle.Location = New Point(17, 26)
-        lblMenuTitle.Name = "lblMenuTitle"
-        lblMenuTitle.Size = New Size(88, 19)
-        lblMenuTitle.TabIndex = 9
-        lblMenuTitle.Text = "LIHAT DATA"
         ' 
         ' UC_FormRaceUser
         ' 
