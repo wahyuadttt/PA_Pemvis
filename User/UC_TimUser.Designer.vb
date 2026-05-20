@@ -19,9 +19,9 @@ Partial Class UC_TimUser
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UC_TimUser))
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         PrintPreviewDialog1 = New PrintPreviewDialog()
         ErrorProvider1 = New ErrorProvider(components)
         PrintDocument1 = New Printing.PrintDocument()
@@ -61,10 +61,9 @@ Partial Class UC_TimUser
         txtSearchTim.BorderStyle = BorderStyle.FixedSingle
         txtSearchTim.Font = New Font("Segoe UI", 10F)
         txtSearchTim.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
-        txtSearchTim.Location = New Point(18, 15)
-        txtSearchTim.Margin = New Padding(4, 4, 4, 4)
+        txtSearchTim.Location = New Point(14, 12)
         txtSearchTim.Name = "txtSearchTim"
-        txtSearchTim.Size = New Size(1350, 34)
+        txtSearchTim.Size = New Size(405, 30)
         txtSearchTim.TabIndex = 0
         txtSearchTim.Text = "🔍  Cari tim / konstruktor..."
         ' 
@@ -74,53 +73,51 @@ Partial Class UC_TimUser
         pnlGrid.Controls.Add(txtSearchTim)
         pnlGrid.Controls.Add(dgvTim)
         pnlGrid.Dock = DockStyle.Fill
-        pnlGrid.Location = New Point(20, 15)
-        pnlGrid.Margin = New Padding(4, 4, 4, 4)
+        pnlGrid.Location = New Point(16, 12)
         pnlGrid.Name = "pnlGrid"
-        pnlGrid.Padding = New Padding(18, 15, 18, 15)
-        pnlGrid.Size = New Size(1396, 1023)
+        pnlGrid.Padding = New Padding(14, 12, 14, 12)
+        pnlGrid.Size = New Size(1117, 819)
         pnlGrid.TabIndex = 1
         ' 
         ' dgvTim
         ' 
-        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        dgvTim.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        dgvTim.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         dgvTim.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvTim.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvTim.BackgroundColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
         dgvTim.BorderStyle = BorderStyle.None
         dgvTim.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dgvTim.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        DataGridViewCellStyle5.ForeColor = Color.White
-        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle5.SelectionForeColor = Color.White
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        dgvTim.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = Color.White
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.SelectionForeColor = Color.White
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgvTim.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvTim.ColumnHeadersHeight = 36
         dgvTim.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
-        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle6.ForeColor = Color.White
-        DataGridViewCellStyle6.Padding = New Padding(4)
-        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        DataGridViewCellStyle6.SelectionForeColor = Color.White
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        dgvTim.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle3.ForeColor = Color.White
+        DataGridViewCellStyle3.Padding = New Padding(4)
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        dgvTim.DefaultCellStyle = DataGridViewCellStyle3
         dgvTim.EnableHeadersVisualStyles = False
         dgvTim.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
-        dgvTim.Location = New Point(18, 60)
-        dgvTim.Margin = New Padding(4, 4, 4, 4)
+        dgvTim.Location = New Point(14, 60)
         dgvTim.Name = "dgvTim"
         dgvTim.ReadOnly = True
         dgvTim.RowHeadersVisible = False
         dgvTim.RowHeadersWidth = 51
         dgvTim.RowTemplate.Height = 34
         dgvTim.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvTim.Size = New Size(1358, 944)
+        dgvTim.Size = New Size(1080, 744)
         dgvTim.TabIndex = 1
         ' 
         ' pnlContent
@@ -128,11 +125,10 @@ Partial Class UC_TimUser
         pnlContent.BackColor = Color.FromArgb(CByte(26), CByte(26), CByte(36))
         pnlContent.Controls.Add(pnlGrid)
         pnlContent.Dock = DockStyle.Fill
-        pnlContent.Location = New Point(25, 94)
-        pnlContent.Margin = New Padding(4, 4, 4, 4)
+        pnlContent.Location = New Point(20, 75)
         pnlContent.Name = "pnlContent"
-        pnlContent.Padding = New Padding(20, 15, 20, 15)
-        pnlContent.Size = New Size(1436, 1053)
+        pnlContent.Padding = New Padding(16, 12, 16, 12)
+        pnlContent.Size = New Size(1149, 843)
         pnlContent.TabIndex = 5
         ' 
         ' pnlHeader
@@ -143,10 +139,9 @@ Partial Class UC_TimUser
         pnlHeader.Controls.Add(lblHeaderTitle)
         pnlHeader.Controls.Add(lblHeaderSub)
         pnlHeader.Dock = DockStyle.Top
-        pnlHeader.Location = New Point(25, 19)
-        pnlHeader.Margin = New Padding(4, 4, 4, 4)
+        pnlHeader.Location = New Point(20, 15)
         pnlHeader.Name = "pnlHeader"
-        pnlHeader.Size = New Size(1436, 75)
+        pnlHeader.Size = New Size(1149, 60)
         pnlHeader.TabIndex = 3
         ' 
         ' lblBadge
@@ -154,10 +149,9 @@ Partial Class UC_TimUser
         lblBadge.BackColor = Color.FromArgb(CByte(15), CByte(40), CByte(15))
         lblBadge.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
         lblBadge.ForeColor = Color.FromArgb(CByte(80), CByte(210), CByte(80))
-        lblBadge.Location = New Point(1275, 24)
-        lblBadge.Margin = New Padding(4, 0, 4, 0)
+        lblBadge.Location = New Point(345, 8)
         lblBadge.Name = "lblBadge"
-        lblBadge.Size = New Size(112, 32)
+        lblBadge.Size = New Size(90, 26)
         lblBadge.TabIndex = 9
         lblBadge.Text = "● READ ONLY"
         lblBadge.TextAlign = ContentAlignment.MiddleCenter
@@ -166,10 +160,9 @@ Partial Class UC_TimUser
         ' 
         pnlHeaderAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         pnlHeaderAccent.Dock = DockStyle.Bottom
-        pnlHeaderAccent.Location = New Point(0, 73)
-        pnlHeaderAccent.Margin = New Padding(4, 4, 4, 4)
+        pnlHeaderAccent.Location = New Point(0, 58)
         pnlHeaderAccent.Name = "pnlHeaderAccent"
-        pnlHeaderAccent.Size = New Size(1436, 2)
+        pnlHeaderAccent.Size = New Size(1149, 2)
         pnlHeaderAccent.TabIndex = 0
         ' 
         ' lblHeaderTitle
@@ -178,10 +171,9 @@ Partial Class UC_TimUser
         lblHeaderTitle.BackColor = Color.Transparent
         lblHeaderTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         lblHeaderTitle.ForeColor = Color.White
-        lblHeaderTitle.Location = New Point(19, 10)
-        lblHeaderTitle.Margin = New Padding(4, 0, 4, 0)
+        lblHeaderTitle.Location = New Point(15, -3)
         lblHeaderTitle.Name = "lblHeaderTitle"
-        lblHeaderTitle.Size = New Size(388, 45)
+        lblHeaderTitle.Size = New Size(324, 37)
         lblHeaderTitle.TabIndex = 1
         lblHeaderTitle.Text = "F1 RACE MANAGEMENT"
         ' 
@@ -191,24 +183,23 @@ Partial Class UC_TimUser
         lblHeaderSub.BackColor = Color.Transparent
         lblHeaderSub.Font = New Font("Segoe UI", 8F)
         lblHeaderSub.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(190))
-        lblHeaderSub.Location = New Point(21, 50)
-        lblHeaderSub.Margin = New Padding(4, 0, 4, 0)
+        lblHeaderSub.Location = New Point(17, 37)
         lblHeaderSub.Name = "lblHeaderSub"
-        lblHeaderSub.Size = New Size(218, 21)
+        lblHeaderSub.Size = New Size(193, 19)
         lblHeaderSub.TabIndex = 2
         lblHeaderSub.Text = "Manajemen Tim / Konstruktor"
         ' 
         ' UC_TimUser
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
         Controls.Add(pnlContent)
         Controls.Add(pnlHeader)
-        Margin = New Padding(4, 5, 4, 5)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "UC_TimUser"
-        Padding = New Padding(25, 19, 25, 19)
-        Size = New Size(1486, 1166)
+        Padding = New Padding(20, 15, 20, 15)
+        Size = New Size(1189, 933)
         CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
         pnlGrid.ResumeLayout(False)
         pnlGrid.PerformLayout()

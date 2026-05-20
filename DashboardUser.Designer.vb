@@ -57,24 +57,21 @@ Partial Class DashboardUser
         ' 
         ' btnNavAdminMode
         ' 
-        btnNavAdminMode.BackColor = Color.FromArgb(CByte(40), CByte(10), CByte(8))
+        btnNavAdminMode.BackColor = Color.FromArgb(CByte(50), CByte(12), CByte(10))
         btnNavAdminMode.Cursor = Cursors.Hand
         btnNavAdminMode.FlatAppearance.BorderSize = 0
         btnNavAdminMode.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(80), CByte(20), CByte(16))
         btnNavAdminMode.FlatStyle = FlatStyle.Flat
         btnNavAdminMode.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         btnNavAdminMode.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        btnNavAdminMode.Location = New Point(12, 690)
+        btnNavAdminMode.Location = New Point(14, 329)
         btnNavAdminMode.Name = "btnNavAdminMode"
         btnNavAdminMode.Padding = New Padding(0, 0, 0, 10)
-        btnNavAdminMode.Size = New Size(197, 48)
+        btnNavAdminMode.Size = New Size(197, 47)
         btnNavAdminMode.TabIndex = 13
         btnNavAdminMode.Text = "  🔐  Login Admin"
         btnNavAdminMode.TextAlign = ContentAlignment.MiddleLeft
         btnNavAdminMode.UseVisualStyleBackColor = False
-
-
-
         ' 
         ' pnlSidebarAccent
         ' 
@@ -82,7 +79,7 @@ Partial Class DashboardUser
         pnlSidebarAccent.Dock = DockStyle.Left
         pnlSidebarAccent.Location = New Point(0, 0)
         pnlSidebarAccent.Name = "pnlSidebarAccent"
-        pnlSidebarAccent.Size = New Size(3, 750)
+        pnlSidebarAccent.Size = New Size(3, 738)
         pnlSidebarAccent.TabIndex = 0
         ' 
         ' lblLogoMark
@@ -108,8 +105,6 @@ Partial Class DashboardUser
         lblMenuLabel.Size = New Size(83, 17)
         lblMenuLabel.TabIndex = 2
         lblMenuLabel.Text = "LIHAT DATA"
-
-
         ' 
         ' btnNavPembalap
         ' 
@@ -118,14 +113,12 @@ Partial Class DashboardUser
         btnNavPembalap.FlatAppearance.BorderSize = 0
         btnNavPembalap.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
         btnNavPembalap.FlatStyle = FlatStyle.Flat
-
         btnNavPembalap.Font = New Font("Segoe UI", 10.0F)
         btnNavPembalap.ForeColor = Color.White
         btnNavPembalap.Location = New Point(0, 80)
         btnNavPembalap.Name = "btnNavPembalap"
         btnNavPembalap.Size = New Size(200, 40)
         btnNavPembalap.TabIndex = 3
-
         btnNavPembalap.Text = "  🏎  Pembalap"
         btnNavPembalap.TextAlign = ContentAlignment.MiddleLeft
         btnNavPembalap.UseVisualStyleBackColor = False
@@ -137,7 +130,6 @@ Partial Class DashboardUser
         btnNavTim.FlatAppearance.BorderSize = 0
         btnNavTim.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
         btnNavTim.FlatStyle = FlatStyle.Flat
-
         btnNavTim.Font = New Font("Segoe UI", 10.0F)
         btnNavTim.ForeColor = Color.White
         btnNavTim.Location = New Point(0, 121)
@@ -145,8 +137,6 @@ Partial Class DashboardUser
         btnNavTim.Size = New Size(200, 40)
         btnNavTim.TabIndex = 4
         btnNavTim.Text = "  🏁  Tim / Konstruktor"
-
-
         btnNavTim.TextAlign = ContentAlignment.MiddleLeft
         btnNavTim.UseVisualStyleBackColor = False
         ' 
@@ -157,14 +147,12 @@ Partial Class DashboardUser
         btnNavRace.FlatAppearance.BorderSize = 0
         btnNavRace.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
         btnNavRace.FlatStyle = FlatStyle.Flat
-
         btnNavRace.Font = New Font("Segoe UI", 10.0F)
         btnNavRace.ForeColor = Color.White
         btnNavRace.Location = New Point(0, 162)
         btnNavRace.Name = "btnNavRace"
         btnNavRace.Size = New Size(200, 40)
         btnNavRace.TabIndex = 5
-
         btnNavRace.Text = "  📅  Jadwal Race"
         btnNavRace.TextAlign = ContentAlignment.MiddleLeft
         btnNavRace.UseVisualStyleBackColor = False
@@ -203,14 +191,13 @@ Partial Class DashboardUser
         btnNavKlasemen.FlatStyle = FlatStyle.Flat
         btnNavKlasemen.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         btnNavKlasemen.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        btnNavKlasemen.Location = New Point(0, 257)
+        btnNavKlasemen.Location = New Point(14, 274)
         btnNavKlasemen.Name = "btnNavKlasemen"
-        btnNavKlasemen.Size = New Size(200, 40)
+        btnNavKlasemen.Size = New Size(200, 49)
         btnNavKlasemen.TabIndex = 8
         btnNavKlasemen.Text = "  🏆  Klasemen"
         btnNavKlasemen.TextAlign = ContentAlignment.MiddleLeft
         btnNavKlasemen.UseVisualStyleBackColor = False
-
         ' 
         ' pnlSidebarFoot
         ' 
@@ -219,7 +206,7 @@ Partial Class DashboardUser
         pnlSidebarFoot.Dock = DockStyle.Bottom
         pnlSidebarFoot.Location = New Point(0, 738)
         pnlSidebarFoot.Name = "pnlSidebarFoot"
-        pnlSidebarFoot.Padding = New Padding(0, 15, 0, 15)
+        pnlSidebarFoot.Padding = New Padding(0, 5, 0, 15)
         pnlSidebarFoot.Size = New Size(223, 62)
         pnlSidebarFoot.TabIndex = 9
         ' 
@@ -233,10 +220,10 @@ Partial Class DashboardUser
         btnKeluar.FlatStyle = FlatStyle.Flat
         btnKeluar.Font = New Font("Segoe UI", 9.5F)
         btnKeluar.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        btnKeluar.Location = New Point(0, 0)
+        btnKeluar.Location = New Point(0, 5)
         btnKeluar.Name = "btnKeluar"
-        btnKeluar.Padding = New Padding(0, 0, 0, 8)
-        btnKeluar.Size = New Size(223, 62)
+        btnKeluar.Padding = New Padding(0, 0, 0, 1)
+        btnKeluar.Size = New Size(223, 42)
         btnKeluar.TabIndex = 0
         btnKeluar.Text = "  ✕  Keluar / Logout"
         btnKeluar.TextAlign = ContentAlignment.MiddleLeft

@@ -59,11 +59,11 @@ Partial Class UC_RaceUser
         ' 
         txtSearchRace.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         txtSearchRace.BorderStyle = BorderStyle.FixedSingle
-        txtSearchRace.Font = New Font("Segoe UI", 10.0F)
+        txtSearchRace.Font = New Font("Segoe UI", 10F)
         txtSearchRace.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearchRace.Location = New Point(14, 12)
         txtSearchRace.Name = "txtSearchRace"
-        txtSearchRace.Size = New Size(1302, 30)
+        txtSearchRace.Size = New Size(405, 30)
         txtSearchRace.TabIndex = 0
         txtSearchRace.Text = "🔍  Cari jadwal race..."
         ' 
@@ -91,7 +91,7 @@ Partial Class UC_RaceUser
         dgvRace.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         DataGridViewCellStyle2.ForeColor = Color.White
         DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
         DataGridViewCellStyle2.SelectionForeColor = Color.White
@@ -101,7 +101,7 @@ Partial Class UC_RaceUser
         dgvRace.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9.0F)
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle3.ForeColor = Color.White
         DataGridViewCellStyle3.Padding = New Padding(4)
         DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
@@ -147,9 +147,9 @@ Partial Class UC_RaceUser
         ' lblBadge
         ' 
         lblBadge.BackColor = Color.FromArgb(CByte(15), CByte(40), CByte(15))
-        lblBadge.Font = New Font("Segoe UI", 7.0F, FontStyle.Bold)
+        lblBadge.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
         lblBadge.ForeColor = Color.FromArgb(CByte(80), CByte(210), CByte(80))
-        lblBadge.Location = New Point(1251, 19)
+        lblBadge.Location = New Point(345, 12)
         lblBadge.Name = "lblBadge"
         lblBadge.Size = New Size(90, 26)
         lblBadge.TabIndex = 10
@@ -169,9 +169,9 @@ Partial Class UC_RaceUser
         ' 
         lblHeaderTitle.AutoSize = True
         lblHeaderTitle.BackColor = Color.Transparent
-        lblHeaderTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
+        lblHeaderTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         lblHeaderTitle.ForeColor = Color.White
-        lblHeaderTitle.Location = New Point(15, 8)
+        lblHeaderTitle.Location = New Point(15, 1)
         lblHeaderTitle.Name = "lblHeaderTitle"
         lblHeaderTitle.Size = New Size(324, 37)
         lblHeaderTitle.TabIndex = 1
@@ -181,17 +181,17 @@ Partial Class UC_RaceUser
         ' 
         lblHeaderSub.AutoSize = True
         lblHeaderSub.BackColor = Color.Transparent
-        lblHeaderSub.Font = New Font("Segoe UI", 8.0F)
+        lblHeaderSub.Font = New Font("Segoe UI", 8F)
         lblHeaderSub.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(190))
-        lblHeaderSub.Location = New Point(17, 40)
+        lblHeaderSub.Location = New Point(17, 38)
         lblHeaderSub.Name = "lblHeaderSub"
-        lblHeaderSub.Size = New Size(144, 19)
+        lblHeaderSub.Size = New Size(158, 19)
         lblHeaderSub.TabIndex = 2
         lblHeaderSub.Text = "Jadwal Race / Grand Prix"
         ' 
         ' UC_RaceUser
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
         Controls.Add(pnlContent)

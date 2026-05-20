@@ -63,7 +63,7 @@ Partial Class UC_PembalapUser
         txtSearchPembalap.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearchPembalap.Location = New Point(14, 12)
         txtSearchPembalap.Name = "txtSearchPembalap"
-        txtSearchPembalap.Size = New Size(1302, 30)
+        txtSearchPembalap.Size = New Size(405, 30)
         txtSearchPembalap.TabIndex = 0
         txtSearchPembalap.Text = "🔍  Cari pembalap..."
         ' 
@@ -76,7 +76,7 @@ Partial Class UC_PembalapUser
         pnlGrid.Location = New Point(16, 12)
         pnlGrid.Name = "pnlGrid"
         pnlGrid.Padding = New Padding(14, 12, 14, 12)
-        pnlGrid.Size = New Size(1325, 849)
+        pnlGrid.Size = New Size(1285, 819)
         pnlGrid.TabIndex = 1
         ' 
         ' dgvPembalap
@@ -117,7 +117,7 @@ Partial Class UC_PembalapUser
         dgvPembalap.RowHeadersWidth = 51
         dgvPembalap.RowTemplate.Height = 34
         dgvPembalap.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvPembalap.Size = New Size(1302, 766)
+        dgvPembalap.Size = New Size(1262, 736)
         dgvPembalap.TabIndex = 1
         ' 
         ' pnlContent
@@ -125,10 +125,10 @@ Partial Class UC_PembalapUser
         pnlContent.BackColor = Color.FromArgb(CByte(26), CByte(26), CByte(36))
         pnlContent.Controls.Add(pnlGrid)
         pnlContent.Dock = DockStyle.Fill
-        pnlContent.Location = New Point(0, 60)
+        pnlContent.Location = New Point(20, 75)
         pnlContent.Name = "pnlContent"
         pnlContent.Padding = New Padding(16, 12, 16, 12)
-        pnlContent.Size = New Size(1357, 873)
+        pnlContent.Size = New Size(1317, 843)
         pnlContent.TabIndex = 5
         ' 
         ' pnlHeader
@@ -139,9 +139,9 @@ Partial Class UC_PembalapUser
         pnlHeader.Controls.Add(lblHeaderTitle)
         pnlHeader.Controls.Add(lblHeaderSub)
         pnlHeader.Dock = DockStyle.Top
-        pnlHeader.Location = New Point(0, 0)
+        pnlHeader.Location = New Point(20, 15)
         pnlHeader.Name = "pnlHeader"
-        pnlHeader.Size = New Size(1357, 60)
+        pnlHeader.Size = New Size(1317, 60)
         pnlHeader.TabIndex = 3
         ' 
         ' lblBadge
@@ -149,7 +149,7 @@ Partial Class UC_PembalapUser
         lblBadge.BackColor = Color.FromArgb(CByte(15), CByte(40), CByte(15))
         lblBadge.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
         lblBadge.ForeColor = Color.FromArgb(CByte(80), CByte(210), CByte(80))
-        lblBadge.Location = New Point(1251, 19)
+        lblBadge.Location = New Point(345, 10)
         lblBadge.Name = "lblBadge"
         lblBadge.Size = New Size(90, 26)
         lblBadge.TabIndex = 10
@@ -162,7 +162,7 @@ Partial Class UC_PembalapUser
         pnlHeaderAccent.Dock = DockStyle.Bottom
         pnlHeaderAccent.Location = New Point(0, 58)
         pnlHeaderAccent.Name = "pnlHeaderAccent"
-        pnlHeaderAccent.Size = New Size(1357, 2)
+        pnlHeaderAccent.Size = New Size(1317, 2)
         pnlHeaderAccent.TabIndex = 0
         ' 
         ' lblHeaderTitle
@@ -171,7 +171,7 @@ Partial Class UC_PembalapUser
         lblHeaderTitle.BackColor = Color.Transparent
         lblHeaderTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         lblHeaderTitle.ForeColor = Color.White
-        lblHeaderTitle.Location = New Point(15, 8)
+        lblHeaderTitle.Location = New Point(15, -1)
         lblHeaderTitle.Name = "lblHeaderTitle"
         lblHeaderTitle.Size = New Size(324, 37)
         lblHeaderTitle.TabIndex = 1
@@ -183,7 +183,7 @@ Partial Class UC_PembalapUser
         lblHeaderSub.BackColor = Color.Transparent
         lblHeaderSub.Font = New Font("Segoe UI", 8F)
         lblHeaderSub.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(190))
-        lblHeaderSub.Location = New Point(17, 40)
+        lblHeaderSub.Location = New Point(17, 38)
         lblHeaderSub.Name = "lblHeaderSub"
         lblHeaderSub.Size = New Size(144, 19)
         lblHeaderSub.TabIndex = 2
