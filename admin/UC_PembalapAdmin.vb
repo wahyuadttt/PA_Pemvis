@@ -1,11 +1,17 @@
+Imports System.Drawing.Printing
+
 Public Class UC_PembalapAdmin
 
     Private selectedIdPembalap As Integer = -1
     Private dtTimCombo As DataTable
+    Private fotoPath As String = ""
 
     Private Sub UC_PembalapAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MuatComboBoxTim()
         TampilPembalap()
+
+        btnUbahPembalap.Enabled = False
+        btnHapusPembalap.Enabled = False
     End Sub
 
     Private Sub MuatComboBoxTim()
@@ -34,6 +40,10 @@ Public Class UC_PembalapAdmin
 
         If dgvPembalap.Columns.Contains("idTim") Then
             dgvPembalap.Columns("idTim").Visible = False
+        End If
+
+        If dgvPembalap.Columns.Contains("foto") Then
+            dgvPembalap.Columns("foto").Visible = False
         End If
 
         If dgvPembalap.Columns.Contains("nama") Then
@@ -83,10 +93,37 @@ Public Class UC_PembalapAdmin
         txtNomor.Clear()
         txtSearchPembalap.Clear()
 
+        picFotoPembalap.Image = Nothing
+
+        fotoPath = ""
         selectedIdPembalap = -1
+
+        btnSimpanPembalap.Enabled = True
+        btnUbahPembalap.Enabled = False
+        btnHapusPembalap.Enabled = False
 
         If cbTim.Items.Count > 0 Then
             cbTim.SelectedIndex = 0
+        End If
+
+    End Sub
+
+    Private Sub btnPilihFoto_Click(sender As Object, e As EventArgs) Handles btnPilihFoto.Click
+
+        Dim ofd As New OpenFileDialog
+
+        ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png"
+
+        If ofd.ShowDialog() = DialogResult.OK Then
+
+            fotoPath = ofd.FileName
+
+            picFotoPembalap.Image =
+                Image.FromFile(fotoPath)
+
+            picFotoPembalap.SizeMode =
+                PictureBoxSizeMode.StretchImage
+
         End If
 
     End Sub
@@ -98,7 +135,8 @@ Public Class UC_PembalapAdmin
         If SimpanPembalap(
             txtNamaPembalap.Text.Trim(),
             txtNegaraPembalap.Text.Trim(),
-            txtNomor.Text.Trim(),
+            CInt(txtNomor.Text.Trim()),
+            fotoPath,
             CInt(cbTim.SelectedValue)) Then
 
             MessageBox.Show("Data berhasil disimpan")
@@ -123,7 +161,8 @@ Public Class UC_PembalapAdmin
             selectedIdPembalap,
             txtNamaPembalap.Text.Trim(),
             txtNegaraPembalap.Text.Trim(),
-            txtNomor.Text.Trim(),
+            CInt(txtNomor.Text.Trim()),
+            fotoPath,
             CInt(cbTim.SelectedValue)) Then
 
             MessageBox.Show("Data berhasil diubah")
@@ -167,6 +206,24 @@ Public Class UC_PembalapAdmin
 
             cbTim.SelectedValue = CInt(row.Cells("idTim").Value)
 
+            fotoPath = row.Cells("foto").Value.ToString()
+
+            If fotoPath <> "" AndAlso IO.File.Exists(fotoPath) Then
+
+                picFotoPembalap.Image =
+                Image.FromFile(fotoPath)
+
+                picFotoPembalap.SizeMode =
+                PictureBoxSizeMode.StretchImage
+
+            Else
+                picFotoPembalap.Image = Nothing
+            End If
+
+            btnSimpanPembalap.Enabled = False
+            btnUbahPembalap.Enabled = True
+            btnHapusPembalap.Enabled = True
+
         End If
 
     End Sub
@@ -192,7 +249,7 @@ Public Class UC_PembalapAdmin
 
     End Sub
 
-    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
 
         Dim fontJudul As New Font("Arial", 16, FontStyle.Bold)
         Dim fontIsi As New Font("Arial", 10)
@@ -231,6 +288,18 @@ Public Class UC_PembalapAdmin
 
         Next
 
+    End Sub
+
+    Private Sub txtNamaPembalap_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNamaPembalap.KeyPress
+        HanyaHuruf(e)
+    End Sub
+
+    Private Sub txtNegaraPembalap_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNegaraPembalap.KeyPress
+        HanyaHuruf(e)
+    End Sub
+
+    Private Sub txtNomor_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNomor.KeyPress
+        HanyaAngka(e)
     End Sub
 
 End Class

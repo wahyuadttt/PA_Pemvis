@@ -20,12 +20,6 @@
     <Compile Update="DashboardUser.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormKlasemen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="LoginAdmin.vb">
       <SubType>Form</SubType>
     </Compile>

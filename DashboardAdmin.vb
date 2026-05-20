@@ -30,6 +30,10 @@ Public Class DashboardAdmin
         TampilkanUserControl(New UC_HasilRaceAdmin())
     End Sub
 
+    Private Sub btnNavKlasemen_Click(sender As Object, e As EventArgs) Handles btnNavKlasemen.Click
+        TampilkanUserControl(New UC_Klasemen())
+    End Sub
+
     Private Sub btnKeluar_Click(sender As Object, e As EventArgs) Handles btnKeluar.Click
 
         Dim hasil As DialogResult =
@@ -41,7 +45,7 @@ Public Class DashboardAdmin
 
         If hasil = DialogResult.Yes Then
 
-            Dim frm As New LoginAdmin()
+            Dim frm As New DashboardUser()
             frm.Show()
 
             Me.Close()

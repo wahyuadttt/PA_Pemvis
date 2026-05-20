@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\admin\\uc_raceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:admin\\uc_raceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\admin\\uc_hasilraceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:admin\\uc_hasilraceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|d:\\kuliah\\praktikum\\pa_pemvis\\admin\\uc_hasilraceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{6ADFBDA6-2C01-9B72-D7F4-735003DCCFC7}|POSTTEST_5.vbproj|solutionrelative:admin\\uc_hasilraceadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,26 +35,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UC_RaceAdmin.vb [Design]",
-              "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\admin\\UC_RaceAdmin.vb",
-              "RelativeDocumentMoniker": "admin\\UC_RaceAdmin.vb",
-              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\admin\\UC_RaceAdmin.vb [Design]",
-              "RelativeToolTip": "admin\\UC_RaceAdmin.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-19T17:43:50.473Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UC_HasilRaceAdmin.vb [Design]",
+              "Title": "UC_HasilRaceAdmin.vb",
               "DocumentMoniker": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\admin\\UC_HasilRaceAdmin.vb",
               "RelativeDocumentMoniker": "admin\\UC_HasilRaceAdmin.vb",
-              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\admin\\UC_HasilRaceAdmin.vb [Design]",
-              "RelativeToolTip": "admin\\UC_HasilRaceAdmin.vb [Design]",
+              "ToolTip": "D:\\Kuliah\\Praktikum\\PA_Pemvis\\admin\\UC_HasilRaceAdmin.vb",
+              "RelativeToolTip": "admin\\UC_HasilRaceAdmin.vb",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAkwPAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-19T17:42:38.443Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-20T03:23:45.505Z",
+              "EditorCaption": ""
             }
           ]
         }

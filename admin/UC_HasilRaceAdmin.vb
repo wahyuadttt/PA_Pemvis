@@ -20,6 +20,10 @@ Public Class UC_HasilRaceAdmin
         TampilHasil()
         UpdatePoin()
 
+        btnSimpanHasil.Enabled = True
+        btnUbahHasil.Enabled = False
+        btnHapusHasil.Enabled = False
+
     End Sub
 
     Private Sub MuatComboBoxRace()
@@ -136,22 +140,33 @@ Public Class UC_HasilRaceAdmin
     End Sub
 
     Private Sub btnSimpanHasil_Click(sender As Object,
-                                     e As EventArgs) _
-                                     Handles btnSimpanHasil.Click
+                                 e As EventArgs) _
+                                 Handles btnSimpanHasil.Click
+
+        If CekPembalapSudahAdaDiRace(
+        CInt(cbRaceHasil.SelectedValue),
+        CInt(cbPembalapHasil.SelectedValue)) Then
+
+            MessageBox.Show(
+            "Pembalap sudah memiliki hasil pada race ini.")
+
+            Exit Sub
+
+        End If
 
         Dim posisi As Integer = CInt(nudPosisi.Value)
 
         Dim poin As Integer =
-            HitungPoin(posisi, chkFastestLap.Checked)
+        HitungPoin(posisi, chkFastestLap.Checked)
 
         If SimpanHasilRace(
-            CInt(cbRaceHasil.SelectedValue),
-            CInt(cbPembalapHasil.SelectedValue),
-            posisi,
-            txtGap.Text,
-            cbStatusFinish.Text,
-            chkFastestLap.Checked,
-            poin) Then
+        CInt(cbRaceHasil.SelectedValue),
+        CInt(cbPembalapHasil.SelectedValue),
+        posisi,
+        txtGap.Text,
+        cbStatusFinish.Text,
+        chkFastestLap.Checked,
+        poin) Then
 
             MessageBox.Show("Berhasil disimpan")
 
@@ -216,36 +231,40 @@ Public Class UC_HasilRaceAdmin
     End Sub
 
     Private Sub dgvHasilRace_CellClick(sender As Object,
-                                       e As DataGridViewCellEventArgs) _
-                                       Handles dgvHasilRace.CellClick
+                                   e As DataGridViewCellEventArgs) _
+                                   Handles dgvHasilRace.CellClick
 
         If e.RowIndex >= 0 Then
 
             Dim row = dgvHasilRace.Rows(e.RowIndex)
 
             selectedIdHasil =
-                CInt(row.Cells("id").Value)
+            CInt(row.Cells("id").Value)
 
             cbPembalapHasil.Text =
-                row.Cells("pembalap").Value.ToString()
+            row.Cells("pembalap").Value.ToString()
 
             txtTimHasil.Text =
-                row.Cells("namaTim").Value.ToString()
+            row.Cells("namaTim").Value.ToString()
 
             nudPosisi.Value =
-                CDec(row.Cells("posisiFinish").Value)
+            CDec(row.Cells("posisiFinish").Value)
 
             txtGap.Text =
-                row.Cells("gap").Value.ToString()
+            row.Cells("gap").Value.ToString()
 
             cbStatusFinish.Text =
-                row.Cells("statusFinish").Value.ToString()
+            row.Cells("statusFinish").Value.ToString()
 
             chkFastestLap.Checked =
-                CBool(row.Cells("fastestLap").Value)
+            CBool(row.Cells("fastestLap").Value)
 
             txtPoinHasil.Text =
-                row.Cells("poin").Value.ToString()
+            row.Cells("poin").Value.ToString()
+
+            btnSimpanHasil.Enabled = False
+            btnUbahHasil.Enabled = True
+            btnHapusHasil.Enabled = True
 
         End If
 
@@ -263,6 +282,10 @@ Public Class UC_HasilRaceAdmin
         UpdatePoin()
 
         selectedIdHasil = -1
+
+        btnSimpanHasil.Enabled = True
+        btnUbahHasil.Enabled = False
+        btnHapusHasil.Enabled = False
 
     End Sub
 

@@ -91,7 +91,7 @@ Partial Class UC_HasilRaceAdmin
         btnSimpanHasil.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         btnSimpanHasil.ForeColor = Color.White
         btnSimpanHasil.Location = New Point(15, 12)
-        btnSimpanHasil.Margin = New Padding(4, 4, 4, 4)
+        btnSimpanHasil.Margin = New Padding(4)
         btnSimpanHasil.Name = "btnSimpanHasil"
         btnSimpanHasil.Size = New Size(98, 38)
         btnSimpanHasil.TabIndex = 0
@@ -108,7 +108,7 @@ Partial Class UC_HasilRaceAdmin
         btnUbahHasil.Font = New Font("Segoe UI", 9F)
         btnUbahHasil.ForeColor = Color.White
         btnUbahHasil.Location = New Point(120, 12)
-        btnUbahHasil.Margin = New Padding(4, 4, 4, 4)
+        btnUbahHasil.Margin = New Padding(4)
         btnUbahHasil.Name = "btnUbahHasil"
         btnUbahHasil.Size = New Size(82, 38)
         btnUbahHasil.TabIndex = 1
@@ -125,7 +125,7 @@ Partial Class UC_HasilRaceAdmin
         btnHapusHasil.Font = New Font("Segoe UI", 9F)
         btnHapusHasil.ForeColor = Color.White
         btnHapusHasil.Location = New Point(210, 12)
-        btnHapusHasil.Margin = New Padding(4, 4, 4, 4)
+        btnHapusHasil.Margin = New Padding(4)
         btnHapusHasil.Name = "btnHapusHasil"
         btnHapusHasil.Size = New Size(82, 38)
         btnHapusHasil.TabIndex = 2
@@ -142,7 +142,7 @@ Partial Class UC_HasilRaceAdmin
         btnBatal.Font = New Font("Segoe UI", 9F)
         btnBatal.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(195))
         btnBatal.Location = New Point(300, 12)
-        btnBatal.Margin = New Padding(4, 4, 4, 4)
+        btnBatal.Margin = New Padding(4)
         btnBatal.Name = "btnBatal"
         btnBatal.Size = New Size(82, 38)
         btnBatal.TabIndex = 3
@@ -158,7 +158,7 @@ Partial Class UC_HasilRaceAdmin
         btnPrintHasil.Font = New Font("Segoe UI", 9F)
         btnPrintHasil.ForeColor = Color.White
         btnPrintHasil.Location = New Point(15, 58)
-        btnPrintHasil.Margin = New Padding(4, 4, 4, 4)
+        btnPrintHasil.Margin = New Padding(4)
         btnPrintHasil.Name = "btnPrintHasil"
         btnPrintHasil.Size = New Size(368, 38)
         btnPrintHasil.TabIndex = 4
@@ -170,6 +170,8 @@ Partial Class UC_HasilRaceAdmin
         ' 
         ' txtPoinHasil
         ' 
+        txtPoinHasil.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        txtPoinHasil.ForeColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         txtPoinHasil.Location = New Point(238, 356)
         txtPoinHasil.Margin = New Padding(2)
         txtPoinHasil.Name = "txtPoinHasil"
@@ -202,16 +204,18 @@ Partial Class UC_HasilRaceAdmin
         pnlInput.Controls.Add(pnlAction)
         pnlInput.Dock = DockStyle.Left
         pnlInput.Location = New Point(20, 15)
-        pnlInput.Margin = New Padding(4, 4, 4, 4)
+        pnlInput.Margin = New Padding(4)
         pnlInput.Name = "pnlInput"
         pnlInput.Size = New Size(450, 1061)
         pnlInput.TabIndex = 0
         ' 
         ' txtTimHasil
         ' 
+        txtTimHasil.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         txtTimHasil.Location = New Point(18, 274)
         txtTimHasil.Margin = New Padding(2)
         txtTimHasil.Name = "txtTimHasil"
+        txtTimHasil.ReadOnly = True
         txtTimHasil.Size = New Size(414, 31)
         txtTimHasil.TabIndex = 20
         ' 
@@ -220,7 +224,7 @@ Partial Class UC_HasilRaceAdmin
         pnlInputAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         pnlInputAccent.Dock = DockStyle.Top
         pnlInputAccent.Location = New Point(0, 0)
-        pnlInputAccent.Margin = New Padding(4, 4, 4, 4)
+        pnlInputAccent.Margin = New Padding(4)
         pnlInputAccent.Name = "pnlInputAccent"
         pnlInputAccent.Size = New Size(450, 4)
         pnlInputAccent.TabIndex = 0
@@ -257,7 +261,7 @@ Partial Class UC_HasilRaceAdmin
         cbRaceHasil.Font = New Font("Segoe UI", 10F)
         cbRaceHasil.ForeColor = Color.White
         cbRaceHasil.Location = New Point(18, 88)
-        cbRaceHasil.Margin = New Padding(4, 4, 4, 4)
+        cbRaceHasil.Margin = New Padding(4)
         cbRaceHasil.Name = "cbRaceHasil"
         cbRaceHasil.Size = New Size(414, 36)
         cbRaceHasil.TabIndex = 3
@@ -266,7 +270,7 @@ Partial Class UC_HasilRaceAdmin
         ' 
         pnlInputSep.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
         pnlInputSep.Location = New Point(18, 142)
-        pnlInputSep.Margin = New Padding(4, 4, 4, 4)
+        pnlInputSep.Margin = New Padding(4)
         pnlInputSep.Name = "pnlInputSep"
         pnlInputSep.Size = New Size(415, 1)
         pnlInputSep.TabIndex = 4
@@ -303,7 +307,7 @@ Partial Class UC_HasilRaceAdmin
         cbPembalapHasil.Font = New Font("Segoe UI", 10F)
         cbPembalapHasil.ForeColor = Color.White
         cbPembalapHasil.Location = New Point(18, 198)
-        cbPembalapHasil.Margin = New Padding(4, 4, 4, 4)
+        cbPembalapHasil.Margin = New Padding(4)
         cbPembalapHasil.Name = "cbPembalapHasil"
         cbPembalapHasil.Size = New Size(414, 36)
         cbPembalapHasil.TabIndex = 7
@@ -339,7 +343,7 @@ Partial Class UC_HasilRaceAdmin
         nudPosisi.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         nudPosisi.ForeColor = Color.White
         nudPosisi.Location = New Point(18, 350)
-        nudPosisi.Margin = New Padding(4, 4, 4, 4)
+        nudPosisi.Margin = New Padding(4)
         nudPosisi.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
         nudPosisi.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         nudPosisi.Name = "nudPosisi"
@@ -379,7 +383,7 @@ Partial Class UC_HasilRaceAdmin
         txtGap.Font = New Font("Segoe UI", 10F)
         txtGap.ForeColor = Color.White
         txtGap.Location = New Point(18, 432)
-        txtGap.Margin = New Padding(4, 4, 4, 4)
+        txtGap.Margin = New Padding(4)
         txtGap.Name = "txtGap"
         txtGap.PlaceholderText = "Contoh: +1.234s / WINNER"
         txtGap.Size = New Size(414, 34)
@@ -406,7 +410,7 @@ Partial Class UC_HasilRaceAdmin
         cbStatusFinish.ForeColor = Color.White
         cbStatusFinish.Items.AddRange(New Object() {"Finish", "DNF", "DNS", "DSQ", "Retired"})
         cbStatusFinish.Location = New Point(18, 510)
-        cbStatusFinish.Margin = New Padding(4, 4, 4, 4)
+        cbStatusFinish.Margin = New Padding(4)
         cbStatusFinish.Name = "cbStatusFinish"
         cbStatusFinish.Size = New Size(414, 36)
         cbStatusFinish.TabIndex = 17
@@ -417,7 +421,7 @@ Partial Class UC_HasilRaceAdmin
         chkFastestLap.Font = New Font("Segoe UI", 9F)
         chkFastestLap.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(215))
         chkFastestLap.Location = New Point(18, 562)
-        chkFastestLap.Margin = New Padding(4, 4, 4, 4)
+        chkFastestLap.Margin = New Padding(4)
         chkFastestLap.Name = "chkFastestLap"
         chkFastestLap.Size = New Size(250, 30)
         chkFastestLap.TabIndex = 18
@@ -434,7 +438,7 @@ Partial Class UC_HasilRaceAdmin
         pnlAction.Controls.Add(btnPrintHasil)
         pnlAction.Dock = DockStyle.Bottom
         pnlAction.Location = New Point(0, 951)
-        pnlAction.Margin = New Padding(4, 4, 4, 4)
+        pnlAction.Margin = New Padding(4)
         pnlAction.Name = "pnlAction"
         pnlAction.Padding = New Padding(15, 12, 15, 12)
         pnlAction.Size = New Size(450, 110)
@@ -447,7 +451,7 @@ Partial Class UC_HasilRaceAdmin
         txtSearch.Font = New Font("Segoe UI", 10F)
         txtSearch.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearch.Location = New Point(18, 82)
-        txtSearch.Margin = New Padding(4, 4, 4, 4)
+        txtSearch.Margin = New Padding(4)
         txtSearch.Name = "txtSearch"
         txtSearch.Size = New Size(1050, 34)
         txtSearch.TabIndex = 1
@@ -486,7 +490,7 @@ Partial Class UC_HasilRaceAdmin
         pnlGridHeader.Controls.Add(lblGridSub)
         pnlGridHeader.Dock = DockStyle.Top
         pnlGridHeader.Location = New Point(18, 15)
-        pnlGridHeader.Margin = New Padding(4, 4, 4, 4)
+        pnlGridHeader.Margin = New Padding(4)
         pnlGridHeader.Name = "pnlGridHeader"
         pnlGridHeader.Size = New Size(903, 58)
         pnlGridHeader.TabIndex = 0
@@ -499,7 +503,7 @@ Partial Class UC_HasilRaceAdmin
         pnlGrid.Controls.Add(dgvHasilRace)
         pnlGrid.Dock = DockStyle.Fill
         pnlGrid.Location = New Point(470, 15)
-        pnlGrid.Margin = New Padding(4, 4, 4, 4)
+        pnlGrid.Margin = New Padding(4)
         pnlGrid.Name = "pnlGrid"
         pnlGrid.Padding = New Padding(18, 15, 18, 15)
         pnlGrid.Size = New Size(939, 1061)
@@ -537,7 +541,7 @@ Partial Class UC_HasilRaceAdmin
         dgvHasilRace.EnableHeadersVisualStyles = False
         dgvHasilRace.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
         dgvHasilRace.Location = New Point(35, 145)
-        dgvHasilRace.Margin = New Padding(4, 4, 4, 4)
+        dgvHasilRace.Margin = New Padding(4)
         dgvHasilRace.Name = "dgvHasilRace"
         dgvHasilRace.ReadOnly = True
         dgvHasilRace.RowHeadersVisible = False
@@ -554,7 +558,7 @@ Partial Class UC_HasilRaceAdmin
         pnlContent.Controls.Add(pnlInput)
         pnlContent.Dock = DockStyle.Fill
         pnlContent.Location = New Point(0, 75)
-        pnlContent.Margin = New Padding(4, 4, 4, 4)
+        pnlContent.Margin = New Padding(4)
         pnlContent.Name = "pnlContent"
         pnlContent.Padding = New Padding(20, 15, 20, 15)
         pnlContent.Size = New Size(1429, 1091)
@@ -569,7 +573,7 @@ Partial Class UC_HasilRaceAdmin
         pnlHeader.Controls.Add(lblAdminBadge)
         pnlHeader.Dock = DockStyle.Top
         pnlHeader.Location = New Point(0, 0)
-        pnlHeader.Margin = New Padding(4, 4, 4, 4)
+        pnlHeader.Margin = New Padding(4)
         pnlHeader.Name = "pnlHeader"
         pnlHeader.Size = New Size(1429, 75)
         pnlHeader.TabIndex = 3
@@ -579,7 +583,7 @@ Partial Class UC_HasilRaceAdmin
         pnlHeaderAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         pnlHeaderAccent.Dock = DockStyle.Bottom
         pnlHeaderAccent.Location = New Point(0, 73)
-        pnlHeaderAccent.Margin = New Padding(4, 4, 4, 4)
+        pnlHeaderAccent.Margin = New Padding(4)
         pnlHeaderAccent.Name = "pnlHeaderAccent"
         pnlHeaderAccent.Size = New Size(1429, 2)
         pnlHeaderAccent.TabIndex = 0
