@@ -1,4 +1,5 @@
 CREATE DATABASE dbPosttestPemvis;
+DROP DATABASE dbPosttestPemvis;
 USE dbPosttestPemvis;
 
 CREATE TABLE TabelTim (

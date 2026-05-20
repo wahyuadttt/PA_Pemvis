@@ -1,3 +1,5 @@
+Imports System.Drawing.Printing
+
 Public Class UC_RaceAdmin
 
     Private selectedId As Integer = 0
@@ -175,14 +177,10 @@ Public Class UC_RaceAdmin
         Dim keyword As String = TextBox1.Text.Trim
 
         If keyword = "" Then
-
             TampilRace()
-
         Else
-
             DataGridView2.DataSource =
                 SearchRace(keyword)
-
             If DataGridView2.Columns.Contains("id") Then
                 DataGridView2.Columns("id").Visible = False
             End If
@@ -201,6 +199,80 @@ Public Class UC_RaceAdmin
 
     Private Sub txtPutaran_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPutaran.KeyPress
         HanyaAngka(e)
+    End Sub
+
+    Private Sub btnPrintRace_Click(sender As Object, e As EventArgs) Handles btnPrintRace.Click
+
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.WindowState = FormWindowState.Maximized
+
+        PrintPreviewDialog1.ShowDialog()
+
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
+        Dim fontHeader As New Font("Arial", 16, FontStyle.Bold)
+        Dim fontIsi As New Font("Arial", 10)
+        Dim brush As New SolidBrush(Color.Black)
+
+        Dim marginLeft As Integer = e.MarginBounds.Left
+        Dim y As Integer = 50
+
+        e.Graphics.DrawString(
+            "DATA RACE",
+            fontHeader,
+            brush,
+            marginLeft,
+            y)
+
+        y += 40
+
+        e.Graphics.DrawString("Nama Race", fontIsi, brush, marginLeft, y)
+        e.Graphics.DrawString("Lokasi", fontIsi, brush, marginLeft + 200, y)
+        e.Graphics.DrawString("Tanggal", fontIsi, brush, marginLeft + 400, y)
+        e.Graphics.DrawString("Putaran", fontIsi, brush, marginLeft + 550, y)
+
+        y += 25
+
+        e.Graphics.DrawLine(Pens.Black, marginLeft, y, marginLeft + 650, y)
+
+        y += 10
+
+        For Each row As DataGridViewRow In DataGridView2.Rows
+            If Not row.IsNewRow Then
+                e.Graphics.DrawString(
+                    row.Cells("namaRace").Value.ToString(),
+                    fontIsi,
+                    brush,
+                    marginLeft,
+                    y)
+
+                e.Graphics.DrawString(
+                    row.Cells("lokasi").Value.ToString(),
+                    fontIsi,
+                    brush,
+                    marginLeft + 200,
+                    y)
+
+                e.Graphics.DrawString(
+                    Convert.ToDateTime(
+                        row.Cells("tanggal").Value).ToString("dd/MM/yyyy"),
+                    fontIsi,
+                    brush,
+                    marginLeft + 400,
+                    y)
+
+                e.Graphics.DrawString(
+                    row.Cells("putaran").Value.ToString(),
+                    fontIsi,
+                    brush,
+                    marginLeft + 550,
+                    y)
+
+                y += 25
+            End If
+        Next
     End Sub
 
 End Class

@@ -23,6 +23,7 @@ Partial Class UC_RaceAdmin
         Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UC_RaceAdmin))
         pnlContent = New Panel()
         pnlGridRace = New Panel()
         TextBox1 = New TextBox()
@@ -49,6 +50,8 @@ Partial Class UC_RaceAdmin
         pnlHeaderAccent = New Panel()
         lblHeaderTitle = New Label()
         lblHeaderSub = New Label()
+        PrintPreviewDialog1 = New PrintPreviewDialog()
+        PrintDocument1 = New Printing.PrintDocument()
         pnlContent.SuspendLayout()
         pnlGridRace.SuspendLayout()
         CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
@@ -302,6 +305,7 @@ Partial Class UC_RaceAdmin
         txtPutaran.Font = New Font("Segoe UI", 10F)
         txtPutaran.ForeColor = Color.White
         txtPutaran.Location = New Point(14, 250)
+        txtPutaran.MaxLength = 2
         txtPutaran.Name = "txtPutaran"
         txtPutaran.Size = New Size(312, 30)
         txtPutaran.TabIndex = 4
@@ -364,7 +368,7 @@ Partial Class UC_RaceAdmin
         btnHapusRace.ForeColor = Color.FromArgb(CByte(255), CByte(100), CByte(100))
         btnHapusRace.Location = New Point(160, 10)
         btnHapusRace.Name = "btnHapusRace"
-        btnHapusRace.Size = New Size(62, 30)
+        btnHapusRace.Size = New Size(70, 30)
         btnHapusRace.TabIndex = 7
         btnHapusRace.Text = "HAPUS"
         btnHapusRace.UseVisualStyleBackColor = False
@@ -378,7 +382,7 @@ Partial Class UC_RaceAdmin
         btnBatalRace.FlatStyle = FlatStyle.Flat
         btnBatalRace.Font = New Font("Segoe UI", 9F)
         btnBatalRace.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(190))
-        btnBatalRace.Location = New Point(228, 10)
+        btnBatalRace.Location = New Point(236, 10)
         btnBatalRace.Name = "btnBatalRace"
         btnBatalRace.Size = New Size(62, 30)
         btnBatalRace.TabIndex = 8
@@ -395,7 +399,7 @@ Partial Class UC_RaceAdmin
         btnPrintRace.ForeColor = Color.White
         btnPrintRace.Location = New Point(12, 46)
         btnPrintRace.Name = "btnPrintRace"
-        btnPrintRace.Size = New Size(278, 30)
+        btnPrintRace.Size = New Size(286, 30)
         btnPrintRace.TabIndex = 9
         btnPrintRace.Text = "🖨  PRINT DOKUMEN"
         btnPrintRace.UseVisualStyleBackColor = False
@@ -444,6 +448,16 @@ Partial Class UC_RaceAdmin
         lblHeaderSub.Size = New Size(146, 19)
         lblHeaderSub.TabIndex = 2
         lblHeaderSub.Text = "Manajemen Data Race"
+        ' 
+        ' PrintPreviewDialog1
+        ' 
+        PrintPreviewDialog1.AutoScrollMargin = New Size(0, 0)
+        PrintPreviewDialog1.AutoScrollMinSize = New Size(0, 0)
+        PrintPreviewDialog1.ClientSize = New Size(400, 300)
+        PrintPreviewDialog1.Enabled = True
+        PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
+        PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        PrintPreviewDialog1.Visible = False
         ' 
         ' UC_RaceAdmin
         ' 
@@ -495,4 +509,6 @@ Partial Class UC_RaceAdmin
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

@@ -72,18 +72,29 @@ Public Class UC_HasilRaceAdmin
                                 fastestLap As Boolean) As Integer
 
         Dim poin As Integer = 0
-
         Select Case posisi
-            Case 1 : poin = 25
-            Case 2 : poin = 18
-            Case 3 : poin = 15
-            Case 4 : poin = 12
-            Case 5 : poin = 10
-            Case 6 : poin = 8
-            Case 7 : poin = 6
-            Case 8 : poin = 4
-            Case 9 : poin = 2
-            Case 10 : poin = 1
+            Case 1
+                poin = 25
+            Case 2
+                poin = 18
+            Case 3
+                poin = 15
+            Case 4
+                poin = 12
+            Case 5
+                poin = 10
+            Case 6
+                poin = 8
+            Case 7
+                poin = 6
+            Case 8
+                poin = 4
+            Case 9
+                poin = 2
+            Case 10
+                poin = 1
+            Case Else
+                poin = 0
         End Select
 
         If fastestLap And posisi <= 10 Then
@@ -230,9 +241,7 @@ Public Class UC_HasilRaceAdmin
 
     End Sub
 
-    Private Sub dgvHasilRace_CellClick(sender As Object,
-                                   e As DataGridViewCellEventArgs) _
-                                   Handles dgvHasilRace.CellClick
+    Private Sub dgvHasilRace_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvHasilRace.CellClick
 
         If e.RowIndex >= 0 Then
 
