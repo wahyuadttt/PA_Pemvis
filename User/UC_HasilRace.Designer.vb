@@ -64,10 +64,11 @@ Partial Class UC_HasilRace
         txtSearch.BorderStyle = BorderStyle.FixedSingle
         txtSearch.Font = New Font("Segoe UI", 10F)
         txtSearch.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
-        txtSearch.Location = New Point(14, 66)
+        txtSearch.Location = New Point(18, 82)
+        txtSearch.Margin = New Padding(4)
         txtSearch.Name = "txtSearch"
         txtSearch.PlaceholderText = "🔍  Cari pembalap / tim..."
-        txtSearch.Size = New Size(1405, 30)
+        txtSearch.Size = New Size(1756, 34)
         txtSearch.TabIndex = 1
         ' 
         ' dgvHasilRace
@@ -101,14 +102,15 @@ Partial Class UC_HasilRace
         dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle3
         dgvHasilRace.EnableHeadersVisualStyles = False
         dgvHasilRace.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
-        dgvHasilRace.Location = New Point(14, 102)
+        dgvHasilRace.Location = New Point(18, 128)
+        dgvHasilRace.Margin = New Padding(4)
         dgvHasilRace.Name = "dgvHasilRace"
         dgvHasilRace.ReadOnly = True
         dgvHasilRace.RowHeadersVisible = False
         dgvHasilRace.RowHeadersWidth = 51
         dgvHasilRace.RowTemplate.Height = 34
         dgvHasilRace.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvHasilRace.Size = New Size(1362, 567)
+        dgvHasilRace.Size = New Size(1702, 709)
         dgvHasilRace.TabIndex = 2
         ' 
         ' lblGridTitle
@@ -117,9 +119,10 @@ Partial Class UC_HasilRace
         lblGridTitle.BackColor = Color.Transparent
         lblGridTitle.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         lblGridTitle.ForeColor = Color.White
-        lblGridTitle.Location = New Point(10, 6)
+        lblGridTitle.Location = New Point(12, 8)
+        lblGridTitle.Margin = New Padding(4, 0, 4, 0)
         lblGridTitle.Name = "lblGridTitle"
-        lblGridTitle.Size = New Size(159, 25)
+        lblGridTitle.Size = New Size(181, 30)
         lblGridTitle.TabIndex = 0
         lblGridTitle.Text = "HASIL BALAPAN"
         ' 
@@ -129,9 +132,10 @@ Partial Class UC_HasilRace
         lblGridSub.BackColor = Color.Transparent
         lblGridSub.Font = New Font("Segoe UI", 8F)
         lblGridSub.ForeColor = Color.FromArgb(CByte(120), CByte(120), CByte(135))
-        lblGridSub.Location = New Point(12, 28)
+        lblGridSub.Location = New Point(15, 35)
+        lblGridSub.Margin = New Padding(4, 0, 4, 0)
         lblGridSub.Name = "lblGridSub"
-        lblGridSub.Size = New Size(245, 19)
+        lblGridSub.Size = New Size(280, 21)
         lblGridSub.TabIndex = 1
         lblGridSub.Text = "Pilih sirkuit di kiri untuk memfilter data"
         ' 
@@ -142,18 +146,21 @@ Partial Class UC_HasilRace
         pnlGridHeader.Controls.Add(lblGridTitle)
         pnlGridHeader.Controls.Add(lblGridSub)
         pnlGridHeader.Dock = DockStyle.Top
-        pnlGridHeader.Location = New Point(14, 12)
+        pnlGridHeader.Location = New Point(18, 15)
+        pnlGridHeader.Margin = New Padding(4)
         pnlGridHeader.Name = "pnlGridHeader"
-        pnlGridHeader.Size = New Size(1365, 46)
+        pnlGridHeader.Size = New Size(1705, 58)
         pnlGridHeader.TabIndex = 0
         ' 
         ' cbPilihRace
         ' 
+        cbPilihRace.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        cbPilihRace.ForeColor = SystemColors.Window
         cbPilihRace.FormattingEnabled = True
-        cbPilihRace.Location = New Point(383, 7)
+        cbPilihRace.Location = New Point(514, 9)
         cbPilihRace.Margin = New Padding(2)
         cbPilihRace.Name = "cbPilihRace"
-        cbPilihRace.Size = New Size(146, 28)
+        cbPilihRace.Size = New Size(182, 33)
         cbPilihRace.TabIndex = 2
         ' 
         ' pnlGrid
@@ -163,10 +170,11 @@ Partial Class UC_HasilRace
         pnlGrid.Controls.Add(txtSearch)
         pnlGrid.Controls.Add(dgvHasilRace)
         pnlGrid.Dock = DockStyle.Fill
-        pnlGrid.Location = New Point(16, 12)
+        pnlGrid.Location = New Point(20, 15)
+        pnlGrid.Margin = New Padding(4)
         pnlGrid.Name = "pnlGrid"
-        pnlGrid.Padding = New Padding(14, 12, 14, 12)
-        pnlGrid.Size = New Size(1393, 684)
+        pnlGrid.Padding = New Padding(18, 15, 18, 15)
+        pnlGrid.Size = New Size(1741, 855)
         pnlGrid.TabIndex = 1
         ' 
         ' pnlContent
@@ -174,10 +182,11 @@ Partial Class UC_HasilRace
         pnlContent.BackColor = Color.FromArgb(CByte(26), CByte(26), CByte(36))
         pnlContent.Controls.Add(pnlGrid)
         pnlContent.Dock = DockStyle.Fill
-        pnlContent.Location = New Point(20, 75)
+        pnlContent.Location = New Point(25, 94)
+        pnlContent.Margin = New Padding(4)
         pnlContent.Name = "pnlContent"
-        pnlContent.Padding = New Padding(16, 12, 16, 12)
-        pnlContent.Size = New Size(1425, 708)
+        pnlContent.Padding = New Padding(20, 15, 20, 15)
+        pnlContent.Size = New Size(1781, 885)
         pnlContent.TabIndex = 5
         ' 
         ' lblHeaderSub
@@ -186,9 +195,10 @@ Partial Class UC_HasilRace
         lblHeaderSub.BackColor = Color.Transparent
         lblHeaderSub.Font = New Font("Segoe UI", 8F)
         lblHeaderSub.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(190))
-        lblHeaderSub.Location = New Point(17, 38)
+        lblHeaderSub.Location = New Point(21, 48)
+        lblHeaderSub.Margin = New Padding(4, 0, 4, 0)
         lblHeaderSub.Name = "lblHeaderSub"
-        lblHeaderSub.Size = New Size(147, 19)
+        lblHeaderSub.Size = New Size(169, 21)
         lblHeaderSub.TabIndex = 2
         lblHeaderSub.Text = "Tampilan Hasil Balapan"
         ' 
@@ -198,9 +208,10 @@ Partial Class UC_HasilRace
         lblHeaderTitle.BackColor = Color.Transparent
         lblHeaderTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         lblHeaderTitle.ForeColor = Color.White
-        lblHeaderTitle.Location = New Point(15, 3)
+        lblHeaderTitle.Location = New Point(19, 4)
+        lblHeaderTitle.Margin = New Padding(4, 0, 4, 0)
         lblHeaderTitle.Name = "lblHeaderTitle"
-        lblHeaderTitle.Size = New Size(324, 37)
+        lblHeaderTitle.Size = New Size(388, 45)
         lblHeaderTitle.TabIndex = 1
         lblHeaderTitle.Text = "F1 RACE MANAGEMENT"
         ' 
@@ -208,9 +219,10 @@ Partial Class UC_HasilRace
         ' 
         pnlHeaderAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         pnlHeaderAccent.Dock = DockStyle.Bottom
-        pnlHeaderAccent.Location = New Point(0, 58)
+        pnlHeaderAccent.Location = New Point(0, 73)
+        pnlHeaderAccent.Margin = New Padding(4)
         pnlHeaderAccent.Name = "pnlHeaderAccent"
-        pnlHeaderAccent.Size = New Size(1425, 2)
+        pnlHeaderAccent.Size = New Size(1781, 2)
         pnlHeaderAccent.TabIndex = 0
         ' 
         ' lblBadge
@@ -218,9 +230,10 @@ Partial Class UC_HasilRace
         lblBadge.BackColor = Color.FromArgb(CByte(15), CByte(40), CByte(15))
         lblBadge.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
         lblBadge.ForeColor = Color.FromArgb(CByte(80), CByte(210), CByte(80))
-        lblBadge.Location = New Point(345, 12)
+        lblBadge.Location = New Point(431, 15)
+        lblBadge.Margin = New Padding(4, 0, 4, 0)
         lblBadge.Name = "lblBadge"
-        lblBadge.Size = New Size(90, 26)
+        lblBadge.Size = New Size(112, 32)
         lblBadge.TabIndex = 5
         lblBadge.Text = "● READ ONLY"
         lblBadge.TextAlign = ContentAlignment.MiddleCenter
@@ -233,20 +246,22 @@ Partial Class UC_HasilRace
         pnlHeader.Controls.Add(lblHeaderTitle)
         pnlHeader.Controls.Add(lblHeaderSub)
         pnlHeader.Dock = DockStyle.Top
-        pnlHeader.Location = New Point(20, 15)
+        pnlHeader.Location = New Point(25, 19)
+        pnlHeader.Margin = New Padding(4)
         pnlHeader.Name = "pnlHeader"
-        pnlHeader.Size = New Size(1425, 60)
+        pnlHeader.Size = New Size(1781, 75)
         pnlHeader.TabIndex = 3
         ' 
         ' UC_HasilRace
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(pnlContent)
         Controls.Add(pnlHeader)
+        Margin = New Padding(4)
         Name = "UC_HasilRace"
-        Padding = New Padding(20, 15, 20, 15)
-        Size = New Size(1465, 798)
+        Padding = New Padding(25, 19, 25, 19)
+        Size = New Size(1831, 998)
         CType(dgvHasilRace, ComponentModel.ISupportInitialize).EndInit()
         pnlGridHeader.ResumeLayout(False)
         pnlGridHeader.PerformLayout()
