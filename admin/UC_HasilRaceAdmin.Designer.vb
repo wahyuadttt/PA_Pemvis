@@ -19,9 +19,9 @@ Partial Class UC_HasilRaceAdmin
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UC_HasilRaceAdmin))
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         PrintPreviewDialog1 = New PrintPreviewDialog()
         btnSimpanHasil = New Button()
         btnUbahHasil = New Button()
@@ -432,7 +432,7 @@ Partial Class UC_HasilRaceAdmin
         txtSearch.Location = New Point(14, 66)
         txtSearch.Name = "txtSearch"
         txtSearch.PlaceholderText = "🔍  Cari pembalap / tim..."
-        txtSearch.Size = New Size(723, 30)
+        txtSearch.Size = New Size(704, 30)
         txtSearch.TabIndex = 1
         ' 
         ' lblGridTitle
@@ -485,33 +485,33 @@ Partial Class UC_HasilRaceAdmin
         ' 
         ' dgvHasilRace
         ' 
-        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        dgvHasilRace.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        dgvHasilRace.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         dgvHasilRace.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvHasilRace.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvHasilRace.BackgroundColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
         dgvHasilRace.BorderStyle = BorderStyle.None
         dgvHasilRace.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dgvHasilRace.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        DataGridViewCellStyle5.ForeColor = Color.White
-        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle5.SelectionForeColor = Color.White
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        dgvHasilRace.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = Color.White
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle2.SelectionForeColor = Color.White
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgvHasilRace.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvHasilRace.ColumnHeadersHeight = 36
         dgvHasilRace.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
-        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle6.ForeColor = Color.White
-        DataGridViewCellStyle6.Padding = New Padding(4)
-        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        DataGridViewCellStyle6.SelectionForeColor = Color.White
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle3.ForeColor = Color.White
+        DataGridViewCellStyle3.Padding = New Padding(4)
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle3
         dgvHasilRace.EnableHeadersVisualStyles = False
         dgvHasilRace.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
         dgvHasilRace.Location = New Point(14, 114)

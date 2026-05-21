@@ -474,4 +474,7 @@ Public Class UC_HasilRaceAdmin
 
     End Sub
 
+    Private Sub dgvHasilRace_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvHasilRace.CellContentClick
+
+    End Sub
 End Class

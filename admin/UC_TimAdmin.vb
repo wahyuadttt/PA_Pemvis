@@ -340,5 +340,7 @@ Public Class UC_TimAdmin
         HanyaHuruf(e)
     End Sub
 
+    Private Sub dgvTim_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTim.CellContentClick
 
+    End Sub
 End Class

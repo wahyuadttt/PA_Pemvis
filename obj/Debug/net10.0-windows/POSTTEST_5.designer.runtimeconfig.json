@@ -12,8 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Inspiron 14\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Inspiron 14\\.nuget\\packages"
+      "C:\\Users\\Lenovo-GK\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Lenovo-GK\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
