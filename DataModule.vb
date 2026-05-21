@@ -399,6 +399,49 @@ Module DataModule
         Return dt
     End Function
 
+    Public Function SearchHasilRace(keyword As String,
+                                idRace As Integer) As DataTable
+
+        Dim dt As New DataTable()
+
+        Try
+
+            Dim query As String =
+            "SELECT h.id, p.nama AS pembalap, t.namaTim, " &
+            "h.posisiFinish, h.gap, h.statusFinish, " &
+            "h.fastestLap, h.poin " &
+            "FROM TabelHasilRace h " &
+            "INNER JOIN TabelPembalap p ON h.idPembalap = p.id " &
+            "INNER JOIN TabelTim t ON p.idTim = t.id " &
+            "WHERE h.idRace = @idRace AND (" &
+            "p.nama LIKE @kw OR " &
+            "t.namaTim LIKE @kw OR " &
+            "h.statusFinish LIKE @kw)" &
+            "ORDER BY h.posisiFinish ASC"
+
+            Using conn As MySqlConnection = GetConnection()
+
+                Using da As New MySqlDataAdapter(query, conn)
+
+                    da.SelectCommand.Parameters.AddWithValue(
+                    "@idRace", idRace)
+
+                    da.SelectCommand.Parameters.AddWithValue(
+                    "@kw", "%" & keyword & "%")
+
+                    da.Fill(dt)
+
+                End Using
+            End Using
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+        Return dt
+
+    End Function
+
     Public Function SimpanRace(
     namaRace As String,
     lokasi As String,

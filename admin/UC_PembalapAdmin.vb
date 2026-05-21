@@ -41,6 +41,8 @@ Public Class UC_PembalapAdmin
             dgvPembalap.DataSource = SearchPembalap(keyword)
         End If
 
+        dgvPembalap.AllowUserToAddRows = False
+
         dgvPembalap.RowTemplate.Height = 80
 
         If dgvPembalap.Columns.Contains("id") Then

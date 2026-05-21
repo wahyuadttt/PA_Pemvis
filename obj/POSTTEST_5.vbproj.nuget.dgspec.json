@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omenm\\Documents\\semester-4\\PA_Pemvis\\POSTTEST_5.vbproj": {}
+    "D:\\Kuliah\\Praktikum\\PA_PemvisFinalKali\\POSTTEST_5.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\omenm\\Documents\\semester-4\\PA_Pemvis\\POSTTEST_5.vbproj": {
+    "D:\\Kuliah\\Praktikum\\PA_PemvisFinalKali\\POSTTEST_5.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omenm\\Documents\\semester-4\\PA_Pemvis\\POSTTEST_5.vbproj",
+        "projectUniqueName": "D:\\Kuliah\\Praktikum\\PA_PemvisFinalKali\\POSTTEST_5.vbproj",
         "projectName": "POSTTEST_5",
-        "projectPath": "C:\\Users\\omenm\\Documents\\semester-4\\PA_Pemvis\\POSTTEST_5.vbproj",
-        "packagesPath": "C:\\Users\\omenm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omenm\\Documents\\semester-4\\PA_Pemvis\\obj\\",
+        "projectPath": "D:\\Kuliah\\Praktikum\\PA_PemvisFinalKali\\POSTTEST_5.vbproj",
+        "packagesPath": "C:\\Users\\Inspiron 14\\.nuget\\packages\\",
+        "outputPath": "D:\\Kuliah\\Praktikum\\PA_PemvisFinalKali\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\omenm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Inspiron 14\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,7 +41,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0-windows": {
@@ -72,7 +72,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

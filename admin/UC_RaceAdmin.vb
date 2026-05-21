@@ -15,6 +15,8 @@ Public Class UC_RaceAdmin
         DataGridView2.DataSource = Nothing
         DataGridView2.DataSource = GetAllRace()
 
+        DataGridView2.AllowUserToAddRows = False
+
         DataGridView2.ReadOnly = True
         DataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         DataGridView2.MultiSelect = False

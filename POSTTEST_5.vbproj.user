@@ -23,9 +23,6 @@
     <Compile Update="LoginAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="User\UC_FormRaceUser.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="User\UC_HasilRace.vb">
       <SubType>UserControl</SubType>
     </Compile>

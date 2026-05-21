@@ -33,11 +33,66 @@
                 GetHasilRaceByRace(
                     CInt(cbPilihRace.SelectedValue))
 
+            dgvHasilRace.AllowUserToAddRows = False
             dgvHasilRace.ReadOnly = True
 
             If dgvHasilRace.Columns.Contains("id") Then
                 dgvHasilRace.Columns("id").Visible = False
             End If
+
+            If dgvHasilRace.Columns.Contains("posisiFinish") Then
+                dgvHasilRace.Columns("posisiFinish").HeaderText = "Posisi"
+            End If
+
+            If dgvHasilRace.Columns.Contains("pembalap") Then
+                dgvHasilRace.Columns("pembalap").HeaderText = "Nama"
+            End If
+
+            If dgvHasilRace.Columns.Contains("namaTim") Then
+                dgvHasilRace.Columns("namaTim").HeaderText = "Tim"
+            End If
+
+            If dgvHasilRace.Columns.Contains("gap") Then
+                dgvHasilRace.Columns("gap").HeaderText = "Gap"
+            End If
+
+            If dgvHasilRace.Columns.Contains("statusFinish") Then
+                dgvHasilRace.Columns("statusFinish").HeaderText = "Status"
+            End If
+
+            If dgvHasilRace.Columns.Contains("fastestLap") Then
+                dgvHasilRace.Columns("fastestLap").HeaderText = "Fastest Lap"
+            End If
+
+            If dgvHasilRace.Columns.Contains("poin") Then
+                dgvHasilRace.Columns("poin").HeaderText = "Poin"
+            End If
+
+        End If
+
+    End Sub
+
+    Private Sub txtSearch_TextChanged(sender As Object,
+                                       e As EventArgs) _
+                                       Handles txtSearch.TextChanged
+
+        If cbPilihRace.SelectedValue Is Nothing Then Exit Sub
+
+        Dim idRace As Integer =
+            CInt(cbPilihRace.SelectedValue)
+
+        Dim keyword As String =
+            txtSearch.Text.Trim()
+
+        If keyword = "" Then
+
+            dgvHasilRace.DataSource =
+                GetHasilRaceByRace(idRace)
+
+        Else
+
+            dgvHasilRace.DataSource =
+                SearchHasilRace(keyword, idRace)
 
         End If
 

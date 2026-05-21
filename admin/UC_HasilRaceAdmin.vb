@@ -58,16 +58,38 @@ Public Class UC_HasilRaceAdmin
 
         End If
 
+        dgvHasilRace.AllowUserToAddRows = False
+
         If dgvHasilRace.Columns.Contains("id") Then
             dgvHasilRace.Columns("id").Visible = False
         End If
 
-        If dgvHasilRace.Columns.Contains("idRace") Then
-            dgvHasilRace.Columns("idRace").Visible = False
+        If dgvHasilRace.Columns.Contains("posisiFinish") Then
+            dgvHasilRace.Columns("posisiFinish").HeaderText = "Posisi"
         End If
 
-        If dgvHasilRace.Columns.Contains("idPembalap") Then
-            dgvHasilRace.Columns("idPembalap").Visible = False
+        If dgvHasilRace.Columns.Contains("pembalap") Then
+            dgvHasilRace.Columns("pembalap").HeaderText = "Nama"
+        End If
+
+        If dgvHasilRace.Columns.Contains("namaTim") Then
+            dgvHasilRace.Columns("namaTim").HeaderText = "Tim"
+        End If
+
+        If dgvHasilRace.Columns.Contains("gap") Then
+            dgvHasilRace.Columns("gap").HeaderText = "Gap"
+        End If
+
+        If dgvHasilRace.Columns.Contains("statusFinish") Then
+            dgvHasilRace.Columns("statusFinish").HeaderText = "Status"
+        End If
+
+        If dgvHasilRace.Columns.Contains("fastestLap") Then
+            dgvHasilRace.Columns("fastestLap").HeaderText = "Fastest Lap"
+        End If
+
+        If dgvHasilRace.Columns.Contains("poin") Then
+            dgvHasilRace.Columns("poin").HeaderText = "Poin"
         End If
 
     End Sub
@@ -175,26 +197,36 @@ Public Class UC_HasilRaceAdmin
     End Sub
 
     Private Sub btnSimpanHasil_Click(sender As Object,
-                                 e As EventArgs) _
-                                 Handles btnSimpanHasil.Click
+                             e As EventArgs) _
+                             Handles btnSimpanHasil.Click
 
         If Not ValidasiHasilRace() Then Exit Sub
 
         If CekPembalapSudahAdaDiRace(
         CInt(cbRaceHasil.SelectedValue),
         CInt(cbPembalapHasil.SelectedValue)) Then
-
-            MessageBox.Show(
-            "Pembalap sudah memiliki hasil pada race ini.")
-
+            MessageBox.Show("Pembalap sudah memiliki hasil pada race ini.",
+            "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
+        End If
 
+        If CekPosisiSudahAda(
+        CInt(cbRaceHasil.SelectedValue),
+        CInt(nudPosisi.Value)) Then
+            MessageBox.Show("Posisi " & nudPosisi.Value & " sudah dipakai pembalap lain!",
+            "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        If chkFastestLap.Checked AndAlso
+        CekFastestLapSudahAda(CInt(cbRaceHasil.SelectedValue)) Then
+            MessageBox.Show("Fastest lap sudah dimiliki pembalap lain di race ini!",
+            "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
         End If
 
         Dim posisi As Integer = CInt(nudPosisi.Value)
-
-        Dim poin As Integer =
-        HitungPoin(posisi, chkFastestLap.Checked)
+        Dim poin As Integer = HitungPoin(posisi, chkFastestLap.Checked)
 
         If SimpanHasilRace(
         CInt(cbRaceHasil.SelectedValue),
@@ -204,47 +236,57 @@ Public Class UC_HasilRaceAdmin
         cbStatusFinish.Text,
         chkFastestLap.Checked,
         poin) Then
-
             MessageBox.Show("Berhasil disimpan")
-
             TampilHasil()
             KosongHasil()
-
         End If
 
     End Sub
 
     Private Sub btnUbahHasil_Click(sender As Object,
-                                   e As EventArgs) _
-                                   Handles btnUbahHasil.Click
-
-        If Not ValidasiHasilRace() Then Exit Sub
+                               e As EventArgs) _
+                               Handles btnUbahHasil.Click
 
         If selectedIdHasil = -1 Then
             MessageBox.Show("Pilih data")
             Exit Sub
         End If
 
-        Dim posisi As Integer = CInt(nudPosisi.Value)
+        If Not ValidasiHasilRace() Then Exit Sub
 
-        Dim poin As Integer =
-            HitungPoin(posisi, chkFastestLap.Checked)
+        If CekPosisiSudahAda(
+        CInt(cbRaceHasil.SelectedValue),
+        CInt(nudPosisi.Value),
+        selectedIdHasil) Then  ' ← excludeId agar tidak bentrok dengan diri sendiri
+            MessageBox.Show("Posisi " & nudPosisi.Value & " sudah dipakai pembalap lain!",
+            "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        If chkFastestLap.Checked AndAlso
+        CekFastestLapSudahAda(
+            CInt(cbRaceHasil.SelectedValue),
+            selectedIdHasil) Then
+            MessageBox.Show("Fastest lap sudah dimiliki pembalap lain di race ini!",
+            "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Dim posisi As Integer = CInt(nudPosisi.Value)
+        Dim poin As Integer = HitungPoin(posisi, chkFastestLap.Checked)
 
         If UbahHasilRace(
-            selectedIdHasil,
-            CInt(cbRaceHasil.SelectedValue),
-            CInt(cbPembalapHasil.SelectedValue),
-            posisi,
-            txtGap.Text,
-            cbStatusFinish.Text,
-            chkFastestLap.Checked,
-            poin) Then
-
+        selectedIdHasil,
+        CInt(cbRaceHasil.SelectedValue),
+        CInt(cbPembalapHasil.SelectedValue),
+        posisi,
+        txtGap.Text,
+        cbStatusFinish.Text,
+        chkFastestLap.Checked,
+        poin) Then
             MessageBox.Show("Data berhasil diubah")
-
             TampilHasil()
             KosongHasil()
-
         End If
 
     End Sub
@@ -405,6 +447,30 @@ Public Class UC_HasilRaceAdmin
             End If
 
         Next
+
+    End Sub
+
+    Private Sub txtSearch_TextChanged(sender As Object,
+                                   e As EventArgs) _
+                                   Handles txtSearch.TextChanged
+
+        Dim keyword As String =
+        txtSearch.Text.Trim()
+
+        Dim idRace As Integer =
+        CInt(cbRaceHasil.SelectedValue)
+
+        If keyword = "" Then
+
+            dgvHasilRace.DataSource =
+            GetHasilRaceByRace(idRace)
+
+        Else
+
+            dgvHasilRace.DataSource =
+            SearchHasilRace(keyword, idRace)
+
+        End If
 
     End Sub
 

@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\omenm\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\omenm\\.nuget\\packages"
+      "C:\\Users\\Inspiron 14\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Inspiron 14\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,

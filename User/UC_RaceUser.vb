@@ -13,6 +13,8 @@ Public Class UC_RaceUser
         dgvRace.DataSource = Nothing
         dgvRace.DataSource = GetAllRace()
 
+        dgvRace.AllowUserToAddRows = False
+
         dgvRace.ReadOnly = True
 
         If dgvRace.Columns.Contains("id") Then

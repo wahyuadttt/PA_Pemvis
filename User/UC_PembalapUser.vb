@@ -13,6 +13,7 @@ Public Class UC_PembalapUser
         dgvPembalap.DataSource = Nothing
         dgvPembalap.DataSource = GetAllPembalap()
 
+        dgvPembalap.AllowUserToAddRows = False
         dgvPembalap.RowTemplate.Height = 80
 
         If dgvPembalap.Columns.Contains("id") Then

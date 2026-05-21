@@ -1,4 +1,6 @@
-﻿Module ValidationModule
+﻿Imports MySqlConnector
+
+Module ValidationModule
 
     Public Sub HanyaHuruf(e As KeyPressEventArgs)
         If Char.IsLetter(e.KeyChar) OrElse Char.IsWhiteSpace(e.KeyChar) OrElse Char.IsControl(e.KeyChar) Then
@@ -48,6 +50,49 @@
 
     Public Function IsEnterKey(e As KeyPressEventArgs) As Boolean
         Return e.KeyChar = ChrW(13)
+    End Function
+
+    Public Function CekPosisiSudahAda(idRace As Integer, posisi As Integer, Optional excludeId As Integer = -1) As Boolean
+        Dim query As String
+
+        If excludeId = -1 Then
+            query = "SELECT COUNT(*) FROM TabelHasilRace WHERE idRace = @idRace AND posisiFinish = @posisi"
+        Else
+            query = "SELECT COUNT(*) FROM TabelHasilRace WHERE idRace = @idRace AND posisiFinish = @posisi AND id <> @excludeId"
+        End If
+
+        Using conn As MySqlConnection = GetConnection()
+            conn.Open()
+            Using cmd As New MySqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@idRace", idRace)
+                cmd.Parameters.AddWithValue("@posisi", posisi)
+                If excludeId <> -1 Then
+                    cmd.Parameters.AddWithValue("@excludeId", excludeId)
+                End If
+                Return CInt(cmd.ExecuteScalar()) > 0
+            End Using
+        End Using
+    End Function
+
+    Public Function CekFastestLapSudahAda(idRace As Integer, Optional excludeId As Integer = -1) As Boolean
+        Dim query As String
+
+        If excludeId = -1 Then
+            query = "SELECT COUNT(*) FROM TabelHasilRace WHERE idRace = @idRace AND fastestLap = 1"
+        Else
+            query = "SELECT COUNT(*) FROM TabelHasilRace WHERE idRace = @idRace AND fastestLap = 1 AND id <> @excludeId"
+        End If
+
+        Using conn As MySqlConnection = GetConnection()
+            conn.Open()
+            Using cmd As New MySqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@idRace", idRace)
+                If excludeId <> -1 Then
+                    cmd.Parameters.AddWithValue("@excludeId", excludeId)
+                End If
+                Return CInt(cmd.ExecuteScalar()) > 0
+            End Using
+        End Using
     End Function
 
 End Module

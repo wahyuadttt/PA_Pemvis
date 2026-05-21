@@ -9,6 +9,8 @@ Public Class UC_Klasemen
         dgvKlasemen.DataSource = Nothing
         dgvKlasemen.DataSource = GetKlasemenPembalap()
 
+        dgvKlasemen.AllowUserToAddRows = False
+
         If dgvKlasemen.Columns.Contains("nama") Then
             dgvKlasemen.Columns("nama").HeaderText = "Pembalap"
         End If

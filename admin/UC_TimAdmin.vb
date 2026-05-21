@@ -22,6 +22,8 @@ Public Class UC_TimAdmin
             dgvTim.DataSource = SearchTim(keyword)
         End If
 
+        dgvTim.AllowUserToAddRows = False
+
         dgvTim.RowTemplate.Height = 80
 
         If dgvTim.Columns.Contains("id") Then
