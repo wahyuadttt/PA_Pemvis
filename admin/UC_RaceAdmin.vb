@@ -59,7 +59,26 @@ Public Class UC_RaceAdmin
 
     End Sub
 
+    Private Function ValidasiRace() As Boolean
+
+        ErrorProvider1.Clear()
+
+        Dim namaValid As Boolean =
+            ValidasiTextBox(ErrorProvider1, txtNamaRace, "Tidak boleh kosong")
+
+        Dim lokasiValid As Boolean =
+            ValidasiTextBox(ErrorProvider1, txtLokasi, "Tidak boleh kosong")
+
+        Dim putaranValid As Boolean =
+            ValidasiTextBox(ErrorProvider1, txtPutaran, "Tidak boleh kosong")
+
+        Return namaValid And lokasiValid And putaranValid
+
+    End Function
+
     Private Sub btnSimpanRace_Click(sender As Object, e As EventArgs) Handles btnSimpanRace.Click
+
+        If Not ValidasiRace() Then Exit Sub
 
         If selectedId <> 0 Then
             MessageBox.Show(
@@ -90,6 +109,8 @@ Public Class UC_RaceAdmin
     End Sub
 
     Private Sub btnUbahRace_Click(sender As Object, e As EventArgs) Handles btnUbahRace.Click
+
+        If Not ValidasiRace() Then Exit Sub
 
         If selectedId = 0 Then
             MessageBox.Show("Pilih data yang ingin diubah.")

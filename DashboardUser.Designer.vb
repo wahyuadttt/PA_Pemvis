@@ -62,7 +62,7 @@ Partial Class DashboardUser
         btnNavAdminMode.FlatAppearance.BorderSize = 0
         btnNavAdminMode.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(80), CByte(20), CByte(16))
         btnNavAdminMode.FlatStyle = FlatStyle.Flat
-        btnNavAdminMode.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        btnNavAdminMode.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         btnNavAdminMode.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         btnNavAdminMode.Location = New Point(14, 329)
         btnNavAdminMode.Name = "btnNavAdminMode"
@@ -86,7 +86,7 @@ Partial Class DashboardUser
         ' 
         lblLogoMark.AutoSize = True
         lblLogoMark.BackColor = Color.Transparent
-        lblLogoMark.Font = New Font("Segoe UI", 13.0F, FontStyle.Bold)
+        lblLogoMark.Font = New Font("Segoe UI", 13F, FontStyle.Bold)
         lblLogoMark.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         lblLogoMark.Location = New Point(14, 20)
         lblLogoMark.Name = "lblLogoMark"
@@ -113,7 +113,7 @@ Partial Class DashboardUser
         btnNavPembalap.FlatAppearance.BorderSize = 0
         btnNavPembalap.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
         btnNavPembalap.FlatStyle = FlatStyle.Flat
-        btnNavPembalap.Font = New Font("Segoe UI", 10.0F)
+        btnNavPembalap.Font = New Font("Segoe UI", 10F)
         btnNavPembalap.ForeColor = Color.White
         btnNavPembalap.Location = New Point(0, 80)
         btnNavPembalap.Name = "btnNavPembalap"
@@ -130,7 +130,7 @@ Partial Class DashboardUser
         btnNavTim.FlatAppearance.BorderSize = 0
         btnNavTim.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
         btnNavTim.FlatStyle = FlatStyle.Flat
-        btnNavTim.Font = New Font("Segoe UI", 10.0F)
+        btnNavTim.Font = New Font("Segoe UI", 10F)
         btnNavTim.ForeColor = Color.White
         btnNavTim.Location = New Point(0, 121)
         btnNavTim.Name = "btnNavTim"
@@ -147,7 +147,7 @@ Partial Class DashboardUser
         btnNavRace.FlatAppearance.BorderSize = 0
         btnNavRace.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
         btnNavRace.FlatStyle = FlatStyle.Flat
-        btnNavRace.Font = New Font("Segoe UI", 10.0F)
+        btnNavRace.Font = New Font("Segoe UI", 10F)
         btnNavRace.ForeColor = Color.White
         btnNavRace.Location = New Point(0, 162)
         btnNavRace.Name = "btnNavRace"
@@ -164,7 +164,7 @@ Partial Class DashboardUser
         btnNavHasil.FlatAppearance.BorderSize = 0
         btnNavHasil.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
         btnNavHasil.FlatStyle = FlatStyle.Flat
-        btnNavHasil.Font = New Font("Segoe UI", 10.0F)
+        btnNavHasil.Font = New Font("Segoe UI", 10F)
         btnNavHasil.ForeColor = Color.White
         btnNavHasil.Location = New Point(0, 203)
         btnNavHasil.Name = "btnNavHasil"
@@ -189,7 +189,7 @@ Partial Class DashboardUser
         btnNavKlasemen.FlatAppearance.BorderSize = 0
         btnNavKlasemen.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(70), CByte(18), CByte(14))
         btnNavKlasemen.FlatStyle = FlatStyle.Flat
-        btnNavKlasemen.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        btnNavKlasemen.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         btnNavKlasemen.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         btnNavKlasemen.Location = New Point(14, 274)
         btnNavKlasemen.Name = "btnNavKlasemen"
@@ -241,10 +241,11 @@ Partial Class DashboardUser
         ' 
         ' DashboardUser
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
         ClientSize = New Size(1280, 800)
+        ControlBox = False
         Controls.Add(pnlContent)
         Controls.Add(pnlSidebar)
         MinimumSize = New Size(1024, 700)

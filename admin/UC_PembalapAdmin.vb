@@ -10,6 +10,8 @@ Public Class UC_PembalapAdmin
         MuatComboBoxTim()
         TampilPembalap()
 
+        cbTim.SelectedIndex = -1
+
         btnUbahPembalap.Enabled = False
         btnHapusPembalap.Enabled = False
     End Sub
@@ -114,12 +116,13 @@ Public Class UC_PembalapAdmin
         Dim nomorValid As Boolean =
             ValidasiTextBox(ErrorProvider1, txtNomor, "Inputan tidak boleh kosong")
 
-        If Not namaValid OrElse Not negaraValid OrElse Not nomorValid Then
-            MessageBox.Show("Inputan tidak boleh kosong")
-            Return False
-        End If
+        Dim fotoValid As Boolean =
+            ValidasiFoto(ErrorProvider1, picFotoPembalap, "Foto harus dipilih")
 
-        Return True
+        Dim timValid As Boolean =
+            ValidasiComboBox(ErrorProvider1, cbTim, "Tim harus dipilih")
+
+        Return namaValid And negaraValid And nomorValid And fotoValid And timValid
 
     End Function
 
@@ -186,6 +189,8 @@ Public Class UC_PembalapAdmin
     End Sub
 
     Private Sub btnUbahPembalap_Click(sender As Object, e As EventArgs) Handles btnUbahPembalap.Click
+
+        If Not ValidasiPembalap() Then Exit Sub
 
         If selectedIdPembalap = -1 Then
             MessageBox.Show("Pilih data yang akan diubah")

@@ -24,6 +24,10 @@ Public Class UC_HasilRaceAdmin
         btnUbahHasil.Enabled = False
         btnHapusHasil.Enabled = False
 
+        cbRaceHasil.SelectedIndex = -1
+        cbPembalapHasil.SelectedIndex = -1
+        cbStatusFinish.SelectedIndex = -1
+
     End Sub
 
     Private Sub MuatComboBoxRace()
@@ -67,6 +71,26 @@ Public Class UC_HasilRaceAdmin
         End If
 
     End Sub
+
+    Private Function ValidasiHasilRace() As Boolean
+
+        ErrorProvider1.Clear()
+
+        Dim raceValid As Boolean =
+            ValidasiComboBox(ErrorProvider1, cbRaceHasil, "Race harus dipilih")
+
+        Dim pembalapValid As Boolean =
+            ValidasiComboBox(ErrorProvider1, cbPembalapHasil, "Pembalap harus dipilih")
+
+        Dim statusValid As Boolean =
+            ValidasiComboBox(ErrorProvider1, cbStatusFinish, "Status finish harus dipilih")
+
+        Dim gapValid As Boolean =
+            ValidasiTextBox(ErrorProvider1, txtGap, "Gap harus diisi")
+
+        Return raceValid And pembalapValid And statusValid And gapValid
+
+    End Function
 
     Private Function HitungPoin(posisi As Integer,
                                 fastestLap As Boolean) As Integer
@@ -154,6 +178,8 @@ Public Class UC_HasilRaceAdmin
                                  e As EventArgs) _
                                  Handles btnSimpanHasil.Click
 
+        If Not ValidasiHasilRace() Then Exit Sub
+
         If CekPembalapSudahAdaDiRace(
         CInt(cbRaceHasil.SelectedValue),
         CInt(cbPembalapHasil.SelectedValue)) Then
@@ -191,6 +217,8 @@ Public Class UC_HasilRaceAdmin
     Private Sub btnUbahHasil_Click(sender As Object,
                                    e As EventArgs) _
                                    Handles btnUbahHasil.Click
+
+        If Not ValidasiHasilRace() Then Exit Sub
 
         If selectedIdHasil = -1 Then
             MessageBox.Show("Pilih data")

@@ -96,7 +96,10 @@ Public Class UC_TimAdmin
         Dim chasisValid As Boolean =
             ValidasiTextBox(ErrorProvider1, txtChasis, "Tidak boleh kosong")
 
-        Return namaValid And negaraValid And mesinValid And chasisValid
+        Dim fotoValid As Boolean =
+            ValidasiFoto(ErrorProvider1, picLogoTim, "Foto harus dipilih")
+
+        Return namaValid And negaraValid And mesinValid And chasisValid And fotoValid
 
     End Function
 
@@ -158,6 +161,8 @@ Public Class UC_TimAdmin
     End Sub
 
     Private Sub btnUbahTim_Click(sender As Object, e As EventArgs) Handles btnUbahTim.Click
+
+        If Not ValidasiTim() Then Exit Sub
 
         If selectedIdTim = -1 Then
             MessageBox.Show("Pilih data")

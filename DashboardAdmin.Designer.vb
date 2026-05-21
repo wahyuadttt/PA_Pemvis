@@ -49,9 +49,8 @@ Partial Class DashboardAdmin
         pnlSidebar.Controls.Add(pnlSidebarFoot)
         pnlSidebar.Dock = DockStyle.Left
         pnlSidebar.Location = New Point(0, 0)
-        pnlSidebar.Margin = New Padding(4, 4, 4, 4)
         pnlSidebar.Name = "pnlSidebar"
-        pnlSidebar.Size = New Size(269, 1000)
+        pnlSidebar.Size = New Size(215, 800)
         pnlSidebar.TabIndex = 0
         ' 
         ' pnlSidebarAccent
@@ -59,9 +58,8 @@ Partial Class DashboardAdmin
         pnlSidebarAccent.BackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
         pnlSidebarAccent.Dock = DockStyle.Left
         pnlSidebarAccent.Location = New Point(0, 0)
-        pnlSidebarAccent.Margin = New Padding(4, 4, 4, 4)
         pnlSidebarAccent.Name = "pnlSidebarAccent"
-        pnlSidebarAccent.Size = New Size(4, 938)
+        pnlSidebarAccent.Size = New Size(3, 750)
         pnlSidebarAccent.TabIndex = 0
         ' 
         ' lblLogoMark
@@ -70,10 +68,9 @@ Partial Class DashboardAdmin
         lblLogoMark.BackColor = Color.Transparent
         lblLogoMark.Font = New Font("Segoe UI", 13F, FontStyle.Bold)
         lblLogoMark.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        lblLogoMark.Location = New Point(18, 25)
-        lblLogoMark.Margin = New Padding(4, 0, 4, 0)
+        lblLogoMark.Location = New Point(14, 20)
         lblLogoMark.Name = "lblLogoMark"
-        lblLogoMark.Size = New Size(240, 36)
+        lblLogoMark.Size = New Size(202, 30)
         lblLogoMark.TabIndex = 1
         lblLogoMark.Text = "F1 MANAGEMENT"
         ' 
@@ -83,10 +80,9 @@ Partial Class DashboardAdmin
         lblMenuLabel.BackColor = Color.Transparent
         lblMenuLabel.Font = New Font("Segoe UI", 7.5F, FontStyle.Bold)
         lblMenuLabel.ForeColor = Color.FromArgb(CByte(110), CByte(110), CByte(130))
-        lblMenuLabel.Location = New Point(18, 75)
-        lblMenuLabel.Margin = New Padding(4, 0, 4, 0)
+        lblMenuLabel.Location = New Point(14, 60)
         lblMenuLabel.Name = "lblMenuLabel"
-        lblMenuLabel.Size = New Size(151, 20)
+        lblMenuLabel.Size = New Size(128, 17)
         lblMenuLabel.TabIndex = 2
         lblMenuLabel.Text = "MANAJEMEN DATA"
         ' 
@@ -99,10 +95,9 @@ Partial Class DashboardAdmin
         btnNavPembalap.FlatStyle = FlatStyle.Flat
         btnNavPembalap.Font = New Font("Segoe UI", 10F)
         btnNavPembalap.ForeColor = Color.White
-        btnNavPembalap.Location = New Point(0, 100)
-        btnNavPembalap.Margin = New Padding(4, 4, 4, 4)
+        btnNavPembalap.Location = New Point(0, 80)
         btnNavPembalap.Name = "btnNavPembalap"
-        btnNavPembalap.Size = New Size(250, 50)
+        btnNavPembalap.Size = New Size(200, 40)
         btnNavPembalap.TabIndex = 3
         btnNavPembalap.Text = "  🏎  Pembalap"
         btnNavPembalap.TextAlign = ContentAlignment.MiddleLeft
@@ -117,10 +112,9 @@ Partial Class DashboardAdmin
         btnNavTim.FlatStyle = FlatStyle.Flat
         btnNavTim.Font = New Font("Segoe UI", 10F)
         btnNavTim.ForeColor = Color.White
-        btnNavTim.Location = New Point(0, 151)
-        btnNavTim.Margin = New Padding(4, 4, 4, 4)
+        btnNavTim.Location = New Point(0, 121)
         btnNavTim.Name = "btnNavTim"
-        btnNavTim.Size = New Size(250, 50)
+        btnNavTim.Size = New Size(200, 40)
         btnNavTim.TabIndex = 4
         btnNavTim.Text = "  🏁  Tim / Konstruktor"
         btnNavTim.TextAlign = ContentAlignment.MiddleLeft
@@ -135,10 +129,9 @@ Partial Class DashboardAdmin
         btnNavRace.FlatStyle = FlatStyle.Flat
         btnNavRace.Font = New Font("Segoe UI", 10F)
         btnNavRace.ForeColor = Color.White
-        btnNavRace.Location = New Point(0, 202)
-        btnNavRace.Margin = New Padding(4, 4, 4, 4)
+        btnNavRace.Location = New Point(0, 162)
         btnNavRace.Name = "btnNavRace"
-        btnNavRace.Size = New Size(250, 50)
+        btnNavRace.Size = New Size(200, 40)
         btnNavRace.TabIndex = 5
         btnNavRace.Text = "  📅  Jadwal Race"
         btnNavRace.TextAlign = ContentAlignment.MiddleLeft
@@ -153,10 +146,9 @@ Partial Class DashboardAdmin
         btnNavHasil.FlatStyle = FlatStyle.Flat
         btnNavHasil.Font = New Font("Segoe UI", 10F)
         btnNavHasil.ForeColor = Color.White
-        btnNavHasil.Location = New Point(0, 254)
-        btnNavHasil.Margin = New Padding(4, 4, 4, 4)
+        btnNavHasil.Location = New Point(0, 203)
         btnNavHasil.Name = "btnNavHasil"
-        btnNavHasil.Size = New Size(250, 50)
+        btnNavHasil.Size = New Size(200, 40)
         btnNavHasil.TabIndex = 6
         btnNavHasil.Text = "  📊  Hasil Race"
         btnNavHasil.TextAlign = ContentAlignment.MiddleLeft
@@ -165,10 +157,9 @@ Partial Class DashboardAdmin
         ' pnlSidebarDiv
         ' 
         pnlSidebarDiv.BackColor = Color.FromArgb(CByte(40), CByte(40), CByte(55))
-        pnlSidebarDiv.Location = New Point(18, 315)
-        pnlSidebarDiv.Margin = New Padding(4, 4, 4, 4)
+        pnlSidebarDiv.Location = New Point(14, 252)
         pnlSidebarDiv.Name = "pnlSidebarDiv"
-        pnlSidebarDiv.Size = New Size(215, 1)
+        pnlSidebarDiv.Size = New Size(172, 1)
         pnlSidebarDiv.TabIndex = 7
         ' 
         ' btnNavKlasemen
@@ -180,10 +171,9 @@ Partial Class DashboardAdmin
         btnNavKlasemen.FlatStyle = FlatStyle.Flat
         btnNavKlasemen.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         btnNavKlasemen.ForeColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        btnNavKlasemen.Location = New Point(12, 319)
-        btnNavKlasemen.Margin = New Padding(4, 4, 4, 4)
+        btnNavKlasemen.Location = New Point(10, 255)
         btnNavKlasemen.Name = "btnNavKlasemen"
-        btnNavKlasemen.Size = New Size(250, 50)
+        btnNavKlasemen.Size = New Size(200, 40)
         btnNavKlasemen.TabIndex = 8
         btnNavKlasemen.Text = "  🏆  Klasemen"
         btnNavKlasemen.TextAlign = ContentAlignment.MiddleLeft
@@ -194,11 +184,10 @@ Partial Class DashboardAdmin
         pnlSidebarFoot.BackColor = Color.FromArgb(CByte(18), CByte(18), CByte(26))
         pnlSidebarFoot.Controls.Add(btnKeluar)
         pnlSidebarFoot.Dock = DockStyle.Bottom
-        pnlSidebarFoot.Location = New Point(0, 938)
-        pnlSidebarFoot.Margin = New Padding(4, 4, 4, 4)
+        pnlSidebarFoot.Location = New Point(0, 750)
         pnlSidebarFoot.Name = "pnlSidebarFoot"
-        pnlSidebarFoot.Padding = New Padding(0, 12, 0, 12)
-        pnlSidebarFoot.Size = New Size(269, 62)
+        pnlSidebarFoot.Padding = New Padding(0, 10, 0, 10)
+        pnlSidebarFoot.Size = New Size(215, 50)
         pnlSidebarFoot.TabIndex = 9
         ' 
         ' btnKeluar
@@ -211,10 +200,9 @@ Partial Class DashboardAdmin
         btnKeluar.FlatStyle = FlatStyle.Flat
         btnKeluar.Font = New Font("Segoe UI", 9.5F)
         btnKeluar.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
-        btnKeluar.Location = New Point(0, 12)
-        btnKeluar.Margin = New Padding(4, 4, 4, 4)
+        btnKeluar.Location = New Point(0, 10)
         btnKeluar.Name = "btnKeluar"
-        btnKeluar.Size = New Size(269, 38)
+        btnKeluar.Size = New Size(215, 30)
         btnKeluar.TabIndex = 0
         btnKeluar.Text = "  ✕  Keluar / Logout"
         btnKeluar.TextAlign = ContentAlignment.MiddleLeft
@@ -224,23 +212,22 @@ Partial Class DashboardAdmin
         ' 
         pnlContent.BackColor = Color.FromArgb(CByte(26), CByte(26), CByte(36))
         pnlContent.Dock = DockStyle.Fill
-        pnlContent.Location = New Point(269, 0)
-        pnlContent.Margin = New Padding(4, 4, 4, 4)
+        pnlContent.Location = New Point(215, 0)
         pnlContent.Name = "pnlContent"
-        pnlContent.Padding = New Padding(25, 0, 0, 0)
-        pnlContent.Size = New Size(1331, 1000)
+        pnlContent.Padding = New Padding(20, 0, 0, 0)
+        pnlContent.Size = New Size(1065, 800)
         pnlContent.TabIndex = 1
         ' 
         ' DashboardAdmin
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
-        ClientSize = New Size(1600, 1000)
+        ClientSize = New Size(1280, 800)
+        ControlBox = False
         Controls.Add(pnlContent)
         Controls.Add(pnlSidebar)
-        Margin = New Padding(4, 4, 4, 4)
-        MinimumSize = New Size(1274, 861)
+        MinimumSize = New Size(1023, 698)
         Name = "DashboardAdmin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "F1 Race Management — Admin Dashboard"

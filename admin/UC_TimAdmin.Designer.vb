@@ -179,7 +179,7 @@ Partial Class UC_TimAdmin
         pnlInput.Dock = DockStyle.Left
         pnlInput.Location = New Point(16, 12)
         pnlInput.Name = "pnlInput"
-        pnlInput.Size = New Size(340, 849)
+        pnlInput.Size = New Size(356, 849)
         pnlInput.TabIndex = 0
         ' 
         ' pnlInputAccent
@@ -188,7 +188,7 @@ Partial Class UC_TimAdmin
         pnlInputAccent.Dock = DockStyle.Top
         pnlInputAccent.Location = New Point(0, 0)
         pnlInputAccent.Name = "pnlInputAccent"
-        pnlInputAccent.Size = New Size(340, 3)
+        pnlInputAccent.Size = New Size(356, 3)
         pnlInputAccent.TabIndex = 0
         ' 
         ' lblPanelInput
@@ -339,7 +339,7 @@ Partial Class UC_TimAdmin
         pnlAction.Location = New Point(0, 761)
         pnlAction.Name = "pnlAction"
         pnlAction.Padding = New Padding(12, 10, 12, 10)
-        pnlAction.Size = New Size(340, 88)
+        pnlAction.Size = New Size(356, 88)
         pnlAction.TabIndex = 13
         ' 
         ' txtSearchTim
@@ -360,10 +360,10 @@ Partial Class UC_TimAdmin
         pnlGrid.Controls.Add(txtSearchTim)
         pnlGrid.Controls.Add(dgvTim)
         pnlGrid.Dock = DockStyle.Fill
-        pnlGrid.Location = New Point(356, 12)
+        pnlGrid.Location = New Point(372, 12)
         pnlGrid.Name = "pnlGrid"
         pnlGrid.Padding = New Padding(14, 12, 14, 12)
-        pnlGrid.Size = New Size(771, 849)
+        pnlGrid.Size = New Size(755, 849)
         pnlGrid.TabIndex = 1
         ' 
         ' dgvTim
@@ -404,7 +404,7 @@ Partial Class UC_TimAdmin
         dgvTim.RowHeadersWidth = 51
         dgvTim.RowTemplate.Height = 34
         dgvTim.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvTim.Size = New Size(760, 1212)
+        dgvTim.Size = New Size(744, 1212)
         dgvTim.TabIndex = 1
         ' 
         ' pnlContent

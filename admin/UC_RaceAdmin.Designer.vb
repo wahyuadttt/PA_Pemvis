@@ -17,6 +17,7 @@ Partial Class UC_RaceAdmin
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
@@ -52,6 +53,7 @@ Partial Class UC_RaceAdmin
         lblHeaderSub = New Label()
         PrintPreviewDialog1 = New PrintPreviewDialog()
         PrintDocument1 = New Printing.PrintDocument()
+        ErrorProvider1 = New ErrorProvider(components)
         pnlContent.SuspendLayout()
         pnlGridRace.SuspendLayout()
         CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
@@ -59,6 +61,7 @@ Partial Class UC_RaceAdmin
         pnlInputRace.SuspendLayout()
         pnlActionRace.SuspendLayout()
         pnlHeader.SuspendLayout()
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlContent
@@ -80,10 +83,10 @@ Partial Class UC_RaceAdmin
         pnlGridRace.Controls.Add(DataGridView2)
         pnlGridRace.Controls.Add(DataGridView1)
         pnlGridRace.Dock = DockStyle.Fill
-        pnlGridRace.Location = New Point(356, 12)
+        pnlGridRace.Location = New Point(372, 12)
         pnlGridRace.Name = "pnlGridRace"
         pnlGridRace.Padding = New Padding(14, 12, 14, 12)
-        pnlGridRace.Size = New Size(771, 849)
+        pnlGridRace.Size = New Size(755, 849)
         pnlGridRace.TabIndex = 1
         ' 
         ' TextBox1
@@ -135,7 +138,7 @@ Partial Class UC_RaceAdmin
         DataGridView2.RowHeadersWidth = 51
         DataGridView2.RowTemplate.Height = 34
         DataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        DataGridView2.Size = New Size(743, 785)
+        DataGridView2.Size = New Size(727, 785)
         DataGridView2.TabIndex = 1
         ' 
         ' DataGridView1
@@ -175,7 +178,7 @@ Partial Class UC_RaceAdmin
         DataGridView1.RowHeadersWidth = 51
         DataGridView1.RowTemplate.Height = 34
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        DataGridView1.Size = New Size(743, 785)
+        DataGridView1.Size = New Size(727, 785)
         DataGridView1.TabIndex = 2
         ' 
         ' pnlInputRace
@@ -195,7 +198,7 @@ Partial Class UC_RaceAdmin
         pnlInputRace.Dock = DockStyle.Left
         pnlInputRace.Location = New Point(16, 12)
         pnlInputRace.Name = "pnlInputRace"
-        pnlInputRace.Size = New Size(340, 849)
+        pnlInputRace.Size = New Size(356, 849)
         pnlInputRace.TabIndex = 0
         ' 
         ' pnlInputAccent
@@ -204,7 +207,7 @@ Partial Class UC_RaceAdmin
         pnlInputAccent.Dock = DockStyle.Top
         pnlInputAccent.Location = New Point(0, 0)
         pnlInputAccent.Name = "pnlInputAccent"
-        pnlInputAccent.Size = New Size(340, 3)
+        pnlInputAccent.Size = New Size(356, 3)
         pnlInputAccent.TabIndex = 0
         ' 
         ' lblPanelRace
@@ -322,7 +325,7 @@ Partial Class UC_RaceAdmin
         pnlActionRace.Location = New Point(0, 761)
         pnlActionRace.Name = "pnlActionRace"
         pnlActionRace.Padding = New Padding(12, 10, 12, 10)
-        pnlActionRace.Size = New Size(340, 88)
+        pnlActionRace.Size = New Size(356, 88)
         pnlActionRace.TabIndex = 13
         ' 
         ' btnSimpanRace
@@ -462,6 +465,10 @@ Partial Class UC_RaceAdmin
         ' PrintDocument1
         ' 
         ' 
+        ' ErrorProvider1
+        ' 
+        ErrorProvider1.ContainerControl = Me
+        ' 
         ' UC_RaceAdmin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -482,6 +489,7 @@ Partial Class UC_RaceAdmin
         pnlActionRace.ResumeLayout(False)
         pnlHeader.ResumeLayout(False)
         pnlHeader.PerformLayout()
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -514,4 +522,5 @@ Partial Class UC_RaceAdmin
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class

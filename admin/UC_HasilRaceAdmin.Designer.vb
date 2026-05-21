@@ -17,10 +17,11 @@ Partial Class UC_HasilRaceAdmin
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UC_HasilRaceAdmin))
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
         PrintPreviewDialog1 = New PrintPreviewDialog()
         btnSimpanHasil = New Button()
         btnUbahHasil = New Button()
@@ -60,6 +61,7 @@ Partial Class UC_HasilRaceAdmin
         pnlHeaderAccent = New Panel()
         lblHeaderTitle = New Label()
         lblHeaderSub = New Label()
+        ErrorProvider1 = New ErrorProvider(components)
         pnlInput.SuspendLayout()
         CType(nudPosisi, ComponentModel.ISupportInitialize).BeginInit()
         pnlAction.SuspendLayout()
@@ -68,6 +70,7 @@ Partial Class UC_HasilRaceAdmin
         CType(dgvHasilRace, ComponentModel.ISupportInitialize).BeginInit()
         pnlContent.SuspendLayout()
         pnlHeader.SuspendLayout()
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PrintPreviewDialog1
@@ -199,7 +202,7 @@ Partial Class UC_HasilRaceAdmin
         pnlInput.Dock = DockStyle.Left
         pnlInput.Location = New Point(16, 12)
         pnlInput.Name = "pnlInput"
-        pnlInput.Size = New Size(360, 849)
+        pnlInput.Size = New Size(376, 849)
         pnlInput.TabIndex = 0
         ' 
         ' txtTimHasil
@@ -219,13 +222,13 @@ Partial Class UC_HasilRaceAdmin
         pnlInputAccent.Dock = DockStyle.Top
         pnlInputAccent.Location = New Point(0, 0)
         pnlInputAccent.Name = "pnlInputAccent"
-        pnlInputAccent.Size = New Size(360, 3)
+        pnlInputAccent.Size = New Size(376, 3)
         pnlInputAccent.TabIndex = 0
         ' 
         ' lblPanelInput
         ' 
         lblPanelInput.AutoSize = True
-        lblPanelInput.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        lblPanelInput.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         lblPanelInput.ForeColor = Color.White
         lblPanelInput.Location = New Point(14, 16)
         lblPanelInput.Name = "lblPanelInput"
@@ -236,7 +239,7 @@ Partial Class UC_HasilRaceAdmin
         ' lblSirkuit
         ' 
         lblSirkuit.AutoSize = True
-        lblSirkuit.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        lblSirkuit.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblSirkuit.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
         lblSirkuit.Location = New Point(14, 52)
         lblSirkuit.Name = "lblSirkuit"
@@ -249,7 +252,7 @@ Partial Class UC_HasilRaceAdmin
         cbRaceHasil.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         cbRaceHasil.DropDownStyle = ComboBoxStyle.DropDownList
         cbRaceHasil.FlatStyle = FlatStyle.Flat
-        cbRaceHasil.Font = New Font("Segoe UI", 10.0F)
+        cbRaceHasil.Font = New Font("Segoe UI", 10F)
         cbRaceHasil.ForeColor = Color.White
         cbRaceHasil.Location = New Point(14, 70)
         cbRaceHasil.Name = "cbRaceHasil"
@@ -267,7 +270,7 @@ Partial Class UC_HasilRaceAdmin
         ' lblInputDetail
         ' 
         lblInputDetail.AutoSize = True
-        lblInputDetail.Font = New Font("Segoe UI", 7.0F, FontStyle.Bold)
+        lblInputDetail.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
         lblInputDetail.ForeColor = Color.FromArgb(CByte(100), CByte(100), CByte(115))
         lblInputDetail.Location = New Point(14, 122)
         lblInputDetail.Name = "lblInputDetail"
@@ -278,7 +281,7 @@ Partial Class UC_HasilRaceAdmin
         ' lblPembalap
         ' 
         lblPembalap.AutoSize = True
-        lblPembalap.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        lblPembalap.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblPembalap.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
         lblPembalap.Location = New Point(14, 140)
         lblPembalap.Name = "lblPembalap"
@@ -291,7 +294,7 @@ Partial Class UC_HasilRaceAdmin
         cbPembalapHasil.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         cbPembalapHasil.DropDownStyle = ComboBoxStyle.DropDownList
         cbPembalapHasil.FlatStyle = FlatStyle.Flat
-        cbPembalapHasil.Font = New Font("Segoe UI", 10.0F)
+        cbPembalapHasil.Font = New Font("Segoe UI", 10F)
         cbPembalapHasil.ForeColor = Color.White
         cbPembalapHasil.Location = New Point(14, 158)
         cbPembalapHasil.Name = "cbPembalapHasil"
@@ -301,7 +304,7 @@ Partial Class UC_HasilRaceAdmin
         ' lblTim
         ' 
         lblTim.AutoSize = True
-        lblTim.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        lblTim.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblTim.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
         lblTim.Location = New Point(14, 200)
         lblTim.Name = "lblTim"
@@ -312,7 +315,7 @@ Partial Class UC_HasilRaceAdmin
         ' lblPosisi
         ' 
         lblPosisi.AutoSize = True
-        lblPosisi.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        lblPosisi.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblPosisi.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
         lblPosisi.Location = New Point(14, 262)
         lblPosisi.Name = "lblPosisi"
@@ -324,7 +327,7 @@ Partial Class UC_HasilRaceAdmin
         ' 
         nudPosisi.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         nudPosisi.BorderStyle = BorderStyle.FixedSingle
-        nudPosisi.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        nudPosisi.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         nudPosisi.ForeColor = Color.White
         nudPosisi.Location = New Point(14, 280)
         nudPosisi.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
@@ -338,7 +341,7 @@ Partial Class UC_HasilRaceAdmin
         ' lblPoin
         ' 
         lblPoin.AutoSize = True
-        lblPoin.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        lblPoin.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblPoin.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
         lblPoin.Location = New Point(190, 262)
         lblPoin.Name = "lblPoin"
@@ -349,7 +352,7 @@ Partial Class UC_HasilRaceAdmin
         ' lblGap
         ' 
         lblGap.AutoSize = True
-        lblGap.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        lblGap.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblGap.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
         lblGap.Location = New Point(14, 328)
         lblGap.Name = "lblGap"
@@ -361,7 +364,7 @@ Partial Class UC_HasilRaceAdmin
         ' 
         txtGap.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         txtGap.BorderStyle = BorderStyle.FixedSingle
-        txtGap.Font = New Font("Segoe UI", 10.0F)
+        txtGap.Font = New Font("Segoe UI", 10F)
         txtGap.ForeColor = Color.White
         txtGap.Location = New Point(14, 346)
         txtGap.Name = "txtGap"
@@ -372,7 +375,7 @@ Partial Class UC_HasilRaceAdmin
         ' lblStatus
         ' 
         lblStatus.AutoSize = True
-        lblStatus.Font = New Font("Segoe UI", 8.0F, FontStyle.Bold)
+        lblStatus.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
         lblStatus.ForeColor = Color.FromArgb(CByte(160), CByte(160), CByte(175))
         lblStatus.Location = New Point(14, 390)
         lblStatus.Name = "lblStatus"
@@ -385,7 +388,7 @@ Partial Class UC_HasilRaceAdmin
         cbStatusFinish.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         cbStatusFinish.DropDownStyle = ComboBoxStyle.DropDownList
         cbStatusFinish.FlatStyle = FlatStyle.Flat
-        cbStatusFinish.Font = New Font("Segoe UI", 10.0F)
+        cbStatusFinish.Font = New Font("Segoe UI", 10F)
         cbStatusFinish.ForeColor = Color.White
         cbStatusFinish.Items.AddRange(New Object() {"Finish", "DNF", "DNS", "DSQ", "Retired"})
         cbStatusFinish.Location = New Point(14, 408)
@@ -396,7 +399,7 @@ Partial Class UC_HasilRaceAdmin
         ' chkFastestLap
         ' 
         chkFastestLap.BackColor = Color.Transparent
-        chkFastestLap.Font = New Font("Segoe UI", 9.0F)
+        chkFastestLap.Font = New Font("Segoe UI", 9F)
         chkFastestLap.ForeColor = Color.FromArgb(CByte(200), CByte(200), CByte(215))
         chkFastestLap.Location = New Point(14, 450)
         chkFastestLap.Name = "chkFastestLap"
@@ -417,14 +420,14 @@ Partial Class UC_HasilRaceAdmin
         pnlAction.Location = New Point(0, 761)
         pnlAction.Name = "pnlAction"
         pnlAction.Padding = New Padding(12, 10, 12, 10)
-        pnlAction.Size = New Size(360, 88)
+        pnlAction.Size = New Size(376, 88)
         pnlAction.TabIndex = 19
         ' 
         ' txtSearch
         ' 
         txtSearch.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
         txtSearch.BorderStyle = BorderStyle.FixedSingle
-        txtSearch.Font = New Font("Segoe UI", 10.0F)
+        txtSearch.Font = New Font("Segoe UI", 10F)
         txtSearch.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearch.Location = New Point(14, 66)
         txtSearch.Name = "txtSearch"
@@ -436,7 +439,7 @@ Partial Class UC_HasilRaceAdmin
         ' 
         lblGridTitle.AutoSize = True
         lblGridTitle.BackColor = Color.Transparent
-        lblGridTitle.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        lblGridTitle.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         lblGridTitle.ForeColor = Color.White
         lblGridTitle.Location = New Point(10, 6)
         lblGridTitle.Name = "lblGridTitle"
@@ -448,7 +451,7 @@ Partial Class UC_HasilRaceAdmin
         ' 
         lblGridSub.AutoSize = True
         lblGridSub.BackColor = Color.Transparent
-        lblGridSub.Font = New Font("Segoe UI", 8.0F)
+        lblGridSub.Font = New Font("Segoe UI", 8F)
         lblGridSub.ForeColor = Color.FromArgb(CByte(120), CByte(120), CByte(135))
         lblGridSub.Location = New Point(12, 28)
         lblGridSub.Name = "lblGridSub"
@@ -464,7 +467,7 @@ Partial Class UC_HasilRaceAdmin
         pnlGridHeader.Dock = DockStyle.Top
         pnlGridHeader.Location = New Point(14, 12)
         pnlGridHeader.Name = "pnlGridHeader"
-        pnlGridHeader.Size = New Size(723, 46)
+        pnlGridHeader.Size = New Size(707, 46)
         pnlGridHeader.TabIndex = 0
         ' 
         ' pnlGrid
@@ -474,41 +477,41 @@ Partial Class UC_HasilRaceAdmin
         pnlGrid.Controls.Add(txtSearch)
         pnlGrid.Controls.Add(dgvHasilRace)
         pnlGrid.Dock = DockStyle.Fill
-        pnlGrid.Location = New Point(376, 12)
+        pnlGrid.Location = New Point(392, 12)
         pnlGrid.Name = "pnlGrid"
         pnlGrid.Padding = New Padding(14, 12, 14, 12)
-        pnlGrid.Size = New Size(751, 849)
+        pnlGrid.Size = New Size(735, 849)
         pnlGrid.TabIndex = 1
         ' 
         ' dgvHasilRace
         ' 
-        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
-        dgvHasilRace.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(38), CByte(38), CByte(52))
+        dgvHasilRace.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         dgvHasilRace.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvHasilRace.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvHasilRace.BackgroundColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
         dgvHasilRace.BorderStyle = BorderStyle.None
         dgvHasilRace.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dgvHasilRace.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
-        DataGridViewCellStyle2.ForeColor = Color.White
-        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
-        DataGridViewCellStyle2.SelectionForeColor = Color.White
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        dgvHasilRace.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        DataGridViewCellStyle5.ForeColor = Color.White
+        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(15), CByte(15), CByte(20))
+        DataGridViewCellStyle5.SelectionForeColor = Color.White
+        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
+        dgvHasilRace.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         dgvHasilRace.ColumnHeadersHeight = 36
         dgvHasilRace.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9.0F)
-        DataGridViewCellStyle3.ForeColor = Color.White
-        DataGridViewCellStyle3.Padding = New Padding(4)
-        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
-        DataGridViewCellStyle3.SelectionForeColor = Color.White
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
-        dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(30), CByte(30), CByte(40))
+        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle6.ForeColor = Color.White
+        DataGridViewCellStyle6.Padding = New Padding(4)
+        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(225), CByte(6), CByte(0))
+        DataGridViewCellStyle6.SelectionForeColor = Color.White
+        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
+        dgvHasilRace.DefaultCellStyle = DataGridViewCellStyle6
         dgvHasilRace.EnableHeadersVisualStyles = False
         dgvHasilRace.GridColor = Color.FromArgb(CByte(50), CByte(50), CByte(65))
         dgvHasilRace.Location = New Point(14, 114)
@@ -518,7 +521,7 @@ Partial Class UC_HasilRaceAdmin
         dgvHasilRace.RowHeadersWidth = 51
         dgvHasilRace.RowTemplate.Height = 34
         dgvHasilRace.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvHasilRace.Size = New Size(720, 1285)
+        dgvHasilRace.Size = New Size(704, 1285)
         dgvHasilRace.TabIndex = 2
         ' 
         ' pnlContent
@@ -558,7 +561,7 @@ Partial Class UC_HasilRaceAdmin
         ' 
         lblHeaderTitle.AutoSize = True
         lblHeaderTitle.BackColor = Color.Transparent
-        lblHeaderTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
+        lblHeaderTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         lblHeaderTitle.ForeColor = Color.White
         lblHeaderTitle.Location = New Point(15, -1)
         lblHeaderTitle.Name = "lblHeaderTitle"
@@ -570,7 +573,7 @@ Partial Class UC_HasilRaceAdmin
         ' 
         lblHeaderSub.AutoSize = True
         lblHeaderSub.BackColor = Color.Transparent
-        lblHeaderSub.Font = New Font("Segoe UI", 8.0F)
+        lblHeaderSub.Font = New Font("Segoe UI", 8F)
         lblHeaderSub.ForeColor = Color.FromArgb(CByte(180), CByte(180), CByte(190))
         lblHeaderSub.Location = New Point(17, 38)
         lblHeaderSub.Name = "lblHeaderSub"
@@ -578,9 +581,13 @@ Partial Class UC_HasilRaceAdmin
         lblHeaderSub.TabIndex = 2
         lblHeaderSub.Text = "Input Tampilan Hasil Balapan"
         ' 
+        ' ErrorProvider1
+        ' 
+        ErrorProvider1.ContainerControl = Me
+        ' 
         ' UC_HasilRaceAdmin
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(21), CByte(21), CByte(30))
         Controls.Add(pnlContent)
@@ -600,6 +607,7 @@ Partial Class UC_HasilRaceAdmin
         pnlContent.ResumeLayout(False)
         pnlHeader.ResumeLayout(False)
         pnlHeader.PerformLayout()
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -643,4 +651,5 @@ Partial Class UC_HasilRaceAdmin
     Friend WithEvents lblHeaderTitle As Label
     Friend WithEvents lblHeaderSub As Label
     Friend WithEvents lblAdminBadge As Label
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class

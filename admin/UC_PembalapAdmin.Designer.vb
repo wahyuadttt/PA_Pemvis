@@ -179,7 +179,7 @@ Partial Class UC_PembalapAdmin
         pnlInput.Dock = DockStyle.Left
         pnlInput.Location = New Point(16, 12)
         pnlInput.Name = "pnlInput"
-        pnlInput.Size = New Size(340, 849)
+        pnlInput.Size = New Size(348, 849)
         pnlInput.TabIndex = 0
         ' 
         ' pnlInputAccent
@@ -188,7 +188,7 @@ Partial Class UC_PembalapAdmin
         pnlInputAccent.Dock = DockStyle.Top
         pnlInputAccent.Location = New Point(0, 0)
         pnlInputAccent.Name = "pnlInputAccent"
-        pnlInputAccent.Size = New Size(340, 3)
+        pnlInputAccent.Size = New Size(348, 3)
         pnlInputAccent.TabIndex = 0
         ' 
         ' lblPanelInput
@@ -343,7 +343,7 @@ Partial Class UC_PembalapAdmin
         pnlAction.Location = New Point(0, 761)
         pnlAction.Name = "pnlAction"
         pnlAction.Padding = New Padding(12, 10, 12, 10)
-        pnlAction.Size = New Size(340, 88)
+        pnlAction.Size = New Size(348, 88)
         pnlAction.TabIndex = 13
         ' 
         ' txtSearchPembalap
@@ -364,10 +364,10 @@ Partial Class UC_PembalapAdmin
         pnlGrid.Controls.Add(txtSearchPembalap)
         pnlGrid.Controls.Add(dgvPembalap)
         pnlGrid.Dock = DockStyle.Fill
-        pnlGrid.Location = New Point(356, 12)
+        pnlGrid.Location = New Point(364, 12)
         pnlGrid.Name = "pnlGrid"
         pnlGrid.Padding = New Padding(14, 12, 14, 12)
-        pnlGrid.Size = New Size(771, 849)
+        pnlGrid.Size = New Size(763, 849)
         pnlGrid.TabIndex = 1
         ' 
         ' dgvPembalap
@@ -408,7 +408,7 @@ Partial Class UC_PembalapAdmin
         dgvPembalap.RowHeadersWidth = 51
         dgvPembalap.RowTemplate.Height = 34
         dgvPembalap.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvPembalap.Size = New Size(733, 1269)
+        dgvPembalap.Size = New Size(725, 1269)
         dgvPembalap.TabIndex = 1
         ' 
         ' pnlContent
