@@ -74,9 +74,9 @@ VALUES
 INSERT INTO TabelRace
 (namaRace, lokasi, tanggal, putaran)
 VALUES
-('Australian GP', 'Melbourne', '2025-03-16', 58),
-('Japanese GP', 'Suzuka', '2025-04-06', 53),
-('Miami GP', 'Miami', '2025-05-04', 57);
+('Australian GP', 'Melbourne', '2025-03-16', 1),
+('Japanese GP', 'Suzuka', '2025-04-06', 3),
+('Miami GP', 'Miami', '2025-05-04', 8);
 
 INSERT INTO TabelHasilRace
 (idRace, idPembalap, posisiFinish, gap, statusFinish, fastestLap, poin)
