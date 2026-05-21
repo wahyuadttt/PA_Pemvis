@@ -63,9 +63,9 @@ Partial Class UC_RaceUser
         txtSearchRace.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearchRace.Location = New Point(14, 12)
         txtSearchRace.Name = "txtSearchRace"
+        txtSearchRace.PlaceholderText = "🔍  Cari jadwal race..."
         txtSearchRace.Size = New Size(405, 30)
         txtSearchRace.TabIndex = 0
-        txtSearchRace.Text = "🔍  Cari jadwal race..."
         ' 
         ' pnlGrid
         ' 

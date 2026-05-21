@@ -66,9 +66,9 @@ Partial Class UC_HasilRace
         txtSearch.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearch.Location = New Point(14, 66)
         txtSearch.Name = "txtSearch"
+        txtSearch.PlaceholderText = "🔍  Cari pembalap / tim..."
         txtSearch.Size = New Size(1405, 30)
         txtSearch.TabIndex = 1
-        txtSearch.Text = "🔍  Cari pembalap / tim..."
         ' 
         ' dgvHasilRace
         ' 

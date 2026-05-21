@@ -251,36 +251,69 @@ Public Class UC_TimAdmin
 
         Dim fontJudul As New Font("Arial", 16, FontStyle.Bold)
         Dim fontIsi As New Font("Arial", 10)
+        Dim brush As New SolidBrush(Color.Black)
 
+        Dim marginLeft As Integer = e.MarginBounds.Left
         Dim y As Integer = 50
 
         e.Graphics.DrawString(
-            "DATA TIM FORMULA 1",
-            fontJudul,
-            Brushes.Black,
-            240,
-            y)
+        "DATA TIM FORMULA 1",
+        fontJudul,
+        brush,
+        marginLeft,
+        y)
 
-        y += 50
+        y += 40
+
+        e.Graphics.DrawString("Nama Tim", fontIsi, brush, marginLeft, y)
+        e.Graphics.DrawString("Negara", fontIsi, brush, marginLeft + 220, y)
+        e.Graphics.DrawString("Mesin", fontIsi, brush, marginLeft + 420, y)
+        e.Graphics.DrawString("Chasis", fontIsi, brush, marginLeft + 580, y)
+
+        y += 25
+
+        e.Graphics.DrawLine(
+        Pens.Black,
+        marginLeft,
+        y,
+        marginLeft + 750,
+        y)
+
+        y += 10
 
         For Each row As DataGridViewRow In dgvTim.Rows
 
             If Not row.IsNewRow Then
 
-                Dim teks As String =
-                    "Tim : " & row.Cells("namaTim").Value.ToString() &
-                    " | Negara : " & row.Cells("negara").Value.ToString() &
-                    " | Mesin : " & row.Cells("mesin").Value.ToString() &
-                    " | Chasis : " & row.Cells("chasis").Value.ToString()
+                e.Graphics.DrawString(
+                row.Cells("namaTim").Value.ToString(),
+                fontIsi,
+                brush,
+                marginLeft,
+                y)
 
                 e.Graphics.DrawString(
-                    teks,
-                    fontIsi,
-                    Brushes.Black,
-                    50,
-                    y)
+                row.Cells("negara").Value.ToString(),
+                fontIsi,
+                brush,
+                marginLeft + 220,
+                y)
 
-                y += 30
+                e.Graphics.DrawString(
+                row.Cells("mesin").Value.ToString(),
+                fontIsi,
+                brush,
+                marginLeft + 420,
+                y)
+
+                e.Graphics.DrawString(
+                row.Cells("chasis").Value.ToString(),
+                fontIsi,
+                brush,
+                marginLeft + 580,
+                y)
+
+                y += 25
 
             End If
 

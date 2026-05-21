@@ -79,9 +79,9 @@ Partial Class UC_FormRaceUser
         txtSearch.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearch.Location = New Point(14, 12)
         txtSearch.Name = "txtSearch"
+        txtSearch.PlaceholderText = "🔍  Cari tim / konstruktor..."
         txtSearch.Size = New Size(1256, 30)
         txtSearch.TabIndex = 0
-        txtSearch.Text = "🔍  Cari tim / konstruktor..."
         ' 
         ' dgvTim
         ' 

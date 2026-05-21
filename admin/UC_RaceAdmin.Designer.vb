@@ -94,9 +94,9 @@ Partial Class UC_RaceAdmin
         TextBox1.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         TextBox1.Location = New Point(14, 12)
         TextBox1.Name = "TextBox1"
+        TextBox1.PlaceholderText = "🔍  Cari jadwal race..."
         TextBox1.Size = New Size(743, 30)
         TextBox1.TabIndex = 0
-        TextBox1.Text = "🔍  Cari jadwal race..."
         ' 
         ' DataGridView2
         ' 
@@ -458,6 +458,9 @@ Partial Class UC_RaceAdmin
         PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), Icon)
         PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         PrintPreviewDialog1.Visible = False
+        ' 
+        ' PrintDocument1
+        ' 
         ' 
         ' UC_RaceAdmin
         ' 

@@ -310,36 +310,69 @@ Public Class UC_HasilRaceAdmin
 
         Dim fontJudul As New Font("Arial", 16, FontStyle.Bold)
         Dim fontIsi As New Font("Arial", 10)
+        Dim brush As New SolidBrush(Color.Black)
 
+        Dim marginLeft As Integer = e.MarginBounds.Left
         Dim y As Integer = 50
 
         e.Graphics.DrawString(
             "HASIL RACE FORMULA 1",
             fontJudul,
-            Brushes.Black,
-            220,
+            brush,
+            marginLeft,
             y)
 
-        y += 50
+        y += 40
+
+        e.Graphics.DrawString("Pembalap", fontIsi, brush, marginLeft, y)
+        e.Graphics.DrawString("Tim", fontIsi, brush, marginLeft + 220, y)
+        e.Graphics.DrawString("Posisi", fontIsi, brush, marginLeft + 450, y)
+        e.Graphics.DrawString("Poin", fontIsi, brush, marginLeft + 560, y)
+
+        y += 25
+
+        e.Graphics.DrawLine(
+            Pens.Black,
+            marginLeft,
+            y,
+            marginLeft + 700,
+            y)
+
+        y += 10
 
         For Each row As DataGridViewRow In dgvHasilRace.Rows
 
             If Not row.IsNewRow Then
 
-                Dim teks As String =
-                    "Pembalap : " & row.Cells("pembalap").Value.ToString() &
-                    " | Tim : " & row.Cells("namaTim").Value.ToString() &
-                    " | Posisi : " & row.Cells("posisiFinish").Value.ToString() &
-                    " | Poin : " & row.Cells("poin").Value.ToString()
-
                 e.Graphics.DrawString(
-                    teks,
+                    row.Cells("pembalap").Value.ToString(),
                     fontIsi,
-                    Brushes.Black,
-                    50,
+                    brush,
+                    marginLeft,
                     y)
 
-                y += 30
+                e.Graphics.DrawString(
+                    row.Cells("namaTim").Value.ToString(),
+                    fontIsi,
+                    brush,
+                    marginLeft + 220,
+                    y)
+
+                e.Graphics.DrawString(
+                    row.Cells("posisiFinish").Value.ToString(),
+                    fontIsi,
+                    brush,
+                    marginLeft + 450,
+                    y)
+
+                e.Graphics.DrawString(
+                    row.Cells("poin").Value.ToString(),
+                    fontIsi,
+                    brush,
+                    marginLeft + 560,
+                    y)
+
+                y += 25
 
             End If
 

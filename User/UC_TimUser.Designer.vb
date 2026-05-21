@@ -63,9 +63,9 @@ Partial Class UC_TimUser
         txtSearchTim.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearchTim.Location = New Point(14, 12)
         txtSearchTim.Name = "txtSearchTim"
+        txtSearchTim.PlaceholderText = "🔍  Cari tim / konstruktor..."
         txtSearchTim.Size = New Size(405, 30)
         txtSearchTim.TabIndex = 0
-        txtSearchTim.Text = "🔍  Cari tim / konstruktor..."
         ' 
         ' pnlGrid
         ' 

@@ -310,7 +310,7 @@ Partial Class LoginAdmin
         MinimizeBox = False
         Name = "LoginAdmin"
         ShowInTaskbar = False
-        StartPosition = FormStartPosition.CenterParent
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Admin Login — F1 Race Management"
         CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
         pnlOuter.ResumeLayout(False)

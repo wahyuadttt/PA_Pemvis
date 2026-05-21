@@ -354,9 +354,9 @@ Partial Class UC_PembalapAdmin
         txtSearchPembalap.ForeColor = Color.FromArgb(CByte(140), CByte(140), CByte(155))
         txtSearchPembalap.Location = New Point(14, 12)
         txtSearchPembalap.Name = "txtSearchPembalap"
+        txtSearchPembalap.PlaceholderText = "🔍  Cari pembalap..."
         txtSearchPembalap.Size = New Size(733, 30)
         txtSearchPembalap.TabIndex = 0
-        txtSearchPembalap.Text = "🔍  Cari pembalap..."
         ' 
         ' pnlGrid
         ' 
